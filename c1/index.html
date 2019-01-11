@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <!--    구형브라우저-->
+    <link rel="shortcut icon" type="image/x-icon"href="./ico/icon16.ico">
+<!--    신형브라우저와 안드로이드 폰-->
+    <link rel="shortcut icon" type="image/x-icon"href="./ico/icon32.ico">
+<!--    아이폰 3 이하-->
+    <link rel="apple-touch-icon" size="57x57 "href="./ico/icon64.png">
+<!--    아이패드-->
+    <link rel="apple-touch-icon" size="72x72 "href="파일 경로72.png">
+<!--아이폰 4이상-->
+  <link rel="apple-touch-icon" size="114x114 "href="파일 경로114.png">
+<!--   IE10이상-->
+   <meta name="msapplication-tilecolor" content="#FFFFFF">
+   <meta name="msapplication-tileimage" content="./ico/icon128.png">
+    
+<!--    메타데이터 개발 공통사항-->
+  
+<!--  <meta http-equiv="default-style" content="phone">
+  <link rel="stylesheet" href="phone.css" title="phone">
+  <link rel="stylesheet" href="desktop.css" title="desktop">-->
+  
+<!--  자동 새로 고침 초 단위설정-->
+  <meta http-equiv="refresh" content="180">
+<!--  데스크탑에서 IE로 웹 문서를 열 때 가장 최신 버전으로 실행-->
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<!--  앱(웹 사이트)의 이름-->
+  <meta name="application-name" content="콘텐츠 이름">
+<!--  웹 사이트 저작자의 이름-->
+  <meta name="author" content="lim gwang min">
+<!--현재문서의 설명   -->
+   <meta name="description" content="콘텐츠 메인페이지">
+<!--   현재 문서의 저작도구-->
+  <meta name="generator" content="Brackets">
+<!--  검색엔진에서 검색되게할 키워드-->
+  <meta name="keywords" content=" 병원,피부,레이저">
+
+<!--   반응형,모바일,태블릿 사이트일경우-->
+  <meta name="viewport" content="widt=device-width, initial-scale=1.0, user-scalable=no">
+   
+   
+   <!--모바일 : 넓이 (물리적 기기의 폭)767px 이하-->
+   <link rel="stylesheet" href="mobile.css" media="screen and (max-width:767px)">
+<!--   태블릿: 768px 이상 ~ 959px 이하-->
+     <link rel="stylesheet" href="tablet.css" media="screen and (min-width:768px)and (max-width:959px)">
+<!--   테스크탑 : 960px 이상-->
+     <link rel="stylesheet" href="desktop.css" media="screen and (min-width:960px)">
+<!--   프린터 : 960px 이상-->
+     <link rel="stylesheet" href="print.css" media="print and (min-width:767px)">
+<!--모든기기-->
+     <link rel="stylesheet" href="all.css" media="all">
+   
+   
+   <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+   <link rel="stylesheet" href="com.css">
+   <link rel="stylesheet" href="grid.css">
+   <link rel="stylesheet" href="main.css">
+  
+   <style> /*       모바일 기종별로 크기 확인하려면 f12에서 컨트롤 +쉬프트 +m 누르기 */
+    </style>
+    <script src="./js/jquery-1.11.1..js"></script>
+    
+    <script>
+    $(function(){
+        var imgWd = parseInt($(".banBox2 li").width()); 
+        var imgMar = parseInt($(".banBox2 li").css("margin"));
+        var imgAni = imgWd + imgMar;
+        var intv = setInterval(function(){ lAni(); }, 3000);
+        function lAni(){
+            $(".imgBox").not(":animared").animate({"margin-left":-imgAni+"px"}, 600, function(){$(".imgBox li").eq(0).appendTo($(".imgBox")); $(".imgBox").css("margin-left", "0px");                                                                                                 
+        });
+    }
+      
+ $(window).scroll(function(){
+        var scTop = $("body, html").scrollTop();
+        if(scTop>=100){
+        $(".hdFrame, #gnb a, .lstBtn span").addClass("on");
+      } else {
+        $(".hdFrame, #gnb a, .lstBtn span").removeClass("on");
+      }
+      });
+     });
+        
+    
+    
+    </script> 
+   
+   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAe3Pz_3qYOQcRKJM4i5cJXGAuoDIu56l8&callback=initmap"></script> 
+
+<script> 
+
+//좌표 값을 바꿔서 입력 36.3491563,127.3776857
+
+function initialize() {
+
+  var myLatlng = new google.maps.LatLng(36.3304391, 127.3865366);
+
+  var mapOptions = {
+
+    zoom: 17,
+
+    center: myLatlng
+
+  }
+
+  var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
+
+ 
+
+  var marker = new google.maps.Marker({
+
+      position: myLatlng,
+
+      map: map,
+
+      title: '우리집'	  //레이블을 바꿔서 입력
+
+  });
+
+}
+
+ 
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+   
+    
+ </script>
+    <title>SRC 병원에 오신 것을 환영합니다.</title>
+
+   
+    
+</head>
+<body onload="initialize()">
+   <div class="hdFrame"></div>
+    <header id="hd">
+        <div class="wrap">
+            <a href="index.html" class="logo">
+            <img src="./ico/copy.png" alt="로고"></a>
+            <nav id="gnb">
+                <ul>
+                    <li><a href="intro.html">진료안내</a></li>
+                    <li><a href="intro1.html">진료과소개</a></li>
+                    <li><a href="intro2.html">교육연구</a></li>
+                    <li><a href="intro3.html">동호회</a></li>
+                    <li><a href="intro4.html">관련사이트</a></li>
+                </ul>
+            </nav>
+            <label for="ck" class="lstBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+             <span></span>
+                </label>
+        </div>
+    </header>
+    
+   <main id="content">
+       <figure id="vs">
+          <input type="radio" name="raItem" id="ra1" checked>
+          <input type="radio" name="raItem" id="ra2">
+           <ul class="banBox">
+               <li><a href="">
+                       <img src="./ico/main.jpg" alt="메인">        
+                   </a>
+                   </li>
+               <li><a href="">
+                       <img src="./ico/main2.jpg" alt="메인2">
+                       <h2 class="banComent"></h2>
+                   </a></li>
+           </ul>
+           <ul class="btnBox">
+               <li><label for="ra1" class="vsbtn active"></label></li>
+               <li><label for="ra2" class="vsbtn"></label></li>
+           </ul>
+       </figure>
+       <div class="page" id="page1">
+           <asid class="page1_side">
+               <h1 class="pageTitle">전문분야</h1>
+               <p class="pageComent">담당교수</p>
+               <a href="" class="detail">담당 교수 바로가기</a>
+           </asid>
+           <div class="banBox2">
+               <ul class="imgBox">
+                   <li class="item1">
+                       <h1 class="num">01</h1>
+                           <h2 class="banTitle">최지호</h2>
+                           <img src="./ico/bottombar1.png" alt="">
+                       
+                   </li>
+                   <li class="item2">
+                       <h1 class="num">02</h1>
+                           <h2 class="banTitle">이미우</h2>
+                           <img src="./ico/bottombar2.png" alt="">
+                       
+                   </li>
+                   <li class="item3">
+                       <h1 class="num">03</h1>
+                           <h2 class="banTitle">장성은</h2>
+                           <img src="./ico/ssam3.png" alt="">
+                   </li>
+                   <li class="item4">
+                       <h1 class="num">04</h1>
+                           <h2 class="banTitle">이우진</h2>
+                           <img src="./ico/ssam4.png" alt="">
+                   </li>
+               </ul>
+           </div>
+       </div>
+       <div class="page" id="page2">
+       <div class="wrap">
+          
+          
+           <h1 class="pageTitle">
+           <span class="gam">감염성</span>병균 종류</h1>
+           
+           <p class="pageComent">5가지 종류에 대해 알아보겠습니다.</p>
+           
+           <ul class="lst">
+              
+               <li><a href="physical.html#page1"><img src="./ico/name1.png" alt=""></a>
+               
+               <span class="itemTitle">여드름</span></li>
+               
+              
+               <li><a href=""><img src="./ico/name2.png" alt=""></a>
+               
+               <span class="itemTitle">대상포진</span></li>
+               
+               
+               <li><a href="physical.html#page2"><img src="./ico/name3.png" alt=""></a>
+               
+               <span class="itemTitle">무좀</span></li>
+               
+               
+               <li><a href="physical.html#page4"><img src="./ico/name5.png" alt=""></a>
+               
+               <span class="itemTitle">화상</span></li>
+               
+           </ul>
+       </div>
+   </div>
+       <div class="page" id="page3">
+           <div class="wrap">
+               <ul>
+                   <li class="col12 first item1">
+                      <a href="#" class="box">
+                       <h3 class="nTitle">NOTICE</h3>
+                       <h2 class="pTitle">턱밑 지방 감소를 위한 임상시험 대상자 모집</h2>
+                       <p class="pContent">자세히 보기</p>
+                       <p class="nDate">111-111-111</p></a>
+                       <a class="box abs" style="padding:0px">
+                       <img src="./ico/top1.png" class="thumnail" alt="골스">
+                   </a>
+                   </li>
+                   
+                   <li class="col6 first item2">
+                      <a href="#" class="box">
+                       <h3 class="nTitle">주사와 연관된 안면 홍반 감소에 대한 연구 대상자 모집</h3>
+                       <h2 class="pTitle">자세히 보기</h2>
+                       <p class="nDate">2018-12-30</p>
+                   </a>
+                   </li>
+                   <li class="col6 item3">
+                       <a href="#" class="box">
+                       <h3 class="nTitle">복부윤곽개선(피하지방 감소) 임상연구 대상자 모집</h3>
+                       <h2 class="pTitle">자세히 보기</h2>
+                       <p class="nDate">2018-12-04</p>
+                       </a>
+                   </li>
+               </ul>
+           </div>
+       </div>
+       
+      
+       
+         <div class="page" id="page4">
+             <div class="wrap">
+                 <ul>
+                     <li class="col4 first">
+                            <a href="http://www.naver.com" class="item1">
+                             <p class="com">아산병원 <br>네이버 블로그 바로가기</p>
+                         </a></li>
+                     <li class="col4"><a href="http://www.facebook.com" class="item2">
+                             <p class="com">아산병원 <br>페이스북 바로가기</p>
+                         </a></li>
+                     <li class="col4"><a href="http://www.youtube.com" class="item3">
+                             <p class="com">아산병원 <br>유튜브 바로가기</p>
+                         </a></li>
+                 </ul>
+             </div>
+         </div>
+       
+       
+       <div class="page" id="page5">
+           <div class="wrap">
+               <ul>
+                   <li class="col4 item1 first">
+                       <h2 class="itemTitle">서울 아산병원 피부과</h2>
+                       <h1 class="teltxt">010-6669-3152</h1>
+                       <p class="itemData">대전 가장동 41-2 번지 우창빌라</p>
+                       <p class="itemData">팩스번호 11-111-111 대표자 임광민 <br>고유번호증 111-111-1111</p>
+                   </li>
+                   <li class="col4 item2">
+                       <h2 class="itemTitle">진료시간</h2>
+                       <p class="itemData">평일 진료 AM 09:00 ~ PM 06:00 <br>
+                                           토요일 진료 AM 09:00 ~ PM 01:00 <br>
+                                           점심시간 PM 12:00 ~ PM 01:00 <br>
+                                           </p>
+                       
+                       <p class="itemData">※ 일요일 및 공휴일은 휴진입니다</p>
+                   </li>
+                   <li class="col4 item3">
+                       <h2 class="itemTitle">찾아오시는 길</h2>
+                      <div id="mapFrame"><div id="map_canvas" style="<width:300></width:200>px; height:200px"></div></div>
+                       
+                   </li>
+               </ul>
+           </div>
+       </div>
+       
+       
+   </main>
+  
+   
+   <footer id="ft">
+       <div class="wrap">
+           <p class="copyright">
+Copyright@2014 by Asan Medical Center. All Rights reserved.</p>
+           <div class="ftlogo"></div>
+       </div>
+   </footer>
+   
+   
+   <input type="checkbox" id="ck">
+<div id="popFrm">
+   <label for="ck" class="closebtn">닫기</label>
+    <div class="popBox">
+        <ul class="item1">
+            <li><h2><a href="intro.html">병원소개</a></h2></li>
+            <li><h3><a href="intro.html#page1">병원소개</a></h3></li>
+            <li><h3><a href="intro.html#page2">의료/치료진</a></h3></li>
+            <li><h3><a href="intro.html#page3">시설안내</a></h3></li>
+            <li><h3><a href="intro.html#page4">부서별 전화번호</a></h3></li>
+            <li><h3><a href="intro.html#page5">오시는길</a></h3></li>
+            <li><h3><a href="intro.html#page6">증명서 발급</a></h3></li>
+            <li><h3><a href="intro.html#page7">비급여 안내</a></h3></li>
+            <li><h3><a href="intro.html#page8">협력기관</a></h3></li>
+        </ul>
+        <ul class="item2">
+            <li><h2><a href="intro.html#page9">재활</a></h2></li>
+            <li><h3><a href="intro.html#page10">소아</a></h3></li>
+            <li><h3><a href="intro.html#page11">청소년</a></h3></li>
+            <li><h3><a href="intro.html#page12">성인</a></h3></li>
+        </ul>
+        <ul class="item3">
+            <li><h2><a href="intro.html#page13">소아낮 병동</a></h2></li>
+            <li><h3><a href="intro.html#page14">낮병동소개</a></h3></li>
+            <li><h3><a href="intro.html#page15">입원안내</a></h3></li>
+            <li><h3><a href="intro.html#page16">치료/평가항목</a></h3></li>
+            <li><h3><a href="intro.html#page17">자주하시는질문</a></h3></li>
+        </ul>
+        <ul class="item4">
+            <li><h2><a href="intro.html#page18">병원소식</a></h2></li>
+            <li><h3><a href="intro.html#page19">공지사항</a></h3></li>
+            <li><h3><a href="intro.html#page20">SRC뉴스레터</a></h3></li>
+            <li><h3><a href="intro.html#page21">사회공헌사업</a></h3></li>
+            <li><h3><a href="intro.html#page22">재활/건강정보</a></h3></li>
+        </ul>
+        <ul class="item5">
+            <li><h2><a href="intro.html#page23">치료연계센터</a></h2></li>
+            <li><h3><a href="intro.html#page24">SRC언어심리상담센터</a></h3></li>
+            <li><h3><a href="intro.html#page25">SRC스포츠센터</a></h3></li>
+        </ul>
+    </div>
+</div>
+   
+   <asid id="quick">
+       <div class="qwrap">
+           <ul class="top">
+              <li><a href="qlogo.html" class="qlogo"></a></li>
+               <li>
+                   <a href="join.html" class="hv">회원가입</a>
+               </li>
+                  <li>
+                   <a href="login.html" class="hv">로그인</a>
+                   </li>
+                   <li>
+                   <a href="intro.html#page7" class="hv">비급여안내</a>
+                   </li>
+                   <li>
+                   <a href="intro.html#page5" class="hv">오시는길</a>
+               </li>
+           </ul>
+           <ul class="bottom">
+               <li><a href="intro.html#page24" class="yellow">심리상담센터</a></li>
+               <li><a href="intro.html#page25" class="syan">스포츠센터</a></li>
+               <li><a href="#" class="totop">위로</a></li>
+           </ul>
+       </div>
+   </asid>
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+     
+</body>
+</html>

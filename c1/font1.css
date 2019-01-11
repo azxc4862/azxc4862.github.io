@@ -1,0 +1,13 @@
+@font-face {
+    font-family:"NanumGothic";
+    src:url("NanumGothic.eot?iefix") formet("embeded-opentype"),
+        url("NanumGothic.woff") formet("woff2"),
+        url("NanumGothic.woff") formet("woff") ,
+        url("NanumGothic.otf") fomet("opentype"),
+        url("NanumGothic.ttf") fomet("truetype"),
+        url("NanumGothic.svg") fomet("svg");
+}
+@font-face { font-family:"v5"; 
+src:url("v5.eot?iefix") formet("embeded-opentype"),
+    url("v5.woff") formet("woff"), 
+    url("v5.ttf") formet("truetype"); }
