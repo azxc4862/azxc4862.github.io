@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>더 좋은 옥천!</title>
+ <link rel="shortcut icon" type="image/x-icon"href="">
+ <link rel="shortcut icon" type="image/x-icon"href="">
+ <link rel="apple-touch-icon" size="57x57 "href="">
+ <link rel="apple-touch-icon" size="72x72 "href="">
+ <link rel="apple-touch-icon" size="114x114 "href="">
+<meta name="msapplication-tilecolor" content="#FFFFFF">
+<meta name="msapplication-tileimage" content="./ico/icon128.png">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="application-name" content="옥천군청">
+<meta name="author" charset="MR Cortez Lim">
+<meta name="description" content="옥천군청">
+
+
+<link rel="stylesheet" href="./css/style.css">
+
+<!--<link rel="stylesheet" href="./css/grid.css">-->
+      <script src="media.js"></script>
+
+   <script
+  src="http://code.jquery.com/jquery-1.12.4.js"
+  integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+  crossorigin="anonymous"></script>
+ <script>
+    $(document).ready(function(){
+        var wd = $(".main6Wrap").width();
+        var intv = setInterval(function(){ nextAni(); }, 5000);
+        
+        function nextAni(){
+            $(".main6slid").not(":animated").animate({"margin-left":-wd+"px"}, 760, function(){
+                $(".main6slid li").eq(0).appendTo($(".main6slid"));
+                $(".main6slid").css("margin-left", "0px");
+            });
+        }
+    });
+    </script>
+    
+    <script>
+    $(document).ready(function(){
+        var wd = $(".gnb").width();
+        var intv = setInterval(function(){ nextAni(); }, 5000);
+        
+        function nextAni(){
+            $(".slid").not(":animated").animate({"margin-left":-wd+"px"}, 760, function(){
+                $(".slid li").eq(0).appendTo($(".slid"));
+                $(".slid").css("margin-left", "0px");
+            });
+        }
+    });
+    </script>
+</head>
+<body>
+  <div id="pop">
+     <label for="event"></label>
+     <input type="checkbox" id="event">
+     
+     <div id="conten">
+         <label for="event" class="close">팝업창 끄기 X</label>
+         <img src="./css/img/popup.jpg" alt="">
+     </div>
+  </div>
+   <header id="hd">
+       <div class="hdWrap1">
+           <a href="" class="simbol"></a>
+           <ul class="menu1">
+               <li>
+                   <a href="">로그인</a>
+                   <a href="">나의옥천</a>
+                   <a href="">전자우편</a>
+                   <a href="">열린민원</a>
+                   <a href="">정보공개</a>
+                   <a href="">더좋은옥천</a>
+                   <a href="">분야별정보</a>
+               </li>
+               <div class="sub">
+               <ul class="menu2">
+                   <a href="">옥천소식</a>
+                   <a href="">응답소</a>
+                   <a href="">정보공개</a>
+                   <a href="">분야정보</a>
+               </ul>
+           </div>
+           </ul>
+           </div>
+           
+           <div class="hdWrap2">
+           <a href="" class="logo"></a>
+           <div class="menu2">
+              <form action="" id="frm1">
+             <input type="text" id="keyword" placeholder="검색어를 입력하세요" autofocus name="keyword">
+             <input type="submit" class="frmBtn searchBtn" value="검색">
+             </form>
+           </div>
+           
+           
+           </div>
+       
+   </header>
+ <div id="main1">
+   <div class="gnb">
+    <ul class="slid">
+    <li>
+     <img src="./css/img/slid-1.jpg" alt="">
+     </li>
+     <li>
+     <img src="./css/img/slid-2.jpg" alt="">
+     </li>
+     <li>
+     <img src="./css/img/slid-3.jpg" alt="">
+     </li>
+     
+     </ul>
+     </div>
+     <div class="pay">
+     <a href="" id=""><img src="./css/img/pay-1.jpg" alt=""></a>
+     <a href="" id=""><img src="./css/img/pay-2.jpg" alt=""></a>
+     <a href="" id=""><img src="./css/img/pay-3.jpg" alt=""></a>
+     
+     </div>
+ </div>
+ <div id="main2" class="">
+        <a href="" class="icon1"></a>
+        <a href="" class="icon2"></a>
+        <a href="" class="icon3"></a>
+        <a href="" class="icon4"></a>
+        <a href="" class="icon5"></a>
+        <a href="" class="icon6"></a>
+        <a href="" class="icon7"></a>
+        <a href="" class="icon8"></a>
+    </div>
+ <div id="main3">
+        <div class="main3Wrap">
+           
+            <h2>옥천은 지금</h2>
+            
+            <div class="img_area">
+            
+            <a href="" class="img"><img src="./css/img/nowimg.jpg" alt=""></a>
+            
+            </div>
+            
+            <div class="txtarea">
+                <ul>
+                    <li>
+                    <a href="" class="con1"><span class="sp1">공지사항 </span> 2019년 만70세 이상 대상포진 무료예방접종 안내</a>
+                    <a href="" class="con1"><span class="sp2">고시공고 </span> 옥천군 귀농인의 집 입주희망자 모집 공고</a>
+                    <a href="" class="con1"><span class="sp3">채용공고 </span> 옥천군 기초푸드뱅크 직원（계약직） 공개경쟁 채용 공고</a>
+                    <a href="" class="con1"><span class="sp4">입법예고 </span> 옥천군 행정기구설치 조례 시행규칙 일부개정규칙안 입법예고</a>
+                    </li>
+                </ul>
+            </div>
+      
+    
+    <div class="com face1">
+       <div class="faceWrap">
+        <a href="" class="gun">
+            <h2>소셜군수실</h2>
+            <p>시대와 나란히 시민과 나란히</p>
+            </a>
+            </div>
+            
+            <div class="img">
+            <a href=""><img src="./css/img/facebook-b.png" alt=""></a>
+            <a href=""><img src="./css/img/you-a.png" alt=""></a>
+           <a href=""><img src="./css/img/instar-b.png" alt=""></a>
+            <a href=""><img src="./css/img/kakao-a.png" alt=""></a>
+            </div>
+             
+        
+    
+      </div>
+    </div>
+    </div>
+ <div id="main4">
+        <div class="main4Wrap1">
+            <h2>주요서비스</h2>
+            <a href="" class="allsite">전체 사이트 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;▶</a>
+            <ul>
+              
+               <a href=""><li class="ms1"></li></a>
+               <a href=""> <li class="ms2"></li></a>
+               <a href=""> <li class="ms3"></li></a>
+               <a href=""> <li class="ms4"></li></a>
+               <a href=""> <li class="ms5"></li></a>
+               <a href=""> <li class="ms6"></li></a>
+               <a href=""> <li class="ms7"></li></a>
+               <a href=""> <li class="ms8"></li></a>
+               <a href=""> <li class="ms9"></li></a>
+               <a href=""> <li class="ms10"></li></a>
+               
+            </ul>
+            </div>
+            <div class="main4Wrap2">
+                <a href="" class="option">설정하기
+                <img src="./css/img/option.png" alt="" class="optionimg"></a>
+                <ul>
+                    <li><a href="">&#8226; 민주주의옥천 </a><img src="./css/img/right.png" alt="" class="right1"></li>
+                    <li><a href="">&#8226; 법무행정서비스</a><img src="./css/img/right.png" alt="" class="right2"></li>
+                    <li><a href="">&#8226; 옥천군보</a><img src="./css/img/right.png" alt="" class="right3"></li>
+                    <li><a href="">&#8226; 내 손안에 옥천</a><img src="./css/img/right.png" alt="" class="right4"></li>
+                    <li><a href="">&#8226; 복지포털</a><img src="./css/img/right.png" alt="" class="right5"></li>
+                </ul>
+                
+            </div>
+        
+    </div>
+ <div id="main5">      
+        <div class="main5Wrap1">
+           <h2>새소식</h2>
+            <ul>
+                <li>
+                  <div class="bimg1"><p class="btxt1">복지</p></div>
+                   <div class="cal1"> 
+                    <a href="" class="title">옥천군, 민선7기 첫 주민과의 대화...소통과 공감 결실 맺으며 알찬 마무리</a>
+                    <p class="coment">김재종 옥천군수가 주민과의 소통과 공감행정을 구현하고 읍면 현황을 현장에서 파악하기 위해 가진 민선7기 첫 ‘읍면 순방 주민과의 대화’가 알찬 결실을 맺으며 마무리 됐다. </p>
+                    </div>
+                </li>
+               <li>
+                  <div class="bimg2"><p class="btxt2">주택</p></div>
+                   <div class="cal2"> 
+                    <a href="" class="title">쌀·밭·조건불리 직접지불 보조금, 18일부터 각 읍·면사무소에서 통합 접수</a>
+                    <p class="coment">옥천군과 국립농산물품질관리원 옥천사무소（이하 농관원 옥천사무소）는 농업인의 소득안정을 위해 오는 18일부터 4월 4일까지 쌀·밭·조건불리 직불금을 통합으로 접수받는다. </p>
+                    </div>
+                </li>
+               <li>
+                  <div class="bimg3"><p class="btxt3">복지</p></div>
+                   <div class="cal3"> 
+                    <a href="" class="title">옥천읍, 주민 곁으로 ‘찾아가는 복지상담실’ 운영</a>
+                    <p class="coment">옥천읍 행정복지센터가 행정기관 방문이 어려운 주민에게 직접 다가가 현장중심의 복지서비스를 제공하기 위해 운영하는 ‘찾아가는 복지상담실’이 주민들의 큰 호응을 얻고 있다. </p>
+                    </div>
+                </li>
+
+            </ul>
+        </div> 
+        <div class="main5Wrap2">
+           
+         <ul>
+                <li>
+                  <div class="bimg4"><p class="btxt4">경제</p>
+                   <div class="cal4"> 
+                    <a href="" class="title">“군민과 함께 숨겨진 규제 찾는다” 옥천군, 다음달 29일까지 규제혁신 아이디어 공모</a>
+                    <p class="coment">충북 옥천군이 군민과 함께 생활 속 숨겨진 규제 찾기에 나선다. 
+                    18일 군은 오는 20일부터 다음달 29일까지 군민을 대상으로 규제혁신 아이디어를 접수받는다고 밝혔다.  </p>
+                    </div>
+                    </div>
+                </li>
+               <li>
+                  <div class="bimg5"><p class="btxt5">환경</p></div>
+                   <div class="cal5"> 
+                    <a href="" class="title">새학기 준비하는 2월... 꼭 가봐야 할 곳 옥천 ‘죽향초교 구교사’</a>
+                    <p class="coment">2월은 새 학기를 준비하는 달이다. 책가방은 물론 연필, 지우개, 공책 등의 학용품도, 교실에서 신을 실내화도 마련해야 한다. 특히 초등학교 입학 자녀를 둔 부모는 아이보다 마음이 더 분주하고 바빠진다. </p>
+                    </div>
+                </li>
+              <li>
+                  <li>
+                  <div class="bimg4"><p class="btxt4">환경</p>
+                   <div class="cal4"> 
+                    <a href="" class="title">옥천군 군민아카데미 상반기 평생학습 정기과정 프로그램 “높은 인기”..다음달 8일까지 모집</a>
+                    <p class="coment">주민의 삶의 질 향상과 행복지수를 높이기 위한 옥천군 상반기 평생학습 정기과정 프로그램이 참여자들의 적극적인 참여의지 속에 높은 접수율을 보이고 있다. </p>
+                    </div>
+                    </div>
+                </li>
+
+            </ul>           
+        </div>
+       <div class="main5Wrap3">
+          
+           <div class="Wrap3Sub1">
+               <ul>
+                <li>
+                  <div class="bimg4"><p class="btxt4">복지</p>
+                   <div class="cal4"> 
+                    <a href="" class="title">옥천군, 생활밀착형 SOC 사업으로 2천97억원 규모 50건 발굴..국비 확보에 ‘온힘’</a>
+                    <p class="coment">정부의 생활SOC 확대 방침에 따라 충북 옥천군이 청년커뮤니티센터 건립 등 총 2천97억원 규모의 생활SOC 사업 50건을 발굴했다.  </p>
+                    </div>
+                    </div>
+                </li>
+               </ul>
+           </div>
+           
+           <div class="Wrap3Sub2">
+               
+               <ul>
+                <li>
+                  <div class="bimg4"><p class="btxt4">복지</p>
+                   <div class="cal4"> 
+                    <a href="" class="title">옥천군치매안심센터, 대상자별 맞춤형 프로그램으로 치매 예방 나선다.</a>
+                    <p class="coment">옥천군치매안심센터가 올해부터 치매고위험군과 치매환자와 분리 운영하는 대상자별 맞춤형 치매 프로그램을 통해 군민 건강 챙기기에 나선다.  </p>
+                    </div>
+                    </div>
+                </li>
+               </ul>
+               
+           </div>
+       </div> 
+        <div class="main5Wrap4">
+           
+            <div class="Wrap4Sub1">
+                <h2>이벤트 신청 <a href="">+</a></h2>
+                
+                <ul>
+                  <li>&#8226;[진행중] <span class="event1">주택</span><a href=""> 공원 홈페이지 만족도 조사에 참여해주시면 상품권 만원을 지급해드립니다. </a></li>
+                  <li>&#8226;[진행중] <span class="event2">환경</span><a href=""> 공원 홈페이지 만족도 조사에 참여해주시면 상품권 만원을 지급해드립니다. </a></li>
+                  <li>&#8226;[진행중] <span class="event3">경제</span><a href=""> 공원 홈페이지 만족도 조사에 참여해주시면 상품권 만원을 지급해드립니다. </a></li>
+                  <li>&#8226;[진행중] <span class="event4">환경</span><a href=""> 공원 홈페이지 만족도 조사에 참여해주시면 상품권 만원을 지급해드립니다. </a></li>
+                  <li>&#8226;[진행중] <span class="event5">교통</span><a href=""> 공원 홈페이지 만족도 조사에 참여해주시면 상품권 만원을 지급해드립니다. </a></li>
+                </ul>
+            </div>
+            
+            <div class="Wrap4Sub2">
+                <h2>이달의 행사 및 축제 <a href="">+</a></h2>
+                
+                <ul>
+                  <li>&#8226; <span class="event1">문화</span><a href=""> 2019.2월 문화달력 </a></li>
+                  <li>&#8226; <span class="event2">문화</span><a href=""> 2/16일 서울 역사 박물관 재능 나눔 콘서트 </a></li>
+                  <li>&#8226; <span class="event3">경제</span><a href=""> 아시아 최고 경쟁률 뚫은 크리에이터, 오는 21일 내한 </a></li>
+                  <li>&#8226; <span class="event4">문화</span><a href=""> 공원 홈페이지 만족도 조사에 참여해주시면 상품권 만원을 지급해드립니다. </a></li>
+                  <li>&#8226; <span class="event5">문화</span><a href=""> 공원 홈페이지 만족도 조사에 참여해주시면 상품권 만원을 지급해드립니다. </a></li>
+                </ul>
+                
+            </div>
+            
+            <div class="Wrap4Sub3">
+                <h2>생활정보 서비스</h2>
+                <ul>
+                    <a href=""><li>버스</li></a>
+                    <a href=""><li class="left">지하철</li></a>
+                    <a href=""><li>도로소통</li></a>
+                    <a href=""><li class="left">심야버스</li></a>
+                    <a href=""><li>내주변정보</li></a>
+                    <a href=""><li class="left">부동산</li></a>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+ <div id="main6">
+        <div class="main6Wrap">
+           <ul class="main6slid">
+            <li><a href="" class="img1"><img src="./css/img/bottom-slid-1.jpg" alt=""></a></li>
+           <li><a href="" class="img2"><img src="./css/img/bottom-slid-2.jpg" alt=""></a></li>
+           <li><a href="" class="img3"><img src="./css/img/bottom-slid-3.jpg" alt=""></a></li>
+           <li><a href="" class="img4"><img src="./css/img/bottom-slid-4.jpg" alt=""></a></li>
+           <li><a href="" class="img5"><img src="./css/img/bottom-slid-5.jpg" alt=""></a></li>
+           <li><a href="" class="img6"><img src="./css/img/bottom-slid-6.jpg" alt=""></a></li>
+        
+        </ul>
+        </div>
+    </div>
+ <div id="main7">
+        <div class="main7Wrap">
+            <a href="" class="come1">홈페이지도우미 &#124; 개인정보처리방침 &#124; 저작권 정책 &#124; 영상정보처리기기 운영 관리방침 &#124; 홈페이지 바로잡기 &#124; 사이트맵</a>
+            <div class="imgWrap">
+            <a href="" class="imgWrap1"></a>
+            <a href="" class="imgWrap2"></a>
+            <a href="" class="imgWrap3"></a>
+            <a href="" class="imgWrap4"></a>
+            </div>
+        </div>
+        <div class="main7Wrap2">
+        <p>서울특별시청 04524 서울특별시 중구 세종대로 110 <a href=""> 찾아오시는 길</a> <br>
+
+전화번호 : 국번없이 120 또는 02-731-2120 (시외 : 02-120 / 해외 : 82-731-2120) [24시간 운영]<br>
+
+© Seoul Metropolitan Government all rights reserved</p>    
+        </div>
+        
+    </div>
+</body>
+</html>

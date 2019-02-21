@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+/*        콘텐츠 크기 및 위치*/
+        #pop { width: 100%; height: 100%; position: fixed;  top: -110%; left: 0;}
+/*      체크박스 안보이게하기*/
+        #event {display: none;}
+/*        클릭했을 시 콘텐츠 위치 설정*/
+        #event:checked + #pop { top: 100px;}
+/*        닫기버튼 설정주기*/
+        .close { position: absolute; cursor: pointer; top: 50px; padding-left: 100px;}
+    </style>
+</head>
+<body>
+ 
+<!--   처음에 표시되는 (ex)열기,보이게하는 문장) 밑에 labe for 값과 input id와 연동 -->
+    <label for="event"></label>
+<!--    input 태그에 id를 클릭시 콘텐츠 유무 지정-->
+    <input type="checkbox" id="event" checked>
+<!--    끝-->
+    
+<!--  pop는 wrap처럼 콘텐츠 감싸며 크기 및 위치 지정 
+pop안에 label은 위에 input 태크 id와 연동 및 닫기버튼 생성
+pop 안에 이미지및 글자 콘텐츠 넣기-->
+    <div id="pop">
+        <label for="event" class="close">다시보지않기</label>
+        <img src="./css/img/popup.jpg" alt="">
+    </div>
+</body>
+</html>
