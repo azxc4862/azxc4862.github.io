@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>진귀한 커피의 세계로 초대합니다.</title>
+     <link rel="shortcut icon" type="image/x-icon"href="img/Untitled-3.ico">
+ <link rel="shortcut icon" type="image/x-icon"href="img/Untitled-3.ico">
+ <link rel="apple-touch-icon" size="57x57 "href="./img/icon57.png">
+ <link rel="apple-touch-icon" size="72x72 "href="./img/icon-72.png">
+ <link rel="apple-touch-icon" size="114x114 "href="./img/icon114.png"> 
+ 
+<meta name="msapplication-tilecolor" content="#FFFFFF">
+<meta name="msapplication-tileimage" content="./img/icon114.png"> 
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="application-name" content="coffe Site">
+    <meta name="author" charset="MR Cortez Lim">
+    <meta name="description" content="coffe">
+    
+   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    
+    <script src="media.js"></script>
+    <link rel="stylesheet" href="./font.css">
+    <link rel="stylesheet" href="reset2.css">
+    <script
+  src="http://code.jquery.com/jquery-1.12.4.js"
+  integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+  crossorigin="anonymous"></script>
+    <script>
+    $(document).ready(function(){
+        var wd = $(window).width();
+        var intv = setInterval(function(){ nextAni(); }, 5000);
+        
+        function nextAni(){
+            $(".imgBox").not(":animated").animate({"margin-left":-wd+"px"}, 800, function(){
+                $(".imgBox li").eq(0).appendTo($(".imgBox"));
+                $(".imgBox").css("margin-left", "0px");
+                $(".numBtnFrame li").eq(0).appendTo($(".numBtnFrame"));
+                $(".numBtnFrame li button").removeClass("on");
+                $(".numBtnFrame li").eq(0).find("button").addClass("on");
+            
+            });
+        }
+    });
+    </script>
+    <script>
+    $(document).ready(function(){
+        $(window).scroll(function(){
+            var scTop = $(window).scrollTop();
+            if(scTop>=120){
+                $(".hdWrap1").not(":animated").slideUp(300);
+                $(".hd").css("position", "fixed").css("height", "80px");
+            } else {
+                $(".hdWrap1").not(":animated").slideDown(300);
+                $(".hd").css("position", "absolute").css("height", "200px");;
+            }
+        });
+    });
+    </script>
+    <script>
+    $(document).ready(function(){
+        $("#gnb label").click(function(){
+            var th = $(this).attr("for");
+            var thId = "#"+th;
+            var scObj = $(thId).offset();
+            var scDist = scObj.top;
+            $("body, html").not(":animated").animate({"scrollTop":scDist}, 600);
+            $("#gnb label").removeClass("on");
+            $(this).addClass("on");
+        });
+    });
+    </script>
+    <style>
+        .hd { width: 100%; height:100px;  background-color:#272425; z-index: 998; color: #b06546; }
+        
+        
+        
+        
+        .hdWrap1 { width: 100%; height:100%;border-bottom:1px solid #b06546; font-family: 'Noto Sans KR', sans-serif;}
+        .hdWrap1 h1 { text-align: center; line-height: 110px; font-size: 2em;}
+        .hdWrap2 { width: 100%; height: 100%; position: fixed; text-indent: -9999; top: -800px;}
+        #gnb { width: 100%; height: 100%; margin: 0 auto;  }
+        #gnb li {   background: #333; border-bottom: 1px solid #fff; height: auto;font-size: 15px; font-weight: 800; line-height: 70px;}
+        #menuOpen {display: none;}
+        .menuBtn.openBtn { font-size: 18px; font-weight: 300;}
+        #gnb li label {display: block; text-align: center; font-size: 17px; font-weight: 800; cursor: pointer;}
+        a { text-decoration: none; }
+        
+        
+        
+        .pg {clear: both; width: 100%;height: 500px;}
+        .vs { clear: both; position: absolute; width: 100%; overflow: hidden; height: 100%;}
+        .imgBox { width: 400%; height: 100%;}
+        .imgBox li {width: 25%; float: left;height: 100%; background-repeat: no-repeat; background-position: center center; background-size:auto 100%;}
+/*
+        .lrBtnBox { position: absolute; z-index: 60; top: 200px; width: 100%;}
+       
+        .lrBtn {display: block; width: 52px; height: 52px; background-size: 52px 52px; background-repeat: no-repeat; background-position: center center; position: absolute;}
+*/
+/*
+        .lrBtn.left {background-image: url(img/left.png); left: 100px; margin-top: 300px;}
+        .lrBtn.right {background-image: url(img/right.png); right: 100px; margin-top: 300px;}
+*/
+        .numBtnBox {position: absolute; bottom:60px; z-index: 61; left: 0; width: 100%; height: 40px;}
+        .numBtnFream {width: 50px; position: relative; margin: 0 auto; height: 40px;}
+        .numBtnFrame li { position: absolute; top: 0; width: 40px; height: 38px; margin-left: 800px; }
+        .item1 { left: 0;}
+        .item2 {left: 50px;}
+        .item3 {left: 100px;}
+        .item4 {left: 150px;}
+        
+
+        .menuBtn {position: absolute; height: 80px;   right: 20px; background-position: center center; background-repeat: no-repeat;}
+/*
+        .numBtn { display: block; width: 40px; height: 38px; background-color: transparent; background-image: url(img/icon-a1.png); background-position: center center; margin-left: 55px; background-repeat: no-repeat;}
+        .numBtn.on {background-image: url(img/icon-a.png);}
+*/
+    
+        
+        #page1 {width: 100%; height: 1800px;; background-image: url(./img/back.jpg); z-index: -999; color:#b06546; background-repeat: no-repeat;}
+        .titBox1 {width: 100%;  text-align: center; padding-top: 300px; font-size: 15px; line-height: 70px; }
+        .grid { clear: both;  width: 100%; height: 100%;  padding-top: 50px; margin: 0 auto;}
+        .grid .BoxFrame:hover {background-color: #b06546; color:#fff; cursor:pointer; transition: 0.6s;}
+        .grid .col4 {float: left; width: 300px; height: 400px; margin: 0 auto;   padding-left: 40px;}
+        .BoxFrame { min-height: 300px;  border: 1px solid #b06546; text-align: center;}
+        .BoxCom { font-size: 14px; padding-top: 30px;}
+        .boxImg {padding-top: 40px;}
+        .c { font-size: 15px; font-weight: 700; }
+        .page1Tit1 { padding-top: 50px;}
+        .pg1last {width: 100%;float: left; font-size: 15px; padding-right: 10px;  font-weight: 600; padding-top: 5px; }
+        
+        
+        #page2 { width: 100%; height: 100%; background-image: url(./img/page3-a.jpg);}
+        #page2 .pageWrap1 { width: 100%; height:100%; text-align: center; padding-left: 250px; padding-top: 160px; line-height: 30px;}
+        #page2 .pageWrap1 .title {font-size: 1.4em; font-weight: 550;}
+        #page2 .pageWrap1 .n1 { color:#4c392b; font-weight: 800; text-align: left; line-height: 50px; cursor: pointer;}
+        #page2 .pageWrap1 .n1:hover {border: 1px solid #4c392b; border-radius: 20px;padding: 7px; background-color: #4c392b; color: #bba071; transition: 0.6s;}
+       
+        .col4 {width: 25%;}
+        #page2 .pageWrap2 { width: 100%; height: 425px; text-align: center; padding-left: 250px; padding-top:10px; line-height: 30px;}
+        #page2 .pageWrap2 .title {font-size: 1.4em; font-weight: 550;}
+        #page2 .pageWrap2 .n2 { color:#e6602e; font-weight: 800; text-align: left; line-height: 50px; cursor: pointer;}
+        
+        #page2 .pageWrap2 .n2:hover {border: 1px solid #e6602e; border-radius: 20px;padding: 7px; background-color: #e6602e; color: #fff; transition: 0.6s;}
+        
+        
+        
+        #page3 { width: 100%; height: 900px; background-image: url(./img/Untitled-1.jpg); background-repeat: no-repeat; margin: 0 auto;}
+        
+        
+        
+        #page6 { width: 100%; height: 1000px; background-image: url(img/page9.jpg); background-size: cover; color: white;}
+        #page6 .pageWrap1 .title { font-size: 2em; }
+        #page6 .pageWrap1 .coment { font-size: 1.1em; font-weight: 400; padding-left: 10px; padding-right: 10px;}
+        #page6 .pageWrap1 { text-align: center; padding-top: 100px; line-height:80px; padding-bottom: 30px;}
+        #page6 .pageWrap2 { width: 1500px; height: 900px;  clear: both; margin: 0 auto;}
+        #page6 .pageWrap2 .list { width: 300px; height: 350px; float: left; text-align: center; margin-top: 170px; padding-top: 50px; line-height: 30px; margin-left: 50px; }
+        .j { font-size: 1.4em; line-height: 60px; font-weight: 700; border-bottom: 2px solid #b06546;}
+        #page6 .pageWrap2 .list:hover {background-color:#272425; color: #b06546; transition: 0.6s;  font-size: 1em;  }
+        
+        #page7 {width: 100%; height: 3000px; background-color:#272425; padding-top: 200px; border-bottom: 2px solid #b06546; }
+        #page7 .pgWrap1 { width: 1000px; height: 1200px; background-color: #e4e4e4; margin: 0 auto; clear: both; border: 5px solid #b06546;}
+        #page7 .pgWrap1 img { width: 20%; padding-left: 50px;}
+        
+        #page7 .pgWrap1 .co {width: 60%; float: right;  padding-right: 100px; padding-top: 120px;}
+        #page7 .pgWrap1 .co p {padding-top: 20px; font-weight: 400 ; font-size: 1em;}
+        
+        #page7 .pgWrap2 { width: 1000px; height: 1200px; background-color: #e4e4e4; margin: 0 auto; clear: both; margin-top: 100px; border: 5px solid #b06546;}
+        #page7 .pgWrap2 img { width: 20%; padding-left: 50px;}
+        
+        #page7 .pgWrap2 .co {width: 60%; float: right;  padding-right: 100px; padding-top: 120px;}
+        #page7 .pgWrap2 .co p {padding-top: 20px; font-weight: 400 ; font-size: 1em;}
+        
+        #page7 .lo {font-size: 2.6em; font-weight: 600; color:#b06546;  text-align: center; padding-bottom: 60px;}
+        #page7 .lo2 {font-size: 2.6em; font-weight: 600; color:#b06546;  text-align: center; padding-top: 100px;}
+      
+        #page8 { width: 100%; height: 1000px;background-color:#272425; border-bottom:2px solid #b06546;  } 
+        #page8 .pgWrap { width: 1200px; height: 600px; margin: 0 auto;}
+        #page8 .youtube-player{width: 1200px; height: 600px; padding-top: 200px; }
+        
+        .ft { width: 100%; height: 112px;}
+        .ft #Wrap1 { width: 100%; height: 290px; text-align: center; background-color: #272425; color: #b06546; line-height: 45px;}
+        .ft #Wrap1 p { padding-top: 20px; padding-bottom: 12px;}
+        .ft #Wrap1 a {color:#b06546; }
+        .nav1, .nav2, .nav3 { border: 1px solid #b06546; padding: 10px; padding-left: 15px; padding-right: 15px; border-radius: 25px; font-size: 18px; font-weight: 700;}
+        .ft #Wrap1 a:hover { color:#fff; background-color:#b06546; transition: 0.8s; }
+/*        이벤트페이지 팝업창*/
+        #pop { width: 100%; height: 100%; position: fixed; top: -110%; left: 0px; z-index: 9998;  }
+        #page9 { display: none;}
+        #page9:checked + #pop { top: 0; padding-left: 690px; padding-top: 120px;}
+        .close { position: absolute; cursor: pointer; color:#b06546; font-size: 2em; font-weight: 600; padding-top: 10px; padding-left: 10px; color:#fff;}
+/*        까시씨엘로 팝업창*/
+        #hpop { width: 100%; height: 100%; position: fixed; top: -200%; left: 0; z-index:9999; }
+        #hole { display: none;}
+        #hole:checked + #hpop { top: 0;  padding-left: 690px; padding-top: 120px;}
+        #hpop .hclose { position: absolute; cursor: pointer; color:#333; font-size: 2em; font-weight: 600;}
+        
+         #hpop2 { width: 100%; height: 100%; position: fixed; top: -200%; left: 0; z-index:9999;  }
+        #hole2 { display: none;}
+        #hole2:checked + #hpop2 { top: 0;  padding-left: 690px; padding-top: 120px;}
+        #hpop2 .hclose { position: absolute; cursor: pointer; color:#333; font-size: 2em; font-weight: 600;}
+        
+        
+         
+        #menu1 { width: 100%; height: 100%; position: fixed; top: -200%; left: 0; z-index:9999;  }
+        #clover { display: none;}
+        #clover:checked + #menu1 { top: 0;  padding-left: 600px; padding-top: 120px;}
+        .hclose { position: absolute; cursor: pointer; color:#b06546; font-size: 2em; font-weight: 600;}
+        
+        #menu2 { width: 100%; height: 100%; position: fixed; top: -200%; left: 0; z-index:9999;  }
+        #blackeagle { display: none;}
+        #blackeagle:checked + #menu2 { top: 0;  padding-left: 600px; padding-top: 120px;}
+        .hclose { position: absolute; cursor: pointer; color:#b06546; font-size: 2em; font-weight: 600;}
+        
+        #menu3 { width: 100%; height: 100%; position: fixed; top: -200%; left: 0; z-index:9999;  }
+        #siphon { display: none;}
+        #siphon:checked + #menu3 { top: 0;  padding-left: 600px; padding-top: 120px;}
+        .hclose { position: absolute; cursor: pointer; color:#fff; font-size: 2em; font-weight: 600; padding-top:10px; padding-left: 20px;}
+        
+        
+        #gnb li:hover { color:#fff; }
+        
+    </style> 
+</head>
+<body>
+<header class="hd">
+    <div class="hdWrap1">
+        <h1>BEAN BROS<label for="menuOpen" class="menuBtn openBtn">menu</label></h1>
+        
+    </div> 
+    <input type="checkbox" id="menuOpen" class="ckItem">
+    <div class="hdWrap2">
+       <h1 class="logo"></h1>
+       <label for="menuOpen" class="menuBtn closeBtn">menu</label>
+        <nav id="gnb"> 
+            <ul class="hdmenu" >
+                <li><label for="main">Home</label></li>
+                <li><label for="page1">추출방법</label></li>
+                <li><label for="page2">신규 원두</label></li>
+                <li><label for="page3">디카페인</label></li>
+                <li><label for="page6">윤리구매</label></li>
+                <li><label for="page7">원두타입</label></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+    <div class="pg" id="main">
+        <figure class="vs">
+            <ul class="imgBox">
+                <li>
+                <img src="./mobile/main-1.jpg" alt="">
+                   <span class="more"></span>
+                </li>
+                <li>
+                <img src="./mobile/main-2.jpg" alt="">
+                   <span class="more">
+                    
+                </span>
+                </li>
+                <li>
+                <img src="./mobile/main-3.jpg" alt="">
+                   <span class="more">
+                    
+                </span>
+                </li>
+                <li>
+                <img src="./mobile/main-4.jpg" alt="">
+                   <span class="more">
+                    
+                </span>
+                </li>
+            </ul>
+            <ul class="lrBtnBox">
+                <li class="leftFr">
+                    <botton class="lrBtn left"></botton>
+                </li>
+                <li class="rightFr">
+                    <botton class="lrBtn right"></botton>
+                </li>
+            </ul>
+        
+            <div class="numBtnBox">
+                <ul class="numBtnFrame">
+                    <li class="item1">
+                        <Botton class="numBtn on"></Botton>
+                    </li>
+                    <li class="item2">
+                        <Botton class="numBtn"></Botton>
+                    </li>
+                    <li class="item3">
+                        <Botton class="numBtn"></Botton>
+                    </li>
+                    <li class="item4">
+                        <Botton class="numBtn"></Botton>
+                    </li>
+                </ul>
+            </div>
+            
+            
+        </figure>
+    </div>
+<div class="pg" id="page1">
+    <div class="titBox1">
+        <h2 class="page1Tit1">
+ 프리미엄 커피를 만나다.
+            <span class="txt"></span>
+        </h2>
+        <h3 class="page1Tit2">"차별화된 최상의 경험을 제공합니다."
+            <span class="txt"></span>
+        </h3>
+    </div>
+    <ul class="grid">
+       
+        <li class="col4">
+            <label for="clover"><div class="BoxFrame">
+                
+                <p class="BoxCom"><span class="c">CLOVER</span>
+                <img src="" alt="" class="boxImg">
+            </div>
+            </label>
+        </li>
+         
+        <li class="col4">
+            <label for="blackeagle"><div class="BoxFrame">
+                
+                <p class="BoxCom"><span class="c">BLACK EAGLE</span>
+                <img src="" alt="" class="boxImg">
+            </div>
+            </label>
+        </li>
+        
+        <li class="col4">
+            <label for="siphon"> <div class="BoxFrame">
+                
+                <p class="BoxCom"><span class="c">SIPHON</span>
+           <img src="" alt="" class="boxImg">
+            </div>
+            </label>
+        </li>
+        
+        <p class="pg1last">
+            "남부 탄자니아의 고지대부터 자메이카의 블루 마운틴까지  
+각각의 원두는 고객들을 새로운 커피 여정으로 초대합니다."
+        </p>
+    </ul>
+    
+    
+    
+    
+    
+    
+    
+    
+</div>
+<div class="pg" id="page2">
+    <div class="pageWrap1">
+        <p class="title">
+            마치 천국에서 즐기는 한 잔의 커피 같은 특별함을 전해줄 커피<br><label for="hole" ><span class="n1">"과테말라 까시 씨엘로"</span></label>
+        </p>
+        <p class="com"> 풍부하면서도 우아한풍미를 지녓으며 섬세한 프로럴 아로마와 레몬같은 청량감<br> 그리고 은은한 다크 코코아의 끝 맛을 느낄 수 있는 커피입니다.</p>
+    </div>
+    <div class="pageWrap2">
+        <p class="title">
+            활기판 새해의 시작을 함께해 줄 커피<br><label for="hole2"><span class="n2">"온두라스 마르칼라"</span></label>
+        </p>
+        <p class="com"> 풍부하고 부드러운 산미,꽃향기 풍미의 밸런스가 뛰어난 온두라스 마르칼라<br> 최고급 아프리카산 커피와 견주어도 손색이 없는 매력적인 커피를 싱글 오리진으로 만나보세요</p>
+    </div>
+</div>
+<div class="pg" id="page3">
+    
+</div>
+<div class="pg" id="page6">
+    <div class="pageWrap1">
+        <h2 class="title">커피 농가들과 함께하는 미래</h2>
+        <h3 class="coment">커피 농가 지원, 경제/사회/환경적 기준 설립 및 준수, 산업적 협력 및 지역사회 개발 <br>프로그램을 통해 폭 넓은 방식으로 윤리적 원두 구매를 실천하고 있습니다.</h3>
+    </div>
+    <div class="pageWrap2">
+        <div class="list col4">
+            <img src="./img/page9-icon1.png" alt="">
+            <p><span class="j">원두 품질</span><br>C.A.F.E Practice로 구매하는 원두는<br>
+스타벅스의 높은 품질 기준을<br> 충족해야 합니다.
+            </p>
+        </div>
+        <div class="list col4">
+            <img src="./img/page9-icon2.png" alt="">
+            <p><span class="j">거래 투명성</span><br>C.A.F.E Practice참여자는<br> 커피 농가 및
+중간 업체에 지불하는<br> 가격을 공개해야 합니다.
+                
+            </p>
+        </div>
+        <div class="list col4">
+            <img src="./img/page9-icon3.png" alt="">
+            <p><span class="j">사회적 책임</span><br>C.A.F.E Practice 참여자는<br> 커피 농부의 권리 보호및 최저<br> 생활 보장, 최저 임금제, 아동 노동 금지,<br> 강제 노동 금지, 차별 금지의<br> 원칙을 지켜야 합니다.
+                
+            </p>
+        </div>
+        <div class="list col4">
+            <img src="./img/page9-icon4.png" alt="">
+            <p><span class="j">환경 보호</span><br>커피 재배 및 가공 처리에 있어<br> 폐기물 발생 억제, 수질보호, 에너지 절약,<br> 생태계 보호, 화학비료 사용 억제 등<br> 친환경적 재배 원칙을<br> 지켜야 합니다.
+                
+            </p>
+        </div>
+    </div>
+</div>
+<div class="pg" id="page7">
+   <h2 class="lo">MIDIUM ROAST</h2>
+    <div class="pgWrap1">
+       
+        <ul>
+            <li>
+                <img src="./img/item1.png" alt="">
+                <div class="co">
+                <h2>과테말라 까시 씨엘로</h2>Guatemala Casi Cielo™
+                <p>풍부하면서도 우아한 풍미, 레몬과 같은 청량감을 느낄 수 있는 커피</p>
+                <p class="t"></p>
+           </div>
+            </li>
+            <li>
+               
+                <img src="./img/item2.png" alt="">
+                <div class="co">
+                <h2>디카페인 하우스 블렌드</h2>Decaf House Blend™
+                <p>깔끔하고 균형잡힌 맛이 특징인 중간정도 무게감의 커피</p>
+           </div>
+            </li>
+            <li>
+               
+                <img src="./img/item3.png" alt="">
+                <div class="co">
+                <h2>에티오피아</h2>Ethiopia™
+                <p>다크초콜릿의 벨벳 같은 부드러움과 후추 같은 스파이시함, 달콤한 감귤류의 풍미가 특징인 원두</p>
+           </div>
+            </li>
+        </ul>
+    </div>
+    <h2 class="lo2">DARK ROAST</h2>
+    <div class="pgWrap2">
+       <ul>
+            <li>
+                <img src="./img/item4.png" alt="">
+                <div class="co">
+                <h2>온두라스 마르칼라</h2>Honduras Marcala™
+                <p>풍부하고 부드러운 산미, 꽃향기 등 밸런스가 뛰어난 커피</p>
+                <p class="t"></p>
+           </div>
+            </li>
+            <li>
+               
+                <img src="./img/item5.png" alt="">
+                <div class="co">
+                <h2>크리스마스 블렌드 에스프레소 로스트</h2>Christmas Blend Espresso Roast™
+                <p>보다 더 강렬한 풍미를 경험하도록 특별히 로스팅된 커피</p>
+           </div>
+            </li>
+            <li>
+               
+                <img src="./img/item6.png" alt="">
+                <div class="co">
+                <h2>수마트라</h2>Sumatra™
+                <p>강렬하면서도 가득찬 풍미, 흙내음을 전해주는 무게감있는 커피</p>
+           </div>
+            </li>
+        </ul>
+        
+    </div>
+</div>
+<div class="pg" id="page8">
+    <div class="pgWrap">
+        <iframe type="text/html" allowtransparency="true" frameborder="0" width="0" height="0" src="http://www.youtube.com/embed/DkTVSKuQhpU?autoplay=1&amp;iv_load_policy=3&amp;controls=0&amp;rel=0&amp;showinfo=0" class="youtube-player"></iframe>
+    </div>
+</div>
+<footer class="ft">
+   
+    <div id="Wrap1">
+    <p>개인정보처리방침 | 영상정보처리기기 | 운영관리 방침 |홈페이지 이용약관 | 위치정보 | 이용약관 | 스타벅스 카드 | 이용약관 비회원 | 이용약관 | 윤리경영 | 핫라인</p>
+    <a href="" class="nav1">찾아오시는길</a>
+    <a href="" class="nav2">신규입점제의</a>
+    <a href="" class="nav3">사이트 맵</a>
+    <p>사업자등록번호 000-00-00000 (주)BEAN BROS 코리아 대표이사 임광민 TEL : 042) 0000-0000 개인정보 책임자 : 임광민</p>
+    <p>ⓒ 2019 BEAN BROS Coffee Company. All Rights Reserved.</p>
+    
+    
+    </div>
+</footer>
+<input type="checkbox" id="page9">
+   <div id="pop">
+    <label for="page9" class="close">X</label>
+     <img src="./img/event.jpg" alt="프로모션 이벤트">
+     </div>
+     
+     
+     <input type="checkbox" id="hole">
+     <div id="hpop">
+        <label for="hole" class="hclose">X</label>
+         <img src="./img/event1.jpg" alt="까시 씨엘로 소개">
+     </div>
+     
+     
+     <input type="checkbox" id="hole2">
+     <div id="hpop2">
+         <label for="hole2" class="hclose">X</label>
+         <img src="./img/event2.jpg" alt="온두라스 소개">
+     </div>
+     
+     
+     <input type="checkbox" id="clover">
+     <div id="menu1">
+         <label for="clover" class="hclose">X</label>
+         <img src="./img/clover.jpg" alt="크로버 소개">
+     </div>
+     
+     
+     <input type="checkbox" id="blackeagle">
+     <div id="menu2">
+         <label for="blackeagle" class="hclose">X</label>
+         <img src="./img/blackeagle.jpg" alt="블랙이글 소개">
+         </div>
+         
+         <input type="checkbox" id="siphon">
+     <div id="menu3">
+         <label for="siphon" class="hclose">X</label>
+         <img src="./img/siphon.jpg" alt="사이폰 소개">
+         </div>
+</body>
+</html>
