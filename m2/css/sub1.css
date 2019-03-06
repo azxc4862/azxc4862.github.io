@@ -9,9 +9,9 @@ ul { list-style: none;}
 /*헤더시작*/
 .hd { width: 100%; height: 8%; background: #f6f5ef; position: fixed; z-index: 99;}
 .hd > h2 {width: auto; height: auto; text-align: center; margin-top: 15px;  position: absolute; left: 40%;}
-.logo { position: absolute; left: 12px; top: 8px; width: 50px;height: 50px; }
+.logo { position: absolute; left: 12px; top: 4%; width: 50px;height: 50px; }
 .logo > img { width: 100%;}
-.btn { width: 50px; height: 50px;  background-image: url(./img/menu.icon2.png); background-size: contain; background-repeat: no-repeat; position: absolute; top: 0; right: 0; right: 10px; top: 8px;}
+.btn { width: 50px; height: 50px;  background-image: url(./img/menu.icon2.png); background-size: contain; background-repeat: no-repeat; position: absolute; top: 0; right: 0; right: 10px; top: 5%;}
 .mainMenu { display: block; width: 100%; height: 100%; }
 .top { width: 100%; height: 8%; background: #fff;}
 .top > a {position: absolute; display: block; width: 50px;height: 50px; top: 20px; left: 15px;}
