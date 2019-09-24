@@ -1,0 +1,319 @@
+@charset "utf-8";
+.imb .pw1 .pw2 {
+    height: 350px;
+}
+.dc_wrap {
+    height: auto;
+}
+.page_wrap_left .pb > div:first-child {
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+}
+
+.page_wrap_left .pb > div:first-child > div:nth-of-type(1){
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+/*page3 시작*/
+.imb {
+    height: auto;
+}
+.pb {
+    border: 0;
+    padding: 12px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.tc {
+    display: table-cell;
+    width: 100%;
+    float: left;
+    
+}
+.sub2_title {
+    padding: 10px;
+}
+
+
+.sub2_title h2 {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+}
+.sub2_title h2::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #ddd;
+    
+}
+
+.sub2_title > .btn_box {
+    content: "";
+    width: 25px;
+    height: 25px;
+    right: 5%;    
+    position: absolute;
+    background: url(../img/icon/controls_M.png) -83px -0px / auto no-repeat;
+}
+
+.sub2_img_ac {
+    height: 80%;
+    padding: 10px 0px;
+    width: 100%;
+}
+.sub2_img_ac img {
+    display: block;
+    width: 100%;
+    opacity: 0;
+}
+.page3 .sub2_img_ac li:first-child {
+    width: 100%;
+    height: 180px;
+    background: url(../img/main/sub2_img1.jpg) center / cover no-repeat;
+}
+.sub2_img_ac li:last-child {
+    padding: 15px 0px;
+}
+.sub2_img_ac h2 {
+    font-size:  18px;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.sub2_bt_link {
+    font-size: 12px;
+    color: #808a94;
+    font-weight: bold;
+}
+.sub2_bt_link > ul {
+    display: table;
+    width: 100%;
+}
+.sub2_bt_link li {
+    display: table-cell;
+    width: 60%;
+}
+.sub2_bt_link li:last-child {
+    position: relative;
+    height: 100%;
+    height: 10px;
+    
+}
+.sub2_bt_link li:last-child > a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.sub2_bt_link li:last-child span {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #999999;
+    bottom: 0;
+}
+.sub2_bt_link li:last-child span:last-child {
+    width: 15%;
+    height: 1px;
+    right: 0;
+    top: 9px;
+    transform: rotate(45deg);
+   
+    
+}
+/*page3 끝*/
+/*page3-1 시작*/
+.txb .pw2 {
+    height: 360px;
+}
+
+.txb .sub2_img_ac > ul > li {
+    display: block;
+    width: 100%;
+    padding: 8px 0px;
+    border-top: 1px solid #ddd;
+    
+}
+.txb .sub2_img_ac > ul > li:last-child {
+    border-bottom: 1px solid #ddd;
+}
+.txb .sub2_img_ac > ul > li > span {
+    font-size: 12px;
+    color: #999999;
+    font-weight: bold;
+    line-height: 20px;
+    display: block;
+    
+}
+.txb .sub2_img_ac > ul > li > a {
+   text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: block;
+    color: black;
+    font-size: 13px;
+    font-weight: 550;
+    
+    
+}
+.page3-2 .sub2_img_ac li:first-child {
+    width: 100%;
+    height: 180px;
+    background: url(../img/main/sub2_img2-1.jpg) center / cover no-repeat;
+    overflow: hidden;
+}
+
+/*page3-2  끝*/
+/*page3-4 시작*/
+.page3-4 {
+ 
+}
+.page3-4.imb .pw1 .pw2 {
+    height: 260px;
+}
+.sub2_title h2 span {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    right: -5px;
+    
+}
+.sns .sub2_title h2 span {
+    background: url(../img/icon/controls.png) -108px -253px / auto repeat;
+}
+.sns .sub2_img_ac a {
+    -webkit-line-clamp:2; 
+    display: -webkit-box;
+    -webkit-box-orient:vertical;
+    overflow: hidden;
+    font-size: 20px;
+    margin: 10px 5px 0px 0px; 
+    cursor: pointer;
+}
+.sns .sub2_img_ac h2 {
+    -webkit-line-clamp:2; 
+    display: -webkit-box;
+    -webkit-box-orient:vertical;
+    overflow: hidden;
+    font-size: 14px;
+    margin: 5px 5px;
+    white-space:normal;
+    color: #666666;
+    font-weight: 500;
+
+}
+/*page3-5 시작*/
+.page3-5.imb .pw1 .pw2 {
+    height: 260px;
+}
+.page3-5 .sub2_img_ac a {
+    -webkit-line-clamp:5; 
+    display: -webkit-box;
+    -webkit-box-orient:vertical;
+    overflow: hidden;
+    font-size: 14px;
+    color: #666666;
+    text-decoration: underline;
+    margin: 10px 5px 0px 0px;   
+    cursor: pointer;
+}
+.page3-5 .sub2_title h2 span {
+    background: url(../img/icon/controls.png) -127px -253px / auto repeat;
+}
+/*page3-5 끝*/
+/*page3-6 시작*/
+.page3-6.imb .pw1 .pw2 {
+    height: 260px;
+}
+.page3-6 .sub2_img_ac a {
+    -webkit-line-clamp:5; 
+    display: -webkit-box;
+    -webkit-box-orient:vertical;
+    overflow: hidden;
+    font-size: 14px;
+    color: #666666;
+    text-decoration: underline;
+    cursor: pointer;
+    margin: 10px 5px 0px 0px;   
+}
+.page3-6 .sub2_title h2 span {
+    background: url(../img/icon/controls.png) -146px -253px / auto repeat;
+}
+/*page3-6 끝*/
+/*page3-7 시작*/
+.page3-7.imb .pw1 .pw2 {
+    height: 260px;
+}
+.page3-7 .sub2_title h2 span {
+    background: url(../img/icon/controls.png) -165px -253px / auto repeat;
+}
+.page3-7 .sub2_img_ac a {
+    display: block;
+    width: 100%;
+    height: 100px;
+    background: url(../img/main/sub2_img3.jpg) center center / cover no-repeat;
+    margin: 5px 5px 0px 0px;   
+}
+.page3-7 .sub2_img_ac a > img {
+    opacity: 0;
+}
+/*page3-7 끝*/
+/*미디어 쿼리 */
+
+@media screen and (min-width:768px) {
+    .imb, .txb {
+        display: inline-block;
+        width: 47%;
+        float: left;
+    }
+}
+@media screen and (min-width:1200px) {
+        .imb, .txb {
+        display: inline-block;
+        width: 23%;
+    }
+    .dc_wrap {
+        height: 100%;
+    }
+    .pe a {
+        text-decoration: none;
+    }
+    .sub2_img_ac h2:hover {
+        text-decoration: underline;
+    
+    }
+    .txb .sub2_img_ac > ul > li > a:hover {
+        text-decoration: underline;
+    }
+    .sub2_img_ac h2:hover {
+        text-decoration: underline;
+    }
+    .sns .sub2_img_ac a:hover{
+        text-decoration: underline;   
+    }
+    .page3-5 .sub2_img_ac a {
+        text-decoration: none;
+    }
+      .page3-5 .sub2_img_ac a:hover {
+        text-decoration: underline;
+    }
+    
+    
+    .page3-6 .sub2_img_ac a {
+        text-decoration: none;
+    }
+     .page3-6 .sub2_img_ac a:hover {
+        text-decoration: underline;
+    }
+    
+    
+}
