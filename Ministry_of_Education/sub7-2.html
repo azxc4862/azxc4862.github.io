@@ -5,26 +5,197 @@
     <meta charset="UTF-8">
     <title>교육부 - 모든 아이는 우리 모두의 아이</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="./css/sub.css">
-    <link rel="stylesheet" href="./css/sub2.css">
+    <link rel="stylesheet" href="./css/sub3.css">
+    <link rel="stylesheet" href="./css/sub4.css">
+    <link rel="stylesheet" href="./css/sub6.css">
+    <link rel="stylesheet" href="./css/sub1_2.css">
+    <link rel="stylesheet" href="./css/sub2_1.css">
+    <link rel="stylesheet" href="./css/sub3-1.css">
+    <link rel="stylesheet" href="./css/sub6_1.css">
+    
+    
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="./js/index.js"></script>
     <script src="./js/index2.js"></script>
 
-    <script>
+     <script>
     $(document).ready(function(){
        $(".page2 ul:last-child > #mo p").click(function(){
           $(".sub_box > li").toggleClass("slg"); 
        });
+        
+//        $(".ls_op").click(function(){
+//           $(".select_ti .ls_op").css("display", "none");
+//           $(".select_ti .ls_close").css("display", "block");
+//            $(".selet_op").css("display", "block");   
+//        });
+//        
+//        $(".ls_close").click(function(){
+//           $(".select_ti .ls_op").css("display", "block");
+//           $(".select_ti .ls_close").css("display", "none");
+//            $(".selet_op").css("display", "none");   
+//        });
+        
+        $(".pl1 .ls_op").click(function(){
+           $(this).css("display", "none");
+           $(".pl1 .ls_close").css("display", "block");
+            $(".pl1 .selet_op").css("display", "block");   
+        });
+        
+        $(".pl1 .ls_close").click(function(){
+           $(".pl1 .ls_op").css("display", "block");
+           $(this).css("display", "none");
+            $(".pl1 .selet_op").css("display", "none");   
+        });
+        
+        $(".pl2 .ls_op").click(function(){
+           $(this).css("display", "none");
+           $(".pl2 .ls_close").css("display", "block");
+            $(".pl2 .selet_op").css("display", "block");   
+        });
+        
+        $(".pl2 .ls_close").click(function(){
+           $(".pl2 .ls_op").css("display", "block");
+           $(this).css("display", "none");
+            $(".pl2 .selet_op").css("display", "none");   
+        });
+        
+        $(".pl3 .ls_op").click(function(){
+           $(this).css("display", "none");
+           $(".pl3 .ls_close").css("display", "block");
+            $(".pl3 .selet_op").css("display", "block");   
+        });
+        
+        $(".pl3 .ls_close").click(function(){
+           $(".pl3 .ls_op").css("display", "block");
+           $(this).css("display", "none");
+            $(".pl3 .selet_op").css("display", "none");   
+        });
+        
+        $(".pl4 .ls_op").click(function(){
+           $(this).css("display", "none");
+           $(".pl4 .ls_close").css("display", "block");
+            $(".pl4 .selet_op").css("display", "block");   
+        });
+        
+        $(".pl4 .ls_close").click(function(){
+           $(".pl4 .ls_op").css("display", "block");
+           $(this).css("display", "none");
+            $(".pl4 .selet_op").css("display", "none");   
+        });
+        
+        $(".pl5 .ls_op").click(function(){
+           $(this).css("display", "none");
+           $(".pl5 .ls_close").css("display", "block");
+            $(".pl5 .selet_op").css("display", "block");   
+        });
+        
+        $(".pl5 .ls_close").click(function(){
+           $(".pl5 .ls_op").css("display", "block");
+           $(this).css("display", "none");
+            $(".pl5 .selet_op").css("display", "none");   
+        });
+        
+        $(".pl6 .ls_op").click(function(){
+           $(this).css("display", "none");
+           $(".pl6 .ls_close").css("display", "block");
+            $(".pl6 .selet_op").css("display", "block");   
+        });
+        
+        $(".pl6 .ls_close").click(function(){
+           $(".pl6 .ls_op").css("display", "block");
+           $(this).css("display", "none");
+            $(".pl6 .selet_op").css("display", "none");   
+        });
+        
+        $(".pl7 .ls_op").click(function(){
+           $(this).css("display", "none");
+           $(".pl7 .ls_close").css("display", "block");
+            $(".pl7 .selet_op").css("display", "block");   
+        });
+        
+        $(".pl7 .ls_close").click(function(){
+           $(".pl7 .ls_op").css("display", "block");
+           $(this).css("display", "none");
+            $(".pl7 .selet_op").css("display", "none");   
+        });
+        
+        $(".pl8 .ls_op").click(function(){
+           $(this).css("display", "none");
+           $(".pl8 .ls_close").css("display", "block");
+            $(".pl8 .selet_op").css("display", "block");   
+        });
+        
+        $(".pl8 .ls_close").click(function(){
+           $(".pl8 .ls_op").css("display", "block");
+           $(this).css("display", "none");
+            $(".pl8 .selet_op").css("display", "none");   
+        });
+        
+        $(".pl9 .ls_op").click(function(){
+           $(this).css("display", "none");
+           $(".pl9 .ls_close").css("display", "block");
+            $(".pl9 .selet_op").css("display", "block");   
+        });
+        
+        $(".pl9 .ls_close").click(function(){
+           $(".pl9 .ls_op").css("display", "block");
+           $(this).css("display", "none");
+            $(".pl9 .selet_op").css("display", "none");   
+        });
+        
+
     });
     </script>
+     <script>
+        $(document).ready(function(){
+            
+             var num = 0;
+           $("#inding").click(function(){
+               num++;
+               if(num <= 1){
+               $(".cm2-2 > ul > li").css("height", "350px");
+               $(".cm2-2_hidn").css("display", "block");
+               $(".cm2-2_hidn").css("opacity", "1");
+                   } else {
+                $(".cm2-2 > ul > li").css("height", "50px");
+               $(".cm2-2_hidn").css("display", "noen;");
+               $(".cm2-2_hidn").css("opacity", "0");
+                   num = 0;
+               }
+//               if(num = 0){
+//               $(".cm2-2 > ul > li").css("height", "50px");
+//               $(".cm2-2_hidn").css("opacity", "0");
+//                   } else {
+//                $(".cm2-2 > ul > li").css("height", "350px");
+//               $(".cm2-2_hidn").css("opacity", "1");
+//                   num = 0;
+//               }
+               console.log(num);
+           });
+            
+            $(".hidn_list p").hover(function(){
+               $(this).next(".hidn_comnet").toggleClass("hc"); 
+            });
 
+
+        });
+    
+    </script>
+<style>
+    .pl7 {
+        display: block;
+    }  
+    .pl7 > div:first-child {
+        background: #ededed;
+    }
+</style>
 </head>
 
 <body>
     <div class="allpage">
         <!--           모바일,태블릿 헤더-->
-        <div class="mo_header mo">
+           <div class="mo_header mo">
             <div class="mo_header_wrap">
                 <a class="logo" href="index.html"><img src="./img/icon/logo.png" alt="교육부 로고"></a>
                 <div class="menu_btn"></div>
@@ -803,391 +974,291 @@
 <!--데스크탑 오버레이-->
         <div class="desk_overlay"></div>
         <div class="all_wrap">
-            
             <div class="allpage_wrap">
                <div class="d_center">
                 <div class="dc_wrap">
-                  <div class="page_wrap_left">
-                    <div class="page2 pe">
-                        <div class="page1_wrap pw">
-                            <div class="page1_wrap1 pw1">
-                                <div class="page1_wrap2 pw2">
-                                    <div class="page1_border pb">
-                                       <div>
-                                       <div>
-                                        <ul>
-                                           <div>
-                                             <li>
-                                                <h1>뉴스&#183;홍보</h1>
-                                             </li>
-                                             <li>
-                                                <span></span>
-                                                <span></span>
-                                             </li>
-                                             <li>
-                                               <div>
-                                                <a href="" class="btn_box"></a>
-                                                <a href="" class="btn_box"></a>
-                                                </div>
-                                             </li>
-                                            </div>
-                                        </ul>
-                                        <ul class="">
-                                           <div>
-                                            <li><a href="#">보도자료</a></li>
-                                            <li><a href="#">주요뉴스</a></li>
-                                            <li><a href="#">홍보마당</a></li>
-                                           </div>
-                                        </ul>
-
-                                    </div>
-                                    </div>
-                                    </div>
-                                </div>
+                  <div class="page_wrap_top">
+                    <div class="page_wrap_top_wrap">
+                        <div class="page_list pl1">
+                         <div>
+                            <select name="" id="list"> 
+                               <option value="">국민소통</option>
+                               <option value="">전자공정회</option>
+                               <option value="">온-교육</option>
+                             </select>
+                             <div class="select_ti close">
+                                  <a href="#:none" class="ls_op">국민소통</a>
+                                  <a href="#:none" class="ls_close">국민소통</a>
+                             </div>
+                             <ul class="selet_op">
+                                 <a href="./sub1-2.html">전자공정회</a>
+                                 <a href="">온-교육</a>
+                             </ul>
+                         </div>
+                        </div>
+                        <div class="page_list pl2">
+                         <div>
+                            <select name="" id="list"> 
+                               <option value="">국민제안</option>
+                               <option value="">나의국민제안</option>
+                             </select>
+                             <div class="select_ti close">
+                                  <a href="#:none" class="ls_op">국민제안</a>
+                                  <a href="#:none" class="ls_close">국민제안</a>
+                             </div>
+                             <ul class="selet_op">
+                                 <a href="">국민제안</a>
+                                 <a href="">나의국민제안</a>
+                             </ul>
+                         </div>
+                        </div>
+                        <div class="page_list pl3">
+                         <div>
+                            <select name="" id="list"> 
+                               <option value="">부정청탁 및 금품등 수수 신고</option>
+                               <option value="">자료실</option>
+                               <option value="">Q&#183;A</option>
+                             </select>
+                             <div class="select_ti close">
+                                  <a href="#:none" class="ls_op">청탁금지법 알아보기</a>
+                                  <a href="#:none" class="ls_close">청탁금지법 알아보기</a>
+                             </div>
+                             <ul class="selet_op">
+                                 <a href="">부정청탁 및 금품등 수수 신고</a>
+                                 <a href="">자료실</a>
+                                 <a href="">Q&#183;A</a>
+                             </ul>
+                         </div>
+                        </div>
+                        <div class="page_list pl4">
+                         <div>
+                            <select name="" id="list"> 
+                               <option value="">민원신청하기</option>
+                               <option value="">나의민원확인</option>
+                               <option value="">국민콜110</option>
+                               <option value="">자주묻는질문(FAQ)</option>
+                               <option value="">질의회신사례집</option>
+                               <option value="">민원편람</option>
+                               
+                             </select>
+                             <div class="select_ti close">
+                                  <a href="#:none" class="ls_op">민원신청</a>
+                                  <a href="#:none" class="ls_close">민원신청</a>
+                             </div>
+                             <ul class="selet_op">
+                                 <a href="">민원신청하기</a>
+                                 <a href="">온-나의민원확인</a>
+                                 <a href="">국민콜110</a>
+                                 <a href="">자주묻는질문(FAQ)</a>
+                                 <a href="">질의회신사례집</a>
+                                 <a href="">민원편람</a>
+                             </ul>
+                         </div>
+                        </div>
+                        <div class="page_list pl5">
+                         <div>
+                            <select name="" id="list"> 
+                               <option value="">내부 부패행위등 신문고</option>
+                               <option value="">청렴옴부즈만민원</option>
+                               <option value="">예산낭비신문고</option>
+                               <option value="">나의신고보기</option>
+                               <option value="">공익신고센터</option>
+                             </select>
+                             <div class="select_ti close">
+                                  <a href="#:none" class="ls_op">부패공익신고</a>
+                                  <a href="#:none" class="ls_close">부패공익신고</a>
+                             </div>
+                             <ul class="selet_op">
+                                 <a href="">내부 부패행위등 신문고</a>
+                                 <a href="">청렴옴부즈만민원</a>
+                                 <a href="">예산낭비신문고</a>
+                                 <a href="">나의신고보기</a>
+                                 <a href="">공익신고센터</a>
+                             </ul>
+                         </div>
+                        </div>
+                        <div class="page_list pl6">
+                         <div>
+                            <select name="" id="list"> 
+                               <option value="">교육부 청백리 칭찬방</option>
+                             </select>
+                             <div class="select_ti close">
+                                  <a href="#:none" class="ls_op">교육부 청백리 칭찬방</a>
+                                  <a href="#:none" class="ls_close">교육부 청백리 칭찬방</a>
+                             </div>
+                             <ul class="selet_op">
+                                 <a href="">교육부 청백리 칭찬방</a>
+                             </ul>
+                         </div>
+                        </div>
+                        <div class="page_list pl7">
+                         <div>
+                            <select name="" id="list"> 
+                               <option value="">규제란?</option>
+                               <option value="">규제개혁과제</option>
+                               <option value="">규제개선건의</option>
+                               <option value="">규제정보포털로 바로가기</option>
+                             </select>
+                             <div class="select_ti close">
+                                  <a href="#:none" class="ls_op">규제개혁</a>
+                                  <a href="#:none" class="ls_close">규제개혁</a>
+                             </div>
+                             <ul class="selet_op">
+                                 <a href="">규제란?</a>
+                                 <a href="">규제개혁과제</a>
+                                 <a href="">규제개선건의</a>
+                                 <a href="">규제정보포털로 바로가기</a>
+                                 
+                             </ul>
+                         </div>
+                        </div>
+                        <div class="page_list pl8">
+                         <div>
+                            <select name="" id="list"> 
+                               <option value="">적극행정이란?</option>
+                               <option value="">적극행정 교육 및 우수사례</option>
+                               <option value="">적극행정 우수공무원 국민추천</option>
+                               <option value="">소극행정 신고하기</option>
+                             </select>
+                             <div class="select_ti close">
+                                  <a href="#:none" class="ls_op">적극행정</a>
+                                  <a href="#:none" class="ls_close">적극행정</a>
+                             </div>
+                             <ul class="selet_op">
+                                 <a href="">적극행정이란?</a>
+                                 <a href="">적극행정 교육 및 우수사례</a>
+                                 <a href="">적극행정 우수공무원 국민추천</a>
+                                 <a href="">소극행정 신고하기</a>
+                             </ul>
+                         </div>
+                        </div>
+                        <div class="page_list pl9">
+                         <div>
+                            <select name="" id="list"> 
+                               <option value="">교육신뢰회복을 위한 국민신고센터</option>
+                               <option value="">인사고충의견수렴</option>
+                               <option value="">불법사교육신고센터</option>
+                               <option value="">안전신문고</option>
+                               <option value="">공시정보 신고</option>
+                               <option value="">대학 입시비리 신고센터</option>
+                             </select>
+                             <div class="select_ti close">
+                                  <a href="#:none" class="ls_op">신고&#183;제안&#183;고충처리</a>
+                                  <a href="#:none" class="ls_close">신고&#183;제안&#183;고충처리</a>
+                             </div>
+                             <ul class="selet_op">
+                                 <a href="">교육신뢰회복을 위한 국민신고센터</a>
+                                 <a href="">인사고충의견수렴</a>
+                                 <a href="">불법사교육신고센터</a>
+                                 <a href="">안전신문고</a>
+                                 <a href="">공시정보 신고</a>
+                                 <a href="">대학 입시비리 신고센터</a>
+                             </ul>
+                         </div>
+                        </div>
+                        <div class="page_map">
+                           <div>
+                             <span class="home"></span>
+                             <span>국민참여&#183;민원</span>
+                             <span>규제개혁</span>
+                             <span>규제개혁과제</span>
                             </div>
                         </div>
-                    </div>
-                </div>
-                  <div class="page_wrap_right">
-                   <div class="d_center">
-                    <div class="d_top">
-                      <div class="page3 pe imb">
-                        <div class="page1_wrap pw">
-                            <div class="page1_wrap1 pw1">
-                                <div class="page1_wrap2 pw2">
-                                <div class="page1_border pb">
-                                       <div>
-                                        <div><!-- display : tabel -->
-                                          <div class="sub2_title tc">
-                                              <h2>주 요 뉴 스</h2>
-                                              <a href="#" class="btn_box"></a>
-                                          </div>
-                                          <div class="sub2_img_ac tc">
-                                              <ul>
-                                                  <li>
-                                                      <img src="./img/main/sub2_img1.jpg" alt="">
-                                                  </li>
-                                                  <li>
-                                                      <h2>(브리핑)2012학년도 대학 전형 시행계획</h2>
-                                                  </li>
-                                              </ul>
-                                          </div>
-                                          <div class="sub2_bt_link tc">
-                                              <ul>
-                                                  <li>
-                                                      2019-04-30
-                                                  </li>
-                                                  <li>
-                                                     <a href="">
-                                                      <span></span>
-                                                      <span></span>
-                                                      </a>
-                                                  </li>
-                                              </ul>
-                                          </div>
-            
-                                        </div>
-                                    </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="title_sub1-2">
+                           <div>
+                            <h1>규제개혁과제</h1>
+                            <ul>
+                                <li><a href="#:none"></a></li>
+                                <li><a href="#:none"></a></li>
+                            </ul>
+                           </div>
                         </div>
                     </div>
-                      <div class="page3-1 pe txb">
-                        <div class="page1_wrap pw">
-                            <div class="page1_wrap1 pw1">
-                                <div class="page1_wrap2 pw2">
-                                <div class="page1_border pb">
-                                       <div>
-                                        <div><!-- display : tabel -->
-                                          <div class="sub2_title tc">
-                                              <h2>보 도 자 료</h2>
-                                              <a href="#" class="btn_box"></a>
-                                          </div>
-                                          <div class="sub2_img_ac tc">
-                                              <ul>
-                                                  <li>
-                                                      <span>2019-09-17</span>
-                                                      <a href="">제64회 대한민국학술원상 시상식 개최</a>
-                                                  </li>
-                                                  <li>
-                                                      <span>2019-09-16</span>
-                                                      <a href="">희망사다리 장학금, 혜택의 폭이 넓어집니다</a>
-                                                  </li>
-                                                  <li>
-                                                      <span>2019-09-16</span>
-                                                      <a href="">[동정자료]유은혜 부총리, 탈북학생 대상 대안학교 ‘하늘꿈학교’ 방문</a>
-                                                  </li>
-                                                  <li>
-                                                      <span>2019-09-16</span>
-                                                      <a href="">	[동정자료]유은혜 부총리, 2학기 고교무상교육 시행 계기 현장 방문</a>
-                                                  </li>
-                                                  <li>
-                                                      <span>2019-09-16</span>
-                                                      <a href="">「OECD 교육지표 2019」결과 발표</a>
-                                                  </li>
-                                              </ul>
-                                          </div>
-                                        </div>
-                                    </div>
-                                    </div>
-                                </div>
-                            </div>
+                 </div>
+                  <div class="page_wrap_center">
+                   <div>
+                      <div class="mo">
+                      <div class="lk_wrap">
+                       <p>본 페이지는 모바일에서는 지원이 되지 않습니다. <br> 아래 링크를 통해 이동하시길 바랍니다. <br><br></p>
+                        <div class="link_page_wrap">
+                       <a href="https://www.epeople.go.kr/jsp/user/UserMain.jsp" target="_blank">국민신문고 바로가기 ▶</a>
+                       </div>
                         </div>
-                    </div>
-                      <div class="page3-2 pe imb">
-                        <div class="page1_wrap pw">
-                            <div class="page1_wrap1 pw1">
-                                <div class="page1_wrap2 pw2">
-                                <div class="page1_border pb">
-                                       <div>
-                                        <div><!-- display : tabel -->
-                                          <div class="sub2_title tc">
-                                              <h2>홍 보 자 료</h2>
-                                              <a href="#" class="btn_box"></a>
-                                          </div>
-                                          <div class="sub2_img_ac tc">
-                                              <ul>
-                                                  <li>
-                                                      <img src="./img/main/sub2_img2-1.jpg" alt="">
-                                                  </li>
-                                                  <li>
-                                                      <h2>[사실은이렇습니다] K-MOOC는 우수한 성과를 거두고 있습니다</h2>
-                                                  </li>
-                                              </ul>
-                                          </div>
-                                          <div class="sub2_bt_link tc">
-                                              <ul>
-                                                  <li>
-                                                      2019-09-18
-                                                  </li>
-                                                  <li>
-                                                     <a href="">
-                                                      <span></span>
-                                                      <span></span>
-                                                      </a>
-                                                  </li>
-                                              </ul>
-                                          </div>
-            
-                                        </div>
-                                    </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                      <div class="page3-3 pe txb">
-                        <div class="page1_wrap pw">
-                            <div class="page1_wrap1 pw1">
-                                <div class="page1_wrap2 pw2">
-                                <div class="page1_border pb">
-                                       <div>
-                                        <div><!-- display : tabel -->
-                                          <div class="sub2_title tc">
-                                              <h2>보 도 해 명</h2>
-                                              <a href="#" class="btn_box"></a>
-                                          </div>
-                                          <div class="sub2_img_ac tc">
-                                              <ul>
-                                                  <li>
-                                                      <span>2019-09-19</span>
-                                                      <a href="">[설명자료]학생들의 안전하고 건강한 VR 콘텐츠 활용을 위해 지속적인 노력을 기울이겠습니다.</a>
-                                                  </li>
-                                                  <li>
-                                                      <span>2019-09-18</span>
-                                                      <a href="">[설명자료] 다양한 분야의 강좌개발과 이수율 증대 노력 등을 통해 한국형 온라인 공개강좌(K-MOOC)는 지속적으로 우수한 성과를 거두고 있습니다</a>
-                                                  </li>
-                                                  <li>
-                                                      <span>2019-09-16</span>
-                                                      <a href="">[설명자료]교육부와 시.도교육청은 장기 미사용 학교용지의 활용을 위해 노력하고 있습니다.</a>
-                                                  </li>
-                                                  <li>
-                                                      <span>2019-09-03</span>
-                                                      <a href="">[설명자료]교육부는 대학입시의 공정성과 투명성을 확보하기 위해 적극 노력하겠습니다.</a>
-                                                  </li>
-                                                  <li>
-                                                      <span>2019-09-02</span>
-                                                      <a href="">[설명자료][교육부 09.02(월) 설명자료] 직업교육을 선택하는 학생은 오히려 늘어나고 있습니다
-</a>
-                                                  </li>
-                                              </ul>
-                                          </div>
-                                        </div>
-                                    </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                       <div class="page3-4 pe imb sns">
-                        <div class="page1_wrap pw">
-                            <div class="page1_wrap1 pw1">
-                                <div class="page1_wrap2 pw2">
-                                <div class="page1_border pb">
-                                       <div>
-                                        <div><!-- display : tabel -->
-                                          <div class="sub2_title tc">
-                                              <h2>NAVER BLOG <span></span></h2>
-                                              <a href="#" class="btn_box"></a>
-                                          </div>
-                                          <div class="sub2_img_ac tc">
-                                              <ul>
-                                                  <li>
-                                                      <a>진로걱정 여기서 해결한다?! (feat.뜻밖의호평고개인기)[교육부xKTV]</a>
-                                                  </li>
-                                                  <li>
-                                                      <h2>크리에이터 #하지 와 학생들이 열심히 몸으로 표현하는 이것은 무엇~? [출처] 진로걱정 여기서 해결한다?! (feat.뜻밖의호평고개인기)[교육부xKTV]|작성자 교육부</h2>
-                                                  </li>
-                                              </ul>
-                                          </div>
-                                          <div class="sub2_bt_link tc">
-                                              <ul>
-                                                  <li>
-                                                      2019-09-20
-                                                  </li>
-                                                  <li>
-                                                     <a href="">
-                                                      <span></span>
-                                                      <span></span>
-                                                      </a>
-                                                  </li>
-                                              </ul>
-                                          </div>
-            
-                                        </div>
-                                    </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                      <div class="page3-5 pe imb sns">
-                        <div class="page1_wrap pw">
-                            <div class="page1_wrap1 pw1">
-                                <div class="page1_wrap2 pw2">
-                                <div class="page1_border pb">
-                                       <div>
-                                        <div><!-- display : tabel -->
-                                          <div class="sub2_title tc">
-                                              <h2>FACEBOOK <span></span></h2>
-                                              <a href="#" class="btn_box"></a>
-                                          </div>
-                                          <div class="sub2_img_ac tc">
-                                              <ul>
-                                                  <li>
-                                                      <a>[학생과 지역 주민 모두 편안한 학교공간🏫] 학생과 주민들 모두 학교 건물을 활용하도록 교육·문화·체육·보육공간을 학교 건물에 함께 마련하겠습니다😘 학생에게는 쾌적하고 편안한 교육환경을, 지역 주민에게는 각종 편의를!</a>
-                                                  </li>
-                                              
-                                              </ul>
-                                          </div>
-                                          <div class="sub2_bt_link tc">
-                                              <ul>
-                                                  <li>
-                                                      2019-09-20
-                                                  </li>
-                                                  <li>
-                                                     <a href="">
-                                                      <span></span>
-                                                      <span></span>
-                                                      </a>
-                                                  </li>
-                                              </ul>
-                                          </div>
-            
-                                        </div>
-                                    </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                       <div class="page3-6 pe imb sns">
-                        <div class="page1_wrap pw">
-                            <div class="page1_wrap1 pw1">
-                                <div class="page1_wrap2 pw2">
-                                <div class="page1_border pb">
-                                       <div>
-                                        <div><!-- display : tabel -->
-                                          <div class="sub2_title tc">
-                                              <h2>TWITTER <span></span></h2>
-                                              <a href="#" class="btn_box"></a>
-                                          </div>
-                                          <div class="sub2_img_ac tc">
-                                              <ul>
-                                                  <li>
-                                                      <a>[교육부X사물궁이 잡학지식] 궁물타임 EVENT🍕 “(궁금)너무 사소해서 못 물어보겠어,,,” 머뭇거리지 말고 구독자 75만의 유튜버 사물궁이에게 물어보자! 시험, 학교, 교육에 대해 궁금했던 소소한 이야기들, 페이스북 댓글로 남겨주세요! #교육부 #사물궁이 ▶자세히보기:</a>
-                                                  </li>
-                                                 
-                                              </ul>
-                                          </div>
-                                          <div class="sub2_bt_link tc">
-                                              <ul>
-                                                  <li>
-                                                      2019-09-18
-                                                  </li>
-                                                  <li>
-                                                     <a href="">
-                                                      <span></span>
-                                                      <span></span>
-                                                      </a>
-                                                  </li>
-                                              </ul>
-                                          </div>
-            
-                                        </div>
-                                    </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="page3-7 pe imb sns">
-                        <div class="page1_wrap pw">
-                            <div class="page1_wrap1 pw1">
-                                <div class="page1_wrap2 pw2">
-                                <div class="page1_border pb">
-                                       <div>
-                                        <div><!-- display : tabel -->
-                                          <div class="sub2_title tc">
-                                              <h2>YOUTUBE <span></span></h2>
-                                              <a href="#" class="btn_box"></a>
-                                          </div>
-                                          <div class="sub2_img_ac tc">
-                                              <ul>
-                                                  <li>
-                                                      <a href="https://www.youtube.com/watch?v=XMtOXRMI7Ew"><img src="./img/main/sub2_img3.jpg" alt=""></a>
-                                                  </li>
-                                                 
-                                              </ul>
-                                          </div>
-                                          <div class="sub2_bt_link tc">
-                                              <ul>
-                                                  <li>
-                                                      2019-01-02
-                                                  </li>
-                                                  <li>
-                                                     <a href="">
-                                                      <span></span>
-                                                      <span></span>
-                                                      </a>
-                                                  </li>
-                                              </ul>
-                                          </div>
-            
-                                        </div>
-                                    </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    
-
-                    </div>
+                      </div>
+                      <div class="com_desk">
+                           <iframe src="http://rmfjqahqlf.dothome.co.kr/b1/bbs/board.php?bo_table=qa"
+                width="95%" height="100%" frameborder="0" scrolling="no"
+                marginwidth="0" marginheight="0">
+     </iframe>
+                      </div>
                    </div>
-                </div>
+                 </div>
+                 <div class="check_list">
+                     <div>
+                         <div class="ch_left">
+                           <h2>열람하신 정보에 대해 만족하십니까?</h2>
+                           <p>현재 페이지읭 만족도를 평가해주세요 <br> 의견을 수렴하여   빠른 시일 내에 반영하겠습니다.</p>
+                         </div>
+                         <div class="check_wrap">
+                             <div>
+                                 <ul class="ch_ls">
+                                     <div class="ch_op">
+                                         <input type="checkbox" id="inp1" class="ip">
+                                         <label for="inp1" class="inp1">
+                                             <span class="hole"></span>
+                                             <span class="icon"></span>
+                                             <span class="com">매우만족</span>
+                                         </label>
+                                     </div>
+                                     <div class="ch_op">
+                                         <input type="checkbox" id="inp2" class="ip">
+                                         <label for="inp2" class="inp2">
+                                             <span class="hole"></span>
+                                             <span class="icon"></span>
+                                             <span class="com">만족</span>
+                                         </label>
+                                     </div>
+                                     <div class="ch_op">
+                                         <input type="checkbox" id="inp3" class="ip">
+                                         <label for="inp3" class="inp3">
+                                             <span class="hole"></span>
+                                             <span class="icon"></span>
+                                             <span class="com">보통</span>
+                                         </label>
+                                     </div>
+                                     <div class="ch_op">
+                                         <input type="checkbox" id="inp4" class="ip">
+                                         <label for="inp4" class="inp4">
+                                             <span class="hole"></span>
+                                             <span class="icon"></span>
+                                             <span class="com">불만족</span>
+                                         </label>
+                                     </div>
+                                     <div class="ch_op">
+                                         <input type="checkbox" id="inp5" class="ip">
+                                         <label for="inp5" class="inp5">
+                                             <span class="hole"></span>
+                                             <span class="icon"></span>
+                                             <span class="com">매우불만족</span>
+                                         </label>
+                                     </div>
+                                 </ul>
+                                 <div class="coment_wrap">
+                                     <ul>
+                                         <li><h3>기타의견</h3></li>
+                                         <li>
+                                             <input type="text">
+                                         </li>
+                                         <li>
+                                             <a href="#:none">평가하기</a>
+                                         </li>
+                                     </ul>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                  
                 </div>
                </div>
             </div>

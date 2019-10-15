@@ -1302,9 +1302,7 @@ button {
     height: 130px
         ;
 }
-.page2 .pw {
-    background: url(../img/main/page2_back_img.jpg) bottom right -30px / contain no-repeat #fff;
-}
+
 .page2 ul {
     width: 60%;
     position: absolute;

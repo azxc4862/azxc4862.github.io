@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+.page_wrap_center > div {
+    border: 0px;
+    padding: 10px;
+  
+}
+.mo {
+    border: 1px solid #ddd;
+   
+}
+.lk_wrap {
+    padding: 30px;
+}
+.mo1 {
+    
+    margin: 20px 0px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    font-size: 14px;
+    text-align: left;
+    background: url(../img/main/notice-Ptn.jpg) 0px 0px / auto repeat;
+}
+.mo1 h2 {
+    padding: 10px 0px;
+    color: #444;
+}
+@media screen and (min-width:1200px) {
+    .com_desk {
+        height: auto;
+    }
+    .text_wrap {
+    }
+    .text_wrap > p {
+        font-weight: bold;
+        line-height: 4;
+    }
+    .text_wrap > ul {
+        display: block;
+        border-top: 2px solid #444;
+        padding: 0px 10px 0px 0px;
+        margin-bottom: 20px;
+        border-left: 1px solid #ededed;
+        border-bottom: 1px solid #ededed;
+        border-right: 1px solid #ededed;
+    }
+    .tx_fist {
+        display: table;
+        width: 100%;
+        border-bottom: 1px solid #ededed;
+    }
+   
+    .tx_last {
+        display: table;
+        width: 100%;
+        
+    }
+    .tw_lf {
+        display: table-cell;
+        width: 20%;
+        padding: 10px 20px;
+        background: #f5f5f5;
+       
+    }
+    .tw_lf > p {
+        color: #444;
+        font-weight: bold;
+    }
+    .tw_rt {
+        display: table-cell;
+       width: 1000px;
+        padding: 10px 15px;
+    }
+    .text_box_btn {
+        text-align: left;
+        padding: 10px 0px 10px 0px;
+        font-size: 14px;
+        line-height: 2;
+        letter-spacing: -0.5px;
+    }
+    .text_box_btn > p > span {
+        color: rgb(255,0,0);
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+
+
+}

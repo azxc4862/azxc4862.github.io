@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+
+
+@media screen and (min-width:1200px) {
+    .com_desk_wrap {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .cd_box {
+        border: 1px solid #ddd;
+        padding: 25px;
+        text-align: left;
+        font-size: 14px;
+    }
+    .cd_box_wrap {
+        border: 1px solid #ddd;
+        height: 250px;
+        overflow-y: scroll;
+        padding: 20px;
+    }
+    .bd {
+        font-weight: bold;
+        color: #444;
+        line-height: 3;
+    }
+    .ibd {
+        padding-left: 10px;
+    }
+    .chbox {
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px 0px;;
+        text-align: center;
+      
+    }
+
+    .chbox  > label {
+      font-weight: bold;
+        font-size: 16px;
+    }
+    .com_desk_wrap > div:last-child {
+        padding: 20px 0px;
+        text-align: left;
+    }
+    .com_desk_wrap > div:last-child p {
+        display: inline-block;
+        color: rgb(51, 102, 204);
+        font-weight: bold;
+    }
+    .com_desk_wrap > div:last-child input {
+        border: 1px solid #444;
+        padding: 7px 0px;
+        margin: 0px 5px 0px 5px;
+    }
+    .com_desk_wrap > div:last-child label {
+        background: #444;
+        color: #fff;
+        padding: 6px 5px;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+ 
+
+}

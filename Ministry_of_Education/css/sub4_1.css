@@ -1,0 +1,248 @@
+@charset "utf-8";
+.page_wrap_center > div {
+    border: 0;
+    padding: 15px;
+}
+.mo1 {
+    padding: 0;
+    padding: 0px;
+    text-align: left;
+    font-size: 12px;
+    padding-bottom: 20px;
+}
+.mo1 > p {
+    color: #464646;
+    letter-spacing: -0.5px;
+    font-weight: 400;
+}
+.mo1_title {
+    font-size: 16px;
+    width: 95%;
+    padding-left: 7px;
+    position: relative;
+    
+}
+.mo1_title::before {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 1px;
+    background: #464646;
+    left: 0;
+    top: 10px;
+}
+.mo1_in {
+    padding: 8px 0px 8px 15px;
+    position: relative;
+}
+.in_tit::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 1px;
+    left: 5px;
+    background: #464646;
+    top: 17px;
+}
+.page_wrap_center > div  h3 {
+    position: relative;
+    display: block;
+    text-align:left;
+    width: 90%;
+   padding: 20px 0px 20px 40px;
+    font-size: 18px;
+    color: #444;
+    font-weight: bold;
+}
+.page_wrap_center > div  h3::before {
+    content: "";
+    width: 13px;
+    height: 13px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    background: #454d5d;
+    border-radius: 100px;
+}
+.page_wrap_center > div  h3::after {
+    content: "";
+    width: 13px;
+    height: 13px;
+    left: 17px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    background: #7887a5;
+    border-radius: 100px;
+}
+.mo2 {
+    text-align: left;
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    background: #f6f8fc;
+}
+.page_wrap_center .mo2 h3::after {
+    top: 32px;
+}
+.page_wrap_center .mo2 h3::before {
+    top: 32px;
+}
+.mo2 p {
+    color: #464646;
+    font-size: 12px;
+}
+.mo2 h2 {
+    font-size: 14px;
+    color: #444;
+    padding: 15px 0px;
+
+}
+.mo2_mid {
+    padding: 5px 0px 5px 8px;
+    position: relative;
+    
+}
+.mo2_mid::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    background: #464646;
+    border-radius: 100px;
+    top: 10px;
+    
+}
+.mo2_in {
+    position: relative;
+    padding: 5px 0px 10px 15px;
+}
+.mo2_in::before {
+    content: "";
+    position: absolute;
+    left: 8px;
+    top: 13px;
+    width: 3px;
+    height: 1px;
+    background: #464646;
+}
+.wrap_top {
+    background: #ededed;
+    text-align: center;
+    display: table;
+    width: 100%;
+    border-top: 2px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    letter-spacing: -0.5px;
+   
+}
+
+.wrap_mid {
+    text-align: center;
+      letter-spacing: -0.5px;
+    
+}
+.wrap_btn {
+    text-align: center;
+    letter-spacing: -0.5px;
+    margin-bottom: 20px;
+ 
+}
+.m1_tit_left {
+    display: table-cell;
+
+    vertical-align: middle;
+    padding: 12px;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.m1_tit_right {
+    vertical-align: middle;
+    display: table-cell;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+.p4_link_box > a {
+    display: block;
+    margin: 30px auto;
+    position: relative;
+    width: 100px;
+    border: 1px solid #ddd;
+    padding: 15px 50px 15px 15px;
+    text-align: left;
+    color: #444;
+    font-size: 14px;
+    transition: 0.5s;
+}
+.p4_link_box > a::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    background: #444;
+    right: 20px;
+    transition: 0.5s;
+    bottom: 20px;
+}
+.p4_link_box > a::after {
+    content: "";
+    transition: 0.5s;
+    position: absolute;
+    width: 15px;
+    height: 1px;
+    background: #444;
+    right: 19px;
+    bottom: 25px;
+    transform: rotate(45deg);
+}
+
+.p4_link_box > a:hover {
+    background: #415479;
+    color: #fff;
+}
+.p4_link_box > a:hover::after {
+    background: #fff;
+}
+.p4_link_box > a:hover::before {
+    background: #fff;
+}
+
+.p4_box_btn p {
+    text-align: left;
+    font-size: 12px;
+    position: relative;
+    padding: 5px 0px 0px 8px;
+}
+.p4_box_btn p:last-child {
+    color: #af6377;
+}
+.p4_box_btn p::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    background: #464646;
+    left: 0;
+    border-radius: 100px;
+    position: absolute;
+    top: 10px;
+}
+.p4_box_btn p:last-child::before {
+    background: #af6377;
+}
+@media screen and (min-width:1200px) {
+    .mo1 {
+        padding: 30px;
+    }
+    .page_wrap_center > div > h3 {
+        text-align: left;
+        padding: 40px 50px;
+        font-size: 22px;
+    }
+
+
+
+
+}

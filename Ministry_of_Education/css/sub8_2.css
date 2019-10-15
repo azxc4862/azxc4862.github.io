@@ -1,0 +1,191 @@
+@charset "utf-8";
+.page_wrap_center > div {
+    border: 0;
+    padding: 10px;
+}
+.page_wrap_center {
+    padding-top: 0;
+}
+.main_wrap1 {
+    border: 1px solid #ddd;
+    padding: 20px 10px;
+    background: url(../img/main/notice-Ptn.jpg) 0px 0px / auto repeat;
+    font-size: 14px;
+    letter-spacing: -0.5px;
+    font-weight: 500;
+    margin: 20px 0px;
+    
+}
+.main_wrap1 p {
+    display: block;
+    position: relative;
+    color: #444;
+    text-align: left;
+    padding: 10px 0px 10px 10px;
+}
+.main_wrap1 p::before {
+    content: "";
+    position: absolute;
+    border: 1px solid #444;
+    width: 2px;
+    height: 2px;
+    border-radius: 100%;
+    background: #444;
+    left: 0;
+    top: 17px;
+}
+.main_wrap2 select {
+    padding: 5px;
+    font-size: 12px;
+    color: #444;
+    float: left;
+    margin-left: 15px;
+}
+.main_wrap2 input {
+    border: 1px solid #ddd;
+    padding: 5px;
+    display: inline-block;
+    float: left;
+    margin-left: 15px;
+    clear: both;
+}
+.main_wrap2 .lst_in {
+    border: 0;
+   max-width: 180px;
+}
+.main_wrap2 table {
+    width: 100%;
+    border-top: 2px solid #ddd;
+}
+.main_wrap2 tr{
+    display: table;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+   
+}
+.main_wrap2 td {
+    display: table-cell;
+}
+.main_wrap2 .tb_title {
+    width: 25%;
+    font-size: 14px;
+    color: #444;
+    font-weight: 500;
+    padding: 10px 5px;
+    background: #ececec;
+}
+.main_wrap2 p {
+    font-size: 12px;
+    color: #934b61;
+  
+    margin-left: 10px;
+    display: inline-block;
+}
+#lst_btn{
+    padding: 5px 10px;
+    background: #fff;
+    color: #444;
+    display: inline-block;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    margin-left: 15px;
+    transition: 0.5s;
+    
+}
+.naming {
+    width: 80%;
+    height: 300px;
+}
+#lst_btn:hover {
+    background: #934b61;
+    border: 1px solid #934b61;
+    color: #fff;
+}
+.btn_wrap {
+    width: 100%;
+    height: 40px;
+    margin: 20px auto;
+}
+.btn_wrap > div {
+    float: right;
+    width: auto;
+    height: 100%;
+    vertical-align: middle;
+    
+}
+.bls {
+    float: left;
+    margin-left: 10px;
+    height: 40px;
+    border: 1px solid #ddd;
+    position: relative;
+    transition: 0.5s;
+}
+.bls a {
+    font-size: 18px;
+    padding: 0px 20px 0px 40px;
+    line-height: 40px;
+    color: #444;
+    vertical-align: middle;
+    font-weight: 400;
+}
+.bls::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 19px;
+    top: 12px;
+}
+.btn_lst1::before {
+    background: url(../img/icon/controls.png) -194px -142px / auto no-repeat;
+}
+.btn_lst1:hover {
+    background:#465379;
+    color: #fff;
+}
+.btn_lst1:hover::before {
+   background: url(../img/icon/controls.png) -211px -142px / auto no-repeat;
+}
+
+.btn_lst2::before {
+    background: url(../img/icon/controls.png) -159px -142px / auto no-repeat;
+}
+.btn_lst2:hover {
+    background:#934b61;
+    color: #fff;
+}
+.bls:hover a {
+    color: #fff;
+}
+.btn_lst2:hover::before {
+   background: url(../img/icon/controls.png) -175px -142px / auto no-repeat;
+}
+.main_wrap3 {
+    padding: 2% 4%;
+    border: 1px solid #d4dbea;
+    background: #f6f8fc;
+    letter-spacing: -0.5px;
+    margin: 30px 0;
+    font-size: 14px;
+    color: #464646;
+    line-height: 25px;
+    font-weight: 500;
+}
+.main_wrap3 p {
+    color: #444;
+}
+.main_wrap3 span {
+    background: url(../img/icon/Tip-Ptn.jpg) center center / auto repeat-x;
+}
+@media screen and (min-width:768px) {
+    
+}
+
+@media screen and (min-width:1200px) {
+    .main_wrap2 .tb_title {
+        width: 15%;
+        font-size: 16px;
+    }
+
+}
