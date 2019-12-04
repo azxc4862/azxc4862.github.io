@@ -167,7 +167,7 @@
 }
 .sub2_contents .text_list_box ul:last-child li {
     width: 90%;
-    margin:0 auto
+    margin:0 auto;
     clear: both;
     padding: 20px 0px;
 }
@@ -225,13 +225,16 @@
     padding: 15px 20px;
     font-size: 16px;
 }
-
+.last_htext {
+    padding-top: 50px;
+}
 .icon_box {
-    display: block;
-    width:225px;
+    display: inline-block;
+    width:40%;
     height: 275px;
     border: 1px solid #ededed;
-    margin: 50px auto;
+    margin-left: 5%;
+    margin-top: 50px;
     line-height:1.8;
     text-align: center;
 }
@@ -266,11 +269,12 @@
 
 }
 .icon_bt_box {
-     display: block;
-    width:235px;
+     display: inline-block;
+    width:45%;
+    margin-left: 2.5%;
     height: 175px;
-    margin: 50px auto;
     text-align: center;
+    margin-bottom: 150px;
     
 }
 
