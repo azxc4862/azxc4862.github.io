@@ -166,13 +166,15 @@
     vertical-align: top;
 }
 .sub2_contents .text_list_box ul:last-child li {
+    width: 90%;
+    margin:0 auto
     clear: both;
     padding: 20px 0px;
 }
 .sub2_contents .text_list_box ul:last-child p:last-child {
     margin: 10px auto;
     display: block;
-    width: 200px;
+   
     border: 1px solid #ededed;
     padding: 5px 15px 20px 15px;
     
@@ -215,11 +217,12 @@
     font-size: 1.3rem;
 }
 .box2_list p {
+    font-size: 18px;
     text-align: left;
     color: #666;
 }
 .box2_list > div {
-    padding: 10px 10px;
+    padding: 15px 20px;
     font-size: 16px;
 }
 
@@ -228,7 +231,6 @@
     width:225px;
     height: 275px;
     border: 1px solid #ededed;
-    padding: 10px;
     margin: 50px auto;
     line-height:1.8;
     text-align: center;
@@ -267,7 +269,6 @@
      display: block;
     width:235px;
     height: 175px;
-    padding: 10px;
     margin: 50px auto;
     text-align: center;
     
@@ -529,7 +530,7 @@
         margin: 10px;
         padding: 20px 30px;
     }
-}
+
 .text_list_box2 .box2_list:first-child {
     border: 0px;
     padding: 0;
@@ -546,7 +547,7 @@
 }
 
 .co1_logo {
-    max-width: 520px;
+    max-width: 510px;
     height: 150px;
 }
 .br_color1 {
@@ -589,7 +590,7 @@
     margin: 0px 30px;
 }
 
-
+}
 @media screen and (min-width: 1024px) {
 
 }
@@ -692,7 +693,7 @@
         left:inherit;
     }
     .mid_text {
-        font-size: 1.3rem
+        font-size: 1.3rem;
     }
     .br_color3 li {
        max-width:250px;
