@@ -372,6 +372,7 @@
 }
 
 .co1_logo {
+    width: 360px;
     margin: 0 auto;
     height: 110px;
     background: url(../img/info_logo2.png) 0px 0px / cover no-repeat;
@@ -551,7 +552,7 @@
 }
 
 .co1_logo {
-    max-width: 510px;
+    width: 510px;
     height: 150px;
 }
 .br_color1 {
