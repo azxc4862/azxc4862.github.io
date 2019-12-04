@@ -207,6 +207,9 @@
     width: 100%;
     margin:0 auto;
 }
+.box2_list:nth-of-type(1) {
+    border: 0;
+}
 .box2_list > p:first-child {
     display: block;
     background: #ed1c24;
