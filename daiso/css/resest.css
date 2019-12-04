@@ -1,0 +1,26 @@
+@charset "utr-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Noto Sans KR', sans-serif;
+    zoom:80%;
+}
+ul {
+    list-style: none;
+}
+button, label ,input, selet {
+    border: 0;
+    outline: 0;
+}
+a {
+    text-decoration: none;
+}
+table {
+    border-spacing: 0;
+}
