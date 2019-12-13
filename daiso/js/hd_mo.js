@@ -1,9 +1,36 @@
      $(document).ready(function(){
          $(".menu_icon").click(function(){
              $(".menu_icon").toggleClass("ck");
-             $(".sub_back").toggleClass("on");
              $(".sub_menu").toggleClass("s_close");
+             $(".sub_back").toggleClass("on");
          });
+         
+         $(".season_item:nth-of-type(1)").click(function(){
+             $(".sub_back").toggleClass("on");
+               $(".pop_item1").toggleClass("pop_on");   
+         });
+         $(".season_item:nth-of-type(2)").click(function(){
+             $(".sub_back").toggleClass("on");
+               $(".pop_item2").toggleClass("pop_on");   
+         });
+         $(".season_item:nth-of-type(3)").click(function(){
+             $(".sub_back").toggleClass("on");
+               $(".pop_item3").toggleClass("pop_on");   
+         });
+         $(".season_item:nth-of-type(4)").click(function(){
+             $(".sub_back").toggleClass("on");
+               $(".pop_item4").toggleClass("pop_on");   
+         });
+         $(".season_item:nth-of-type(5)").click(function(){
+             $(".sub_back").toggleClass("on");
+               $(".pop_item5").toggleClass("pop_on");   
+         });
+         $(".season_pop_close").click(function(){
+             $(".sub_back").toggleClass("on");
+               $(".season_pop").removeClass("pop_on");
+                 
+         });
+
 
          
          $("#header").hover(function(){

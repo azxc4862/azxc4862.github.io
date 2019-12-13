@@ -27,7 +27,7 @@
     position: absolute;
     width: 100%;
     text-align: center;
-    top: 50%;
+    top: 65%;
     transform: translateY(-50%);
     font-size: 1.4rem;
 }
@@ -50,6 +50,7 @@
     font-size: 1.2rem;
     letter-spacing: -0.5px;
     background: #f6f6f6;
+    box-shadow: 25px 25px 45px rgba(0,0,0,0.2);
 }
 .sub_main_text li {
     padding: 10px 0px;
@@ -174,7 +175,7 @@
 .sub2_contents .text_list_box ul:last-child p:last-child {
     margin: 10px auto;
     display: block;
-   
+   box-shadow: 25px 25px 45px rgba(0,0,0,0.2);
     border: 1px solid #ededed;
     padding: 5px 15px 20px 15px;
     
@@ -201,6 +202,7 @@
     max-width: 320px;
     width: 80%;
     border: 1px solid #ededed;
+    box-shadow: 25px 25px 45px rgba(0,0,0,0.2);
 }
 .box2_list img {
     display: block;
@@ -209,6 +211,7 @@
 }
 .box2_list:nth-of-type(1) {
     border: 0;
+    box-shadow: none;
 }
 .box2_list > p:first-child {
     display: block;
@@ -485,7 +488,6 @@
 
 
 
-
 @media screen and (min-width: 375px) {
 
 }
@@ -603,17 +605,19 @@
 }
 @media screen and (min-width: 1200px) {
     .sub1 {
-        height: 550px;
+        height: 290px;
     }
     .sub1 h3 {
         font-size: 40px;
     }
     .sub_contents .sub_list h3 {
         font-size: 35px;
+        padding: 100px 0px;
     }
     .sub_main_img {
         width: 45%;
         display: inline-block;
+        box-shadow: 25px 25px 45px rgba(0,0,0,0.2);
     }
     .sub_main_text {
         width: 45%;
@@ -661,7 +665,7 @@
     
     }    
     .icon_box {
-        width: 21%;
+        width: 22%;
       
         margin: 100px 1%;
     }  

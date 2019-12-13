@@ -1,0 +1,519 @@
+@charset "utf-8"; 
+
+.sub1 {
+    background: url(../img/lnb3_h2_img_m.png) center / cover no-repeat;
+}
+.sub3_items {
+    width: 320px;
+    height: 530px;
+    margin: 40px auto;
+    vertical-align: top;
+}
+.sub3_items img {
+    width: 100%;
+    max-width: 348px;
+    margin: 0 auto;
+    display: block;
+    
+}
+.sub3_items p:nth-of-type(1) {
+    font-size: 1.9rem;
+    line-height: 40px;
+    padding: 20px 0px;
+    font-weight: 550;
+    color: #515756;
+}
+.sub3_items p:last-child {
+    font-size: 1.2rem;
+    line-height:30px;
+    color: #777;
+}
+
+.season_item {
+    width: 100%;
+    background: #f6f4f0;
+    margin: 50px 0px;
+    position: relative;
+    cursor: pointer;
+    
+}
+
+
+.season_item img {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    
+}
+.season_item_wrap {
+    margin: 0 auto;
+    margin-bottom: 100px;
+    padding: 60px 40px 20px 40px
+}
+.season_item .season_img {
+    max-width: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.season_item:nth-of-type(1) .season_img {
+    background: url(../img/main_img9.jpg) center / cover no-repeat;
+    box-shadow: 28px 28px 43px rgba(0,0,0,0.2);
+}
+.season_item:nth-of-type(2) .season_img {
+    background: url(../img/main_img10.png) center / cover no-repeat;
+    box-shadow: 28px 28px 43px rgba(0,0,0,0.2);
+}
+.season_item:nth-of-type(3) .season_img {
+    background: url(../img/3698727137_eMV5EvYb_fb1be36502bdd901817f07f247ac39ad7ecdc1d2.png) center / cover no-repeat;
+    box-shadow: 28px 28px 43px rgba(0,0,0,0.2);
+}
+.season_item:nth-of-type(4) .season_img {
+    background: url(../img/3698727137_V9RLqKFs_51a4b58d47e5405055a85f289cbfc1a85a634961.jpg) center / cover no-repeat;
+    box-shadow: 28px 28px 43px rgba(0,0,0,0.2);
+}
+.season_item:nth-of-type(5) .season_img {
+    background: url(../img/3698727137_NSfZw0vg_9a13f3fdb4b3070bea6d6854c38f6ed9d3c7a7d5.png) center / cover no-repeat;
+    box-shadow: 28px 28px 43px rgba(0,0,0,0.2);
+}
+.season_item .season_text {
+    text-align: center;
+    padding: 30px 5px;
+    margin-top: 40px;
+    position: relative;
+}
+.season_item .season_text::before {
+    content: "";
+    width: 40px;
+    height: 1px;
+    background: #7b7b7b;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.season_item .season_text p:nth-of-type(1) {
+    font-size: 1.4rem;
+    color: #222;
+}
+.season_item .season_text p:nth-of-type(2) {
+    font-size: 1rem;
+    padding: 20px 0px;
+    color: #7b7b7b;
+}
+.season_item .season_text p:nth-of-type(3) {
+    font-size: 1rem;
+    color: #7b7b7b;
+}
+
+.season_pop {
+    z-index: 97;
+    position: fixed;
+    top: 0;
+    width: 80%;
+    height: 100%;
+    transition: 0.2s;
+    left: -100%;
+    overflow-y: scroll;
+    background: #fff;
+}
+.season_pop .pop_wrap {
+    padding: 40px 20px;
+}
+.season_pop .pop_wrap p {
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.2rem;
+    position: relative;
+}
+.season_pop .pop_wrap li {
+    padding: 30px 0px;
+    max-width: 650px;
+    margin: 0 auto;
+    overflow:hidden;
+    cursor: pointer;
+}
+.season_pop .pop_wrap li img {
+    display: block;
+    width: 100%;
+    transform: scale(0.9);
+    transition: 0.2s;
+}
+.season_pop .pop_wrap li img:hover {
+     transform: scale(1);
+}
+.season_pop_close {
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: -2px;
+    cursor: pointer;
+    right: 0;
+    background: url(../img/content_icon.png) -15px -30px / auto no-repeat;
+}
+.pop_on {
+    left: 0;
+    transition: 0.2s;
+}
+.season_pop_close.pop_on {
+    left: 0;
+    transition: 0.2s;
+}
+.sub_list_back {
+    background: #f2f2f2; 
+    width: 90%;
+    padding: 50px 20px;
+    margin: 0 auto;
+}
+.sub_list_back > ul > li {
+    width: 90%;
+    margin: 30px auto;
+    background: #fff;
+    position: relative;
+    box-shadow:  28px 28px 43px rgba(0,0,0,0.2); 
+    height: 390px;
+    vertical-align: top;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.sub_list_back > ul > li:hover {
+    transform: scale(1.1);
+}
+.sub_list_back > ul > li > div {
+    padding: 50px 40px 160px;
+}
+.sub_list_back > ul > li > div > p {
+    font-weight:550;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+.sub_list_back > ul > li > div > ul > li {
+    color: #7a7a7a;
+    padding: 10px 0px 10px 20px;
+    position: relative;
+    line-height: 24px;
+    font-size: 1rem;
+}
+.sub_list_back > ul > li > div > ul > li::before {
+    content: "-";
+    position: absolute;
+    width: 5px;
+    height: 1px;
+    left: 5px;
+    color: #7a7a7a;
+}
+.sub5_icon {
+    width: 130px;
+    height: 130px;
+    bottom: 20px;
+    right: 25px;
+    display: block;
+    position: absolute;
+
+}
+.sub_list_back > ul > li:nth-of-type(1) .sub5_icon {
+        background: url(../img/recruit_info.png) -580px -261px / auto no-repeat;
+}
+.sub_list_back > ul > li:nth-of-type(2) .sub5_icon {
+        background: url(../img/recruit_info.png) -721px -131px / auto no-repeat;
+}
+.sub_list_back > ul > li:nth-of-type(3) .sub5_icon {
+        background: url(../img/recruit_info.png) -580px -0px / auto no-repeat;
+}
+.sub_list_back > ul > li:nth-of-type(4) .sub5_icon {
+        background: url(../img/recruit_info.png) -581px -131px / auto no-repeat;
+}
+.sub_list_back > ul > li:nth-of-type(5) .sub5_icon {
+        background: url(../img/recruit_info.png) -721px -0px / auto no-repeat;
+}
+
+
+.table_wrap {
+    padding: 50px 20px;
+    background: #f2f2f2;
+}
+.table_wrap > div > ul {
+    padding: 50px 0px;
+}
+.table_wrap > div > p {
+    font-size: 1.1rem;
+    color: #5d5d5d;
+    padding: 5px 0px;
+    line-height: 26px;
+}
+.table_wrap > div > p > span {
+    color: #333;
+    font-size: 1.1rem;
+    font-weight: 550;
+}
+.table_list {
+    border: 1px solid #e7e7e7;
+    background: #fff;
+}
+.table_list li {
+    padding: 15px 25px 35px 25px;
+}
+.table_list li p {
+    font-size: 1.1rem;
+    color: #5d5d5d;
+}
+.table_list li .rt_title {
+    color: #333;
+    font-weight: 550;
+    padding: 25px 0px;
+    text-align: center;
+}
+.table_list li .rt_text {
+    padding-left: 10px;
+    line-height: 1.6;
+    font-size: 1rem;
+    position: relative;
+}
+.table_list li .rt_text::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    background: #5d5d5d;
+    border-radius: 100%;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    display: block;
+}
+.table_list .title {
+    display: block;
+    text-align: center;
+    padding: 30px;
+    font-size: 1.1rem;
+    line-height: 2;
+    font-weight: 550;
+    color: #333;
+    background: #f7f7f7;
+    border-bottom: 1px solid #e7e7e7;
+}
+.title > br {
+    display: none;
+}
+.Job_introduction_wrap li {
+    padding: 30px 0px 0px 0px;
+    width: 90%;
+    margin:  30px auto;
+    box-shadow: 15px 15px 25px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: 0.2s;
+}
+.Job_introduction_wrap li:hover {
+    transform: scale(1.1);
+}
+.jop_icon {
+    width: 120px;
+    height: 100px;
+    display: block;
+    margin:  0 auto;
+}
+.jop_text {
+    padding: 30px;
+    position: relative;
+}
+.jop_text::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 1px;
+    position: absolute;
+    background:#333;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.jop_text_title {
+    font-size: 1.3rem;
+    color: #333;
+    font-weight: 550;
+    padding: 25px 0px;
+}
+.jop_text_cont {
+    padding: 0px 0px 15px 10px;
+    position: relative;
+    color: #646464;
+}
+.jop_text_cont::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 100%;
+    position: absolute;
+    display: block;
+    left: 0px;
+    background: #646464;
+    top: 8px;
+}
+.Job_introduction_wrap li:nth-of-type(1) .jop_icon{
+    background: url(../img/recruit_icon.png) 0px 0px / auto no-repeat;
+}
+.Job_introduction_wrap li:nth-of-type(2) .jop_icon{
+    background: url(../img/recruit_icon.png) -121px 0px / auto no-repeat;
+}
+.Job_introduction_wrap li:nth-of-type(3) .jop_icon{
+    background: url(../img/recruit_icon.png) -242px 0px / auto no-repeat;
+}
+.Job_introduction_wrap li:nth-of-type(4) .jop_icon{
+    height: 95px;
+    background: url(../img/recruit_icon.png) -363px 0px / auto no-repeat;
+}
+.Job_introduction_wrap li:nth-of-type(5) .jop_icon{
+    background: url(../img/recruit_icon.png) -484px 0px / auto no-repeat;
+}
+.Job_introduction_wrap li:nth-of-type(6) .jop_icon{
+    background: url(../img/recruit_icon.png) -362px -84px / auto no-repeat;
+}
+iframe {
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: block;
+    overflow-y: visible;
+}
+@media screen and (min-width: 375px) {
+
+}
+@media screen and (min-width: 414px) {
+
+}
+@media screen and (min-width: 768px) {
+    .sub_contents {
+        width: 100%;
+    }
+    .sub3_items {
+        display: inline-block;
+    }
+    .sub3_items:nth-of-type(2n) {
+        float: right;
+    }
+    .season_pop .pop_wrap p {
+        text-align: center;
+        font-size: 1.4rem;
+    }
+    .sub_list_back > ul > li {
+        width: 45%;
+        display: inline-block;
+        margin: 2%;
+    }
+    .table_list {
+        display: table;
+        width: 100%;
+    }
+    .table_list .title {
+        display: table-cell;
+        width: 20%;
+        min-width: 180px;
+    }
+    .table_list_wrap > ul {
+        display: table-cell;
+        width: 80%;
+    }
+    .title > br {
+    display: block;
+}
+    .table_list li .rt_title {
+        text-align: left;
+    }
+    .table_list:last-child .rt_title {
+        text-align: center;
+        
+    }
+    .Job_introduction_wrap li {
+        width: 45%;
+        height: 440px;
+        display: inline-block;
+        margin: 2.3%;
+        vertical-align: top;
+    }
+
+}
+@media screen and (min-width: 1024px) {
+        .sub3_items:nth-of-type(2n) {
+        float: none;
+    }
+    .sub3_items {
+    width: 348px;
+    height: 530px;
+    margin: 40px 5px;
+    vertical-align: top;
+}
+    .season_item .season_img  {
+        display: inline-block;
+    }
+    
+    .season_item_wrap {
+        width: 85%;
+        margin: 0 auto;
+        clear: both;
+    }
+    .season_item .season_text {
+        display: block;
+        width: 500px;
+        margin-top: 100px;
+        float: right;
+    }
+    .season_item_wrap {
+        padding: 40px 0px 0px 0px;
+    }
+
+    .season_item:nth-child(2n) .season_text {
+        
+    }
+    .Job_introduction_wrap li {
+        width: 29%;
+        margin: 3% 2%;
+    }
+
+}
+@media screen and (min-width: 1200px) {
+    .season_item_wrap {
+        width: 55%;
+    }
+    .season_pop {
+        width: 45%;
+    }
+
+    .sub3_items {
+         margin: 40px 15px;
+    }
+    .season_item .season_text p:nth-of-type(1) {
+    font-size: 1.8rem;
+}
+.season_item .season_text p:nth-of-type(2) {
+    font-size: 1.1rem;
+}
+.season_item .season_text p:nth-of-type(3) {
+    font-size: 1.1rem;
+}
+    .sub_list_back > ul > li {
+        width: 29%;
+    }
+    .table_wrap > div {
+        width: 60%;
+        margin:  0 auto;
+    }
+    .Job_introduction_wrap {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
