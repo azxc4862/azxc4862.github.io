@@ -1,5 +1,5 @@
 //main img fade style//
-$(document).ready(function () {
+$(document).ready(function(){
     var num1 = $(".slide_wrap li").length;
 
     var stra = 0;
