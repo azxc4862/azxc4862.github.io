@@ -1052,7 +1052,6 @@ button {
     background-color:#272b3b;
     border-bottom: 3px solid #737373;
     position: fixed;
-    top: 0;
     z-index: 999;
 }
 .mo_header_wrap {
@@ -1093,7 +1092,7 @@ button {
 }
 .main_slide {
     width: 100%;
-    margin-top: 50px;
+    padding-top: 50px;
     height: 280px;
     
 }
@@ -2612,7 +2611,7 @@ tr, td {
     display: inline-block;
     position: absolute;
     right: 5px;
-    top: 35%;
+    top: 5px;
     width: 1px;
     height: 45%;
     background: #fff;
