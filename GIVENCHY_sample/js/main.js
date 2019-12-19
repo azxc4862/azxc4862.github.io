@@ -85,7 +85,6 @@ $(document).ready(function () {
         }, 600);
         $(".close").css("display", "block");
         $(".menu_Btn").css("display", "none");
-        $(".allwrap").addClass("ov");
     });
 });
 
@@ -96,7 +95,6 @@ $(document).ready(function () {
         }, 600);
         $(".close").css("display", "none");
         $(".menu_Btn").css("display", "block");
-        $(".allwrap").removeClass("ov");
     });
 });
 
