@@ -1,0 +1,118 @@
+@charset "utf-8";
+.sub1_art1 a {
+    display: block;
+    background: #000;
+    color: #fff;
+    padding: 15px 25px;
+    width: 70%;
+    margin: 20px auto;
+}
+.img_view li img {
+    max-width: 221px;
+}
+.lim {
+    display: block;
+    width: 100%;
+    position: relative    
+}
+.lim a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    font-size: 1.75rem;
+    color: #fff;
+}
+.lim a:hover {
+    text-decoration: underline;
+}
+.lim img {
+    width: 100%;
+}
+.mp_2 {
+    padding: 20px;
+    text-align: center;
+}
+.mp_2 ul > li {
+    display: block;
+    width: 100%;
+    padding-top: 20px;
+}
+.text_mv {
+    margin: 10px 0px 20px 0px;
+    line-height: 1.7;
+}
+.text_mv a {
+    color: #333;
+    font-weight: bold;
+    font-size: 12px;
+}
+.text_mv p {
+    color: #717171;
+    font-size: 0.75rem;
+}
+
+.mp_2 img {
+    display: block;
+    width: 100%;
+}
+.text_mv a {
+    text-overflow:ellipsis;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.text_mv a:last-child {
+    border: 1px solid #333;
+    line-height: 4;
+    padding: 5px 10px;
+    display: inline;
+}
+.contents .sub1_art1 > p {
+    color: #333;
+    padding: 10px 0px;
+}
+.mdtitle {
+    padding: 50px 30px;
+    line-height: 1.7;
+    font-size: 14px;
+}
+.sub6_top_back {
+    background: url(../sub_img/sub66_top_back.jpg) center center / cover no-repeat;
+}
+.sub6_top_back img {
+    display: block;
+    height: 700px;
+    width: 100%;
+    opacity: 0;
+    
+    
+}
+@media screen and (min-width:768px) {
+    .sub1_art1 a {
+        width: 50%;
+    }
+    .mp_2 ul > li {
+        display: inline-block;
+        width: 32.3333%;
+        vertical-align: top;
+    }
+    .mdtitle {
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width:1200px) {
+       .sub1_art1 a {
+        max-width: 200px;
+    }
+    .mp_2 ul > li {
+        width: 25%;
+        margin: 2.5%;
+    }
+
+}

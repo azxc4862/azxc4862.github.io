@@ -1,0 +1,268 @@
+@charset "utf-8";
+.main_page {
+    padding: 50px 0px;;
+    text-align: center;
+    position: relative;
+}
+input {
+    position: absolute;
+    top: -100%;
+    opacity: 0;
+    
+}
+.main_page > h3 {
+    padding: 30px;
+    font-size: 20px;
+}
+.main_page > p {
+    padding: 25px;
+    font-size: 16px;
+    color: #333;
+}
+.main_page > a {
+    display: inline-block;
+    font-size: 12px;
+    color: #fff;
+    background: #000;
+    padding: 15px 50px;
+}
+.gl {
+    width: 80%;
+    text-align: left;
+    display: block;
+    margin: 0 auto;
+    font-size: 14px;
+}
+.ch {
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+    padding: 10px 0px;
+    font-weight: 550;
+    font-size: 12px;
+    cursor: pointer;
+}
+.ch::after {
+    content: "+";
+    color: #bbb;
+    float: right;
+    
+}
+.ch2::after {
+    content: "+";
+    color: #bbb;
+    float: right;
+    
+}
+.sub1 {
+    padding: 10px;
+
+}
+.gl{
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    display: none;
+}
+.sub1 p {
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+.sub2 {
+    padding: 10px;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    display: none;
+}
+.ch2 {
+    display: block;
+    font-size: 0.8em;
+    padding: 10px;
+    
+}
+.sub2 a {
+    color: #717171;
+    font-weight: 400;
+    border-bottom: 1px solid #ddd;
+    display: block;
+    padding: 10px;
+}
+.sub2 a:hover {
+    text-decoration: underline;
+}
+
+#sub1-1:checked ~ #gl1-1{
+    height: auto;
+    overflow: visible;
+    opacity: 1;
+    display: block;
+}
+
+#sub1-2:checked ~ #gl1-2{
+    height: auto;
+   overflow: visible;
+    opacity: 1;
+    display: block;
+}
+#sub1-3:checked ~ #gl1-3{
+    height: auto;
+    display: block;
+    opacity: 1;
+    overflow: visible;
+}
+#sub1-4:checked ~ #gl1-4{
+    height: auto;
+    display: block;
+    opacity: 1;
+    overflow: visible;
+}
+
+
+
+
+#sub2-1:checked ~ #sub_wrap1 {
+    height: auto;
+    display: block;
+    opacity: 1;
+    overflow: visible;
+}
+#sub2-2:checked ~ #sub_wrap2 {
+    height: auto;
+    display: block;
+    opacity: 1;
+    overflow: visible;
+}
+#sub2-3:checked ~ #sub_wrap3 {
+    height: auto;
+    display: block;
+    opacity: 1;
+    overflow: visible;
+}
+#sub2-4:checked ~ #sub_wrap4 {
+    height: auto;
+    display: block;
+    opacity: 1;
+    overflow: visible;
+}
+#sub2-5:checked ~ #sub_wrap5 {
+    height: auto;
+    display: block;
+    opacity: 1;
+    overflow: visible;
+}
+
+#sub3-1:checked ~ #sub_wrap3-1 {
+    height: auto;
+    display: block;
+    opacity: 1;
+    overflow: visible;
+}
+#sub3-2:checked ~ #sub_wrap3-2 {
+    height: auto;
+    display: block;
+    opacity: 1;
+    overflow: visible;
+}
+
+
+
+
+#sub4-1:checked ~ #sub_wrap4-1 {
+    height: auto;
+    display: block;
+    opacity: 1;
+    overflow: visible;
+}
+#sub4-2:checked ~ #sub_wrap4-2 {
+    height: auto;
+    display: block;
+    opacity: 1;
+    overflow: visible;
+}
+#sub4-3:checked ~ #sub_wrap4-3 {
+    height: auto;
+    display: block;
+    opacity: 1;
+    overflow: visible;
+}
+#sub4-4:checked ~ #sub_wrap4-4 {
+    height: auto;
+    display: block;
+    opacity: 1;
+    overflow: visible;
+}
+#sub4-5:checked ~ #sub_wrap4-5 {
+    height: auto;
+    display: block;
+    opacity: 1;
+    overflow: visible;
+}
+#sub4-6:checked ~ #sub_wrap4-6 {
+    height: auto;
+    display: block;
+    opacity: 1;
+    overflow: visible;
+}
+#sub4-7:checked ~ #sub_wrap4-7 {
+    height: auto;
+    display: block;
+    opacity: 1;
+    overflow: visible;
+}
+#sub4-8:checked ~ #sub_wrap4-8 {
+    height: auto;
+    display: block;
+    opacity: 1;
+    overflow: visible;
+}
+
+
+
+#sub5-1:checked ~ #sub_wrap5-1 {
+    height: auto;
+    display: block;
+    opacity: 1;
+    overflow: visible;
+}
+#sub5-2:checked ~ #sub_wrap5-2 {
+    height: auto;
+    display: block;
+    opacity: 1;
+    overflow: visible;
+}
+#sub5-3:checked ~ #sub_wrap5-3 {
+    height: auto;
+    display: block;
+    opacity: 1;
+    overflow: visible;
+}
+#sub5-4:checked ~ #sub_wrap5-4 {
+    height: auto;
+    display: block;
+    opacity: 1;
+    overflow: visible;
+}
+
+@media screen and (min-width: 768px) {
+      .gl {
+     width: 50%;
+      }
+    .ch{
+        width: 50%;
+}
+@media screen and (min-width:1200px) {
+    .main_page {
+        padding-top: 100px;
+    }
+  .gl {
+     width: 30%;
+      }
+    .ch{
+        width: 30%;
+    
+}

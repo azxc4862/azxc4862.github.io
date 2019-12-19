@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>givenchy</title>
+    <link rel="stylesheet" href="./css/main2.css">
+    <link rel="stylesheet" href="./css/1_sub1-3.css">
+    <link rel="stylesheet" href="./css/4_sub4-1.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <script src="http://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script src="./js/scroll_event.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Noto+Sans+KR&display=swap" rel="stylesheet">
+
+    <script>
+        $(document).ready(function(){
+         $(".more").click(function(){
+             $(".pop").fadeIn();
+         })
+            
+            $(".pop_close").click(function(){
+             $(".pop").fadeOut();
+         })
+       
+    });
+    </script>
+    <script>
+    $(document).ready(function(){
+       var wd= $(".img_view li").width();
+       var num = $(".img_view li").length;
+       var zero = 0;
+       
+        $(".left").click(function(){
+            $(".img_view").not("animated").animate({"margin-left": -wd+ "px"}, 600, function(){
+           $(".img_view li").eq(0).appendTo($(".img_view ul"));
+            $(".img_view").css("margin-left", "0px");
+        });
+            });
+        
+        $(".right").click(function(){
+             $(".img_view li").eq(num - 1).prependTo($(".img_view ul"));
+                $(".img_view").css("margin-left", -wd + "px");
+                $(".img_view").not(":animated").animate({
+                    "margin-left": "0px"
+                }, 700);
+        });
+        
+        $(".left2").click(function(){
+            $(".img_view2").not("animated").animate({"margin-left": -wd+ "px"}, 600, function(){
+           $(".img_view2 li").eq(0).appendTo($(".img_view2 ul"));
+            $(".img_view2").css("margin-left", "0px");
+        });
+            });
+        
+        $(".right2").click(function(){
+             $(".img_view2 li").eq(num - 1).prependTo($(".img_view2 ul"));
+                $(".img_view2").css("margin-left", -wd + "px");
+                $(".img_view2").not(":animated").animate({
+                    "margin-left": "0px"
+                }, 700);
+        });
+        
+        });
+   
+</script>
+<style>
+    .yy:nth-of-type(4) > a {
+        font-weight: bold;
+    }   
+    .img_view li img {
+    max-width: none;
+}
+
+    .contents .sub1_art1 > p {
+        padding: 5px 0px;
+        font-size: 0.9rem;
+    }
+    .img_view li img {
+        width: auto;
+    }
+    @media screen  and (min-width:768px) {
+        .lf_btn {
+            width: 100%;
+            left: 0;
+        }
+
+    }
+    @media screen  and (min-width:1200px) {
+        .art1_img_list{
+            width: 40%;
+        }
+        .contents {
+            width: 100%;
+        }
+                    .sub1_art1 {
+        width: 50%;
+    } 
+    }
+</style>
+</head>
+
+<body>
+    <div class="allwrap">
+      <div class="submenu">
+            <ul class="sub_Wrap">
+                <li class="col kr nex1">컬렉션<span></span></li>
+                <li class="col kr nex2">여성<span></span></li>
+                <li class="col kr nex3">남성<span></span></li>
+                <li class="col kr nex17">매종<span></span></li>
+                <li class="col"><a href="sub5.html">스토어</a></li>
+                <li class="col"><a href="https://www.givenchybeauty.com/">뷰티</a></li>
+<!--
+                <li class="bb"><a href="#">연락하기</a></li>
+                <li class="bb"><a href="#">로그인</a></li>
+-->
+            </ul>
+            <ul class="sub_page1 spg ">
+                <li class="ret"><span></span>컬렉션</li>
+                <li><a href="./sub1.html"><img src="./img/main_img_2.jpg" alt=""></a></li>
+                <li><a href="./sub1.html">아카이브</a></li>
+                <li class="nex4"><a href="#none">2019 봄 여름 컬렉션<span></span></a></li>
+                <li class="nex5"><a href="#none">2019 가을 겨울<span></span></a></li>
+                <li class="nex6"><a href="#none">오뜨 꾸뛰르<span></span></a></li>
+            </ul>
+            
+            <ul class="sub_page1-1 spg sp">
+                <li class="ret2"><span></span>2019 봄 여름 컬렉션</li>
+                <li><a href="1_sub1-1.html">여성 봄 컬렉션</a></li>
+                <li><a href="1_sub1-2.html">남성 봄 컬렉션</a></li>
+                <li><a href="1_sub1-3.html">여성 여름 컬렉션</a></li>
+            </ul>
+            <ul class="sub_page1-2 spg sp">
+                <li class="ret2"><span></span>2019 가을 겨울</li>
+                <li><a href="1_sub2-1.html">2019 가을 컬렉션</a></li>
+                <li><a href="1_sub2-2.html">여성 가을 컬렉션</a></li>
+                <li><a href="1_sub1-4.html">남성 겨울 컬렉션</a></li>
+            </ul>
+            <ul class="sub_page1-3 spg sp">
+                <li class="ret2"><span></span>오뜨 꾸뛰르</li>
+                <li><a href="1_sub3-1.html">2019 봄 여름 컬렉션</a></li>
+            </ul>
+<!--            컬렉션-->
+            
+            <ul class="sub_page2 spg">
+                <li class="ret"><span></span>여성</li>
+                <li><a href="sub2.html"><img src="./img/main_img_3.jpg" alt=""></a></li>
+                <li class="nex7"><a href="#nonel">신제품<span></span></a></li>
+                <li class="nex8"><a href="#none">의류<span></span></a></li>
+                <li class="nex9"><a href="#none">가방<span></span></a></li>
+                <li class="nex10"><a href="#none">신발<span></span></a></li>
+                <li class="nex11"><a href="#none">액세사리<span></span></a></li>
+            </ul>
+            <ul class="sub_page2-1 spg sp">
+                <li class="ret2"><span></span>신제품</li>
+                <li><a href="2_sub1-1.html">Winter Of Eden</a></li>
+                <li><a href="2_sub1-2.html">여성의 위한 선물</a></li>
+                <li><a href="2_sub1-3.html">신상품</a></li>
+            </ul>
+            <ul class="sub_page2-2 spg sp">
+                <li class="ret2"><span></span>의류</li>
+                <li><a href="2_sub2-1.html">이브닝 드레스</a></li>
+                <li><a href="2_sub2-2.html">데일리 드레스</a></li>
+                <li><a href="2_sub2-3.html">쟈켓</a></li>
+            </ul>
+            <ul class="sub_page2-3 spg sp">
+                <li class="ret2"><span></span>신발</li>
+                <li><a href="2_sub3-1.html">핸드백</a></li>
+                <li><a href="2_sub3-2.html">크로스바디 백</a></li>
+                <li><a href="2_sub3-3.html">숄더백</a></li>
+            </ul>
+            <ul class="sub_page2-4 spg sp">
+                <li class="ret2"><span></span>신발</li>
+                <li><a href="2_sub4-1.html">스니커즈</a></li>
+                <li><a href="2_sub4-2.html">플랫</a></li>
+                <li><a href="2_sub4-3.html">부즈 &amp; 부티</a></li>
+            </ul>
+            <ul class="sub_page2-5 spg sp">
+                <li class="ret2"><span></span>액세사리</li>
+                <li><a href="2_sub5-1.html">파우치</a></li>
+                <li><a href="2_sub5-2.html">지갑</a></li>
+                <li><a href="2_sub5-3.html">키 &amp; 카드 홀더</a></li>
+            </ul>
+            
+<!--            여성-->
+            
+            <ul class="sub_page3 spg">
+                <li class="ret"><span></span>남성</li>
+                <li class="nex6"><a href="#none"><img src="./img/main_img_4.jpg" alt=""></a></li>
+                <li class="nex12"><a href="#none">신제품<span></span></a></li>
+                <li class="nex13"><a href="#none">의류<span></span></a></li>
+                <li class="nex14"><a href="#none">가방<span></span></a></li>
+                <li class="nex15"><a href="#none">신발<span></span></a></li>
+                <li class="nex16"><a href="#none">액세사리<span></span></a></li>
+            </ul>
+            
+            <ul class="sub_page3-1 spg sp">
+                <li class="ret2"><span></span>신제품</li>
+                <li><a href="3_sub1-1.html">Winter Of Eden</a></li>
+                <li><a href="3_sub1-2.html">남성의 위한 선물</a></li>
+                <li><a href="3_sub1-3.html">신상품</a></li>
+            </ul>
+            <ul class="sub_page3-2 spg sp">
+                <li class="ret2"><span></span>의류</li>
+                <li><a href="3_sub2-1.html">코트</a></li>
+                <li><a href="3_sub2-2.html">보머 &amp; 블루종</a></li>
+                <li><a href="3_sub2-3.html">스웻셔츠</a></li>
+            </ul>
+            <ul class="sub_page3-3 spg sp">
+                <li class="ret2"><span></span>신발</li>
+                <li><a href="3_sub3-1.html">크로스바디 백</a></li>
+                <li><a href="3_sub3-2.html">위켄드 백</a></li>
+                <li><a href="3_sub3-3.html">백팩</a></li>
+            </ul>
+            <ul class="sub_page3-4 spg sp">
+                <li class="ret2"><span></span>신발</li>
+                <li><a href="3_sub4-1.html">스니커즈</a></li>
+                <li><a href="3_sub4-2.html">부츠 &amp; 더비</a></li>
+                <li><a href="3_sub4-3.html">캐주얼 슈즈</a></li>
+            </ul>
+            <ul class="sub_page3-5 spg sp">
+                <li class="ret2"><span></span>액세사리</li>
+                <li><a href="3_sub5-1.html">파우치</a></li>
+                <li><a href="3_sub5-2.html">지갑</a></li>
+                <li><a href="3_sub5-3.html">키 &amp; 카드 홀더</a></li>
+            </ul>
+            
+<!--            남성-->
+        
+        <ul class="sub_page4 spg">
+                <li class="ret"><span></span>메종</li>
+                <li class="nex6"><a href="#none"><img src="./img/main_img_1.jpg" alt=""></a></li>
+                <li class="nex18"><a href="#none">신제품<span></span></a></li>
+                <li class="nex19"><a href="#none">마일스톤<span></span></a></li>
+                <li class="nex20"><a href="#none">주제별<span></span></a></li>
+            </ul>
+            
+            <ul class="sub_page4-1 spg sp">
+                <li class="ret2"><span></span>신제품</li>
+                 <li><a href="./4_sub1-1.html">지방시 연말 선물</a></li>
+                <li><a href="./4_sub1-2.html">Arivenchy</a></li>
+                <li><a href="./4_sub1-3.html">The Eden Bag</a></li>
+            </ul>
+            <ul class="sub_page4-2 spg sp">
+                <li class="ret2"><span></span>마일스톤</li>
+                <li><a href="./4_sub2-1.html">위베르 드 지방시</a></li>
+                <li><a href="./4_sub2-2.html">클레어 웨이트 켈러</a></li>
+              <li><a href="./4_sub2-3.html">파리: 조지 셍크</a></li>
+            </ul>
+            <ul class="sub_page4-3 spg sp">
+                <li class="ret2"><span></span>주제별</li>
+                <li><a href="./4_sub3-1.html">지방시 스토리</a></li>
+                <li><a href="./4_sub3-2.html">클레어 웨이트 켈러</a></li>
+                <li><a href="./4_sub3-3.html">브랜드 역사</a></li>
+            </ul>
+
+        </div>
+        <div class="hd">
+            <div class="hd_wrap">
+<!--
+            
+           <p class="search">Search</p>
+           <p class="heart">Wish list</p>
+-->
+            <a href="./index.html" class="logo">
+                <img src="./img/Givenchy16SS2-1.png" alt="로고">
+            </a>
+            <div class="close">
+                <span></span>
+                <span></span>
+            </div>
+            <p class="menu_Btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </p>
+              <div class="deshd desk">
+            <nav id="gnb">
+                <ul>
+                    <li class="yy">
+                        <a href="./sub1.html" class="main">컬렉션</a>
+                        <div class="sub_wrap">
+                            <div class="inner">
+                                <div class="inner_Wrap">
+                                    <strong class="tit">2019 봄 여름 컬렉션</strong>
+                                    <ul>
+                                        <li><a href="./1_sub1-1.html">여성 봄 컬렉션</a></li>
+                                        <li><a href="./1_sub1-2.html">남성 봄 컬렉션</a></li>
+                                        <li><a href="./1_sub1-3.html">여성 봄 여름 컬렉션</a></li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="inner_Wrap" style="opacity: 0;">
+                                    <strong class="tit">2019 가을 겨울</strong>
+                             
+                                </div>
+                                <div class="inner_Wrap">
+                                    <strong class="tit">2019 가을 겨울</strong>
+                                    <ul>
+                                        <li><a href="1_sub2-1.html">2019 가을 남성</a></li>
+                                        <li><a href="1_sub2-2.html">여성 가을 컬렉션</a></li>
+                                        <li><a href="1_sub1-4.html">남성 겨울 컬렉션</a></li>
+                                    </ul>
+                                </div>
+                                <div class="inner_Wrap"  style="opacity: 0;">
+                                    <strong class="tit">2019 가을 겨울</strong>
+                             
+                                </div>
+                                <div class="inner_Wrap good">
+                                    <strong class="tit">오뜨 꾸뛰르</strong>
+                                    <ul>
+                                        <li><a href="./1_sub3-1.html">2019 봄 여름 컬렉션</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="inner_Wrap imgs">
+                                    <ul>
+                                        <li><a href="sub1.html"><img src="./img/sub_1-1_img.jpg" alt="">SLIM FLARED TROUSERS</a></li>
+                                        <li><a href="sub1.html"><img src="./img/sub_1-2_img.jpg" alt="">SLIM FLARED TROUSERS</a></li>
+                                        <li><a href="sub1.html"><img src="./img/sub_1-3_img.jpg" alt="">SLIM FLARED TROUSERS</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="yy">
+                        <a href="sub2.html" class="main">여성</a>
+                        <div class="sub_wrap">
+                            <div class="inner">
+                                <div class="inner_Wrap">
+                                    <strong class="tit">신제품</strong>
+                                    <ul>
+                                        <li><a href="./2_sub1-1.html">Winter Of Eden</a></li>
+                                        <li><a href="./2_sub1-2.html">여성의 위한 선물</a></li>
+                                        <li><a href="./2_sub1-3.html">신상품</a></li>
+                                    </ul>
+                                </div>
+                                <div class="inner_Wrap">
+                                    <strong class="tit">의류</strong>
+                                    <ul>
+                                        <li><a href="./2_sub2-1.html">이브닝 드레스</a></li>
+                                        <li><a href="./2_sub2-2.html">데일리 드레스</a></li>
+                                        <li><a href="./2_sub2-3.html">쟈켓</a></li>
+                                    </ul>
+                                </div>
+                                <div class="inner_Wrap good">
+                                    <strong class="tit">가방</strong>
+                                    <ul>
+                                        <li><a href="./2_sub3-1.html">핸드백</a></li>
+                                        <li><a href="./2_sub3-2.html">크로스바디 백</a></li>
+                                        <li><a href="./2_sub3-3.html">숄더백</a></li>
+                                    </ul>
+                                </div>
+                                <div class="inner_Wrap">
+                                    <strong class="tit">신발</strong>
+                                    <ul>
+                                        <li><a href="./2_sub4-1.html">스니커즈</a></li>
+                                        <li><a href="./2_sub4-2.html">플랫</a></li>
+                                        <li><a href="./2_sub4-3.html">부즈 &amp; 부티</a></li>
+                                    </ul>
+                                </div>
+                                <div class="inner_Wrap">
+                                    <strong class="tit">액세사리</strong>
+                                    <ul>
+                                        <li><a href="./2_sub5-1.html">파우치</a></li>
+                                        <li><a href="./2_sub5-2.html">지갑</a></li>
+                                        <li><a href="./2_sub5-3.html">키 &amp; 카드 홀더</a></li>
+                                    </ul>
+                                </div>
+                                <div class="inner_Wrap imgs">
+                                    <ul>
+                                        <li><a href="./sub2.html"><img src="./img/sub2.jpg" alt="">GV3</a></li>
+                                        <li><a href="./sub2.html"><img src="./img/sub2-2.jpg" alt="">Whip</a></li>
+                                        <li><a href="./sub2.html"><img src="./img/sub2-3.jpg" alt="">Antigona</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li class="yy">
+                        <a href="sub3.html" class="main">남성</a>
+                        <div class="sub_wrap">
+                            <div class="inner">
+                                <div class="inner_Wrap">
+                                    <strong class="tit">신제품</strong>
+                                    <ul>
+                                        <li><a href="./3_sub1-1.html">Winter Of Eden</a></li>
+                                        <li><a href="./3_sub1-2.html">남성을 위한 선물</a></li>
+                                        <li><a href="./3_sub1-3.html">신상품</a></li>
+                                    </ul>
+                                </div>
+                                <div class="inner_Wrap">
+                                    <strong class="tit">의류</strong>
+                                    <ul>
+                                        <li><a href="./3_sub2-1.html">코트</a></li>
+                                        <li><a href="./3_sub2-2.html">보머 &amp; 블루종</a></li>
+                                        <li><a href="./3_sub2-3.html">스웻셔츠</a></li>
+                                    </ul>
+                                </div>
+                                <div class="inner_Wrap good">
+                                    <strong class="tit">가방</strong>
+                                    <ul>
+                                        <li><a href="./3_sub3-1.html">크로스바디 백</a></li>
+                                        <li><a href="./3_sub3-2.html">위켄드 백</a></li>
+                                        <li><a href="./3_sub3-3.html">백팩</a></li>
+                                    </ul>
+                                </div>
+                                <div class="inner_Wrap">
+                                    <strong class="tit">신발</strong>
+                                    <ul>
+                                        <li><a href="./3_sub4-1.html">스니커즈</a></li>
+                                        <li><a href="./3_sub4-2.html">부츠 &amp; 더비</a></li>
+                                        <li><a href="./3_sub4-3.html">캐주얼 슈즈</a></li>
+                                    </ul>
+                                </div>
+                                <div class="inner_Wrap">
+                                    <strong class="tit">액세사리</strong>
+                                    <ul>
+                                        <li><a href="./3_sub5-1.html">파우치</a></li>
+                                        <li><a href="./3_sub5-2.html">지갑</a></li>
+                                        <li><a href="./3_sub5-3.html">키 &amp; 카드 홀더</a></li>
+                                    </ul>
+                                </div>
+                                <div class="inner_Wrap imgs">
+                                    <ul>
+                                        <li><a href="./sub3.html"><img src="./img/sub2.jpg" alt="">GV3</a></li>
+                                        <li><a href="./sub3.html"><img src="./img/sub2-2.jpg" alt="">Whip</a></li>
+                                        <li><a href="./sub3.html"><img src="./img/sub2-3.jpg" alt="">Antigona</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </li>
+
+                    <li class="yy">
+                        <a href="sub4.html" class="main">메종</a>
+                        <div class="sub_wrap">
+                            <div class="inner">
+                                <div class="inner_Wrap">
+                                    <strong class="tit">신제품</strong>
+                                    <ul>
+                                        <li><a href="./4_sub1-1.html">지방시 연말 선물</a></li>
+                                        <li><a href="./4_sub1-2.html">Arivenchy</a></li>
+                                        <li><a href="./4_sub1-3.html">The Eden Bag</a></li>
+                                    </ul>
+                                </div>
+                                <div class="inner_Wrap"  style="opacity: 0;">
+                                    <strong class="tit">2019 가을 겨울</strong>
+                             
+                                </div>
+                                <div class="inner_Wrap">
+                                    <strong class="tit">마일스톤</strong>
+                                    <ul>
+                                        <li><a href="./4_sub2-1.html">위베르 드 지방시</a></li>
+                                        <li><a href="./4_sub2-2.html">클레어 웨이트 켈러</a></li>
+                                        <li><a href="./4_sub2-3.html">파리: 조지 셍크</a></li>
+                                    </ul>
+                                </div>
+                                <div class="inner_Wrap"  style="opacity: 0;">
+                                    <strong class="tit">2019 가을 겨울</strong>
+                             
+                                </div>
+                                <div class="inner_Wrap good">
+                                    <strong class="tit">주제별</strong>
+                                    <ul>
+                                        <li><a href="./4_sub3-1.html">지방시 스토리</a></li>
+                                        <li><a href="./4_sub3-2.html">클레어 웨이트 켈러</a></li>
+                                        <li><a href="./4_sub3-3.html">브랜드 역사</a></li>
+                                    </ul>
+                                </div>>
+                                
+                                <div class="inner_Wrap imgs">
+                                    <ul>
+                                        <li><a href="./sub4.html"><img src="./img/1959-GIVENCHY-ON-AVENUE-GEORGE-V_tile.jpg" alt="">하우스의 역사</a></li>
+                                        <li><a href="./sub4.html"><img src="./img/RoyalWedding_Tile2.jpg" alt="">로열 웨딩</a></li>
+                                        <li><a href="./sub4.html"><img src="./img/Tile Jaw SS19.jpg" alt="">JAW 스니커즈</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </li>
+
+                    <li>
+                        <a href="sub5.html" class="main">스토어</a>
+
+                    </li>
+                    <li>
+                        <a href="https://www.givenchybeauty.com/" class="main">뷰티</a>
+
+                    </li>
+                </ul>
+            </nav>
+        </div>
+</div>
+        </div>
+
+
+        <div class="contents">
+            <div class="sub6_top_back">
+                <img src="./sub_img/sub66_top_back.jpg" alt="">
+            </div>
+            <div class="sub1_art1">
+                <p>메종</p>
+                <h3>GV3 백</h3>
+                <p>클레어 웨이트 켈러가 최초로 선보이는 새로운 핸드백 컬렉션의 독특한 분위기와 특별한 장인 정신을 소개합니다.</p>
+                
+                <p>지방시 메종의 역사적인 주소인 ‘조지 셍크 3번지’에서 이름을 딴 GV3 백은 클레어 웨이트 켈러의 새로운 컬렉션에서 최초로 핸드백으로서 지방시 하우스 역사상 가장 중요한 순간을 의미합니다.</p>
+                <p>지방시 하우스를 상징하는 이중적인 스타일을 대조적인 심미성이 돋보이는 디자인으로 구현했습니다. 세련된 스타일과 실용성을 겸비한 디자인은 하우스의 헤리티지를 이어가며, 동시에 오늘날의 모던한 감성을 표현합니다. 똑같은 두 개의 모티브가 맞물려서 전체를 이루는 상징적인 인터로킹 더블 G 잠금 장식이 인상적입니다.</p>
+                <p>핸드백은 부드러운 촉감을 자랑하는 최고급 퀄리티의 가죽 소재로 제작되었습니다. 가죽 본연의 결이 그대로 살아 있는 반짝이는 염소 가죽과 매트한 질감의 양 가죽으로 완성된 백은 ‘탐포나토’ 기법을 활용하여 소재를 손으로 직접 가볍게 문질러 컬러를 입혔습니다. 이를 통해 소재 본연의 특성을 간직하면서 한층 더 깊이감이 느껴지도록 연출했습니다. 가죽은 각각 따로 염색하고 손으로 컬러를 입혔습니다. 수작업으로 광을 내고 실루엣을 완성하면, 마지막으로 핸드백의 솔기에 직접 손으로 컬러를 입혀 완성합니다.</p>
+                <p>GV3 백은 듀얼 체인 스트랩과 탈착 가능한 가죽 스트랩을 매치한 실용성이 돋보이며, 이를 활용하여 다양한 스타일을 연출할 수 있습니다. ‘키싱’ 타입의 더블 G 마그네틱 잠금장치는 위로 밀어 올리면 열리는 리프트업 스타일이며 한 손으로 간편하게 열고 닫을 수 있습니다.</p>
+            </div>
+
+
+            <div class="art2_img_list">
+               <div class="img_list_wrap">
+                <div class="lf_btn">
+                 <div class="left bt"></div>
+                 <div class="right bt"></div>
+                 </div>
+                <div class="img_view">
+
+                <ul>
+                    <li>
+                        <img src="./sub_img/sub66_slide1.jpg" alt="">
+                        <p></p>
+                    </li>
+                    <li>
+                        <img src="./sub_img/sub66_slide2.jpg" alt="">
+                        <p></p>
+                    </li>
+                    <li>
+                        <img src="./sub_img/sub66_slide3.jpg" alt="">
+                        <p></p>
+                    </li>
+                    <li>
+                        <img src="./sub_img/sub66_slide4.jpg" alt="">
+                        <p></p>
+                    </li>
+                    <li>
+                        <img src="./sub_img/sub66_slide5.jpg" alt="">
+                        <p></p>
+                    </li>
+
+                </ul>
+
+                </div>
+                </div>
+                </div>
+                
+                
+<!--
+                            
+           
+            <div class="girls lim">
+                
+                    <img src="./sub_img/sub55_back.jpg" alt="">
+                </div>
+-->
+                
+                
+<!--
+                <div class="art2_img_list">
+               <div class="img_list_wrap">
+                <div class="lf_btn">
+                 <div class="left2 bt"></div>
+                 <div class="right2 bt"></div>
+                 </div>
+                <div class="img_view2">
+
+                <ul>
+                    <li>
+                        <img src="./sub_img/ONITSUKA%20slide4.jpg" alt="">
+                        <p></p>
+                    </li>
+                    <li>
+                        <img src="./sub_img/ONITSUKA%20slide5.jpg" alt="">
+                        <p></p>
+                    </li>
+                    <li>
+                        <img src="./sub_img/ONITSUKA%20slide6.jpg" alt="">
+                        <p></p>
+                    </li>
+
+                </ul>
+
+                </div>
+                </div>
+                </div>
+-->
+
+                
+                <div class="mp_2">
+                   <ul>
+                       <li class="mp2_1">
+                         <a href="4_sub1-1.html">
+                          <img src="./sub_img/sub44.jpg" alt="">
+                          <div class="text_mv">
+                              <a href="4_sub1-1.html">지방시 연말 선물 - 자세히 보기</a>
+                              <p>18.11.2019</p>
+                              <a href="4_sub3-1.html">GIVENCHY STORIES</a>
+                          </div>
+                          </a>
+                       </li>
+                       <li class="mp2_2">
+                         <a href="sub55.html">
+                          <img src="./sub_img/sub55.jpg" alt="">
+                          <div class="text_mv">
+                              <a href="sub55.html">미스틱 핸드백 - 자세히 보기</a>
+                              <p>16.04.2019</p>
+                              <a href="4_sub3-1.html">GIVENCHY STORIES</a>
+                          </div>
+                          </a>
+                       </li>
+                       <li class="mp2_3">
+                         <a href="sub66.html">
+                          <img src="./sub_img/sub66.jpg" alt="">
+                          <div class="text_mv">
+                              <a href="sub66.html">GV3 백 - 자세히 보기 </a>
+                              <p>10.04.2019</p>
+                              <a href="4_sub3-1.html">GIVENCHY STORIES</a>
+                          </div>
+                          </a>
+                       </li>
+                   </ul>
+               </div>
+          
+            
+<!--
+                <div class="art3_img_list">
+                  <p>셀러브리티</p>
+                  
+                   <div class="img_list_wrap">
+                     <div class="lf_btn">
+                      <div class="left2 bt"></div>
+                      <div class="right2 bt"></div>
+                     </div>
+                    <div class="img_view2">
+                    <ul>
+                        <li>
+                            <img src="./img/Hikary Mori Collection.jpg" alt="">
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="./img/JM FALL 19.jpg" alt="">
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="./img/CELEB RM FALL .jpg" alt="">
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="./img/CharlizeTheron_Fall19_Collection_Slider.jpg" alt="">
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="./img/Golshifteh Farahani Fall Collection.jpg" alt="">
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="./img/Noomi Rapace Collection.jpg" alt="">
+                            <p></p>
+                        </li>
+                    </ul>
+                   
+                    </div>
+                </div>
+                </div>
+-->
+                
+        </div>
+        
+        <div class="footer">
+            <ul>
+                <li>
+                    <h4>고객 서비스</h4>
+                    <a href="">FAQ</a>
+                    <a href="">구독 해지하기</a>
+                    <a href="">연락하기</a>
+                    <a href="">명암 증대</a>
+                </li>
+                <li>
+                    <h4>정보</h4>
+                    <a href="">채용</a>
+                    <a href="">보도 자료</a>
+                </li>
+                <li>
+                    <h4>법적 요건</h4>
+                    <a href="">개인정보 보호정책</a>
+                    <a href="">쿠키 정책</a>
+                    <a href="">이용약관</a>
+                    <a href="">ANTI MODERN SLAVERY STATEMENT</a>
+                </li>
+                <li>
+                    <h4><a href="">GIVENCHYBEAUTY.COM 방문하기</a></h4>
+                    <p>沪公网安备 31010602001699号</p>
+                    <p>沪ICP备18007175号</p>
+                    <p>纪梵希(上海)商贸有限公司</p>
+                </li>
+                <li>
+                    <a href=""></a>
+                    <a href=""></a>
+                    <a href=""></a>
+                    <a href=""></a>
+                    <a href=""></a>
+                </li>
+            </ul>
+        </div>
+        
+       <div class="pop">
+            <div class="pop_wrap">
+               <div class="pop_close">
+                   <span></span>
+                   <span></span>
+               </div>
+                <ul>
+                    <li><img src="./img/SS19-Preco-Gallery-Background-17.jpg" alt=""></li>
+                    <li><img src="./img/SS19-Preco-Gallery-Background-08.jpg" alt=""></li>
+                    <li><img src="./img/SS19-Preco-Gallery-Background-10.jpg" alt=""></li>
+                    <li><img src="./img/SS19-Preco-Gallery-Background-27.jpg" alt=""></li>
+                    <li><img src="./img/SS19-Preco-Gallery-Background-12.jpg" alt=""></li>
+                    <li><img src="./img/SS19-Preco-Gallery-Background-15.jpg" alt=""></li>
+                    <li><img src="./img/SS19-Preco-Gallery-Background-36.jpg" alt=""></li>
+                    <li><img src="./img/SS19-Preco-Gallery-Background-44.jpg" alt=""></li>
+
+                </ul>
+            </div>
+        </div>
+
+        
+        
+
+    </div>
+</body>
+
+</html>
