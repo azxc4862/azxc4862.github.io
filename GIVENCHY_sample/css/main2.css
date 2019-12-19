@@ -83,6 +83,7 @@ p {
     width: 35px;
     height: 30px;
     margin-top: 5px;
+    z-index: 99;
     display: none;
    
 }
@@ -125,6 +126,7 @@ p {
     top: 7px;
     right: 20px;
     width: 25px;
+    z-index: 99;
     height: 20px;
     margin-top: 10px;
 }
