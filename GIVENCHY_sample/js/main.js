@@ -80,23 +80,14 @@ $(document).ready(function () {
 //submenu slide
 $(document).ready(function () {
     $(".menu_Btn").click(function () {
-        $(".submenu").not(":animated").animate({
-            "right": "0"
-        }, 600);
-        $(".close").css("display", "block");
-        $(".menu_Btn").css("display", "none");
+        $(".submenu").toggleClass("menu_on");
+        $(".menu_Btn span:nth-of-type(1)").toggleClass("sub_top");
+        $(".menu_Btn span:nth-of-type(2)").toggleClass("sub_mid");
+        $(".menu_Btn span:nth-of-type(3)").toggleClass("sub_bt");
     });
+    
 });
 
-$(document).ready(function () {
-    $(".close").click(function () {
-        $(".submenu").not(":animated").animate({
-            "right": "-100%"
-        }, 600);
-        $(".close").css("display", "none");
-        $(".menu_Btn").css("display", "block");
-    });
-});
 
 //submenu page slide
 
