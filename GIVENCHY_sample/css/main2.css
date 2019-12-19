@@ -20,9 +20,6 @@ a {
 ul {
     list-style: none;
 }
-.ov {
-    overflow: hidden;
-}
 .desk {
     display: none;
 }
@@ -32,6 +29,7 @@ ul {
     width: 80%;
     height: 100%;
     z-index: 13;
+    transition: 0.2s;
     top: 50px;
     right: -100%;
     background-color: white;
@@ -58,6 +56,8 @@ p {
     height: 50px;
     border-bottom: 1px solid #000;
     position: fixed;
+    top: 0;
+    right: 0;
     background-color: white;
    
 }
@@ -364,7 +364,7 @@ p {
 
 .slide {
     width: 100%;
-    padding-top: 60px;
+    padding-top: 50px;
     margin: 0 auto;
 }
 
