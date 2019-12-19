@@ -57,8 +57,6 @@ p {
     border-bottom: 1px solid #000;
     position: fixed;
     z-index: 99;
-    top: 0;
-    right: 0;
     background-color: white;
    
 }
