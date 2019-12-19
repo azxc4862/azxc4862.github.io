@@ -651,7 +651,7 @@ p {
         width: 100%;
     }
     .left_1, .left_serch, .menu_Btn {
-        display: none;
+        opacity: 0;
     }
     .contents_style img {
         max-width: 530px;
