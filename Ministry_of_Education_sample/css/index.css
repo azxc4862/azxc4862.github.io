@@ -615,7 +615,7 @@ button {
 /*모바일 서치 끝*/
 /*데스크탑 헤더 시작*/
 .desk_header {
-    width: 99%;
+    width: 100%;
     margin: 0 auto;
     z-index: 999;
     position: fixed;
@@ -2785,6 +2785,8 @@ tr, td {
        padding: 5px;
         width: 15%;
     }
+
+
     .tb {
         display: block;
     }
@@ -2929,8 +2931,8 @@ tr, td {
         width: 15%;
     }
     .main_slide {
-        margin-top: 100px;
         height: 645px;
+        padding-top: 100px;
         
     }
     .border_top  {
@@ -3481,6 +3483,9 @@ tr, td {
         display: table;
         height: auto;
         width: 100%;
+    }
+    .main_slide {
+        padding-top: 0;
     }
 /*    바텀변경 끝*/
 
