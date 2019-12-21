@@ -95,7 +95,7 @@ table {
     background: url(../img/main_img.jpg) 0px 0px / cover no-repeat;
 }
 #header .header_wrap {
-    background: rgba(0,0,0,0.2);
+    background: rgba(0,0,0,0.7);
     height: 100%;
     text-align: center;
     font-size: 1.1rem;
@@ -217,6 +217,10 @@ table {
 #about .wrap .about_icon_wrap li p {
     font-size: 1rem;
     padding: 5px 0px;
+}
+#about .wrap .about_icon_wrap li h4 {
+    font-size: 1.4rem;
+    padding: 10px 0px;
 }
 #about .wrap .about_icon_wrap li:first-child p:last-child {
     color: #7e7e7e;
@@ -600,7 +604,7 @@ table {
     }
     #portfolio .article {
         width: 45%;
-        margin: 2.5%;
+        margin: 2.3%;
         display: inline-block;
     }
     #skill > .wrap li {
