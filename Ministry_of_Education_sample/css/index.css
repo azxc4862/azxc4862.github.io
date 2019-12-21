@@ -3273,6 +3273,10 @@ tr, td {
 
 
 @media screen and (min-width:1200px) {
+    body {
+        zoom: 80%;
+    }
+
     .mo {
         display: none;
     }
