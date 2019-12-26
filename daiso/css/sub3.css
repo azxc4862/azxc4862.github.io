@@ -408,7 +408,7 @@ iframe {
     .table_list .title {
         display: table-cell;
         width: 20%;
-        min-width: 180px;
+        min-width: 250px;
     }
     .table_list_wrap > ul {
         display: table-cell;
