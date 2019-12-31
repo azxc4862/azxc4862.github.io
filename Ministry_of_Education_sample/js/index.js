@@ -314,17 +314,17 @@
                 }, 700);
             });
 //            푸터슬라이드 끝
-/*            var reponsive;
-            var win= $(window).width();
-            
-            function setReponsive() {
-                if(win >= 1200) {
-                    $("body").css("zoom", "80%");
-                }
-            }
-            
-            $(window).on("load", function(){
-                setReponsive();
-            })*/
-    
+//            var reponsive;
+//            var win= $(window).width();
+//            
+//            function setReponsive() {
+//                if(win >= 1200) {
+//                    $("body").css("zoom", "80%");
+//                }
+//            }
+//            
+//            $(window).on("load", function(){
+//                setReponsive();
+//            })
+//    
         });
