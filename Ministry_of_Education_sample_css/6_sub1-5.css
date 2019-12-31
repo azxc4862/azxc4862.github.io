@@ -1,0 +1,174 @@
+@charset "utf-8";
+.page_wrap_center > div h3 {
+    position:relative;
+    display: block;
+    text-align: left;
+    padding: 20px 0px 20px 40px;
+    width: 90%;
+    font-size: 16px;
+    color: #444;
+    font-weight: bold;
+    
+}
+.page_wrap_center > div h3::before{
+    content: "";
+    width: 13px;
+    height: 13px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    background: #454d5d;
+    border-radius: 100px;
+}
+.page_wrap_center > div h3::after{
+    content: "";
+    width: 13px;
+    height: 13px;
+    left: 17px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    background: #7887a5;
+    border-radius: 100px;
+}
+
+.act1_box {
+    border: 3px solid #053863;
+    padding: 25px;
+    overflow: hidden;
+   
+}
+.act1_img {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+.act1_box p {
+    text-align: left;
+    line-height: 20px;
+    color: #222;
+    font-size: 13px;
+    padding: 5px 0px;
+}
+.act1_box a {
+    float: left;
+    display: inline-block;
+    border: 1px solid #464e57;
+    background: #545f6b;
+    color:#fff;
+    font-size: 10px;
+    margin-top: 5px;
+    padding: 5px 10px;
+}
+.act2 h4 {
+    display: block;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 10px 0px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.co1, .co2, .co3, .co4 {
+    padding: 10px 0;
+    text-align: left;
+    font-size: 12px;
+}
+.co1 h4 {
+    background: #053863;
+    
+}
+.co2 h4 {
+    background: #e5032f;
+}
+.co3 h4 {
+    background: #575757;
+}
+.co4 h4 {
+    background: #fff;
+    color: #222;
+    border: 1px solid #ddd;
+}
+.act2 p {
+    line-height: 28px;
+    color: #444;
+}
+.act3 > div {
+    margin-bottom: 20px;
+}
+.imgbox1 > p {
+    text-align: left;
+    color: #444;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+.imgbox2 > p {
+    padding-bottom: 30px;
+    color: #444;
+    text-align: left;
+    font-weight: bold;
+}
+.imgbox_wrap {
+    background: url(https://azxc4862.github.io/Ministry_of_Education_sample_icon/mi_bg.gif) repeat;
+    padding: 5px;
+    border: 1px solid #ddd;
+}
+ .imgbox_wrap li {
+        display: block;
+        margin: 0 auto;
+     padding: 10px;
+    }
+
+
+@media screen and (min-width:768px) {
+
+}
+
+@media screen and (min-width:1200px) {
+    .act1_img {
+        width: 25%;
+        float: left;
+        margin-right: 20px;
+    }
+    .act1_box p {
+        font-size: 16px;
+    }
+    .act1_box a {
+        font-size: 14px;
+    }
+    .act2 > div {
+    width: 48%;
+    float: left;
+    font-size: 16px;
+   }
+    .act2 p {
+     padding-bottom: 20px;
+    }
+    .act2 h4 {
+        padding: 20px 0px;
+        font-size: 14px;
+        font-weight: 550;
+    }
+    .co2, .co4 {
+    margin-left: 4%;
+   } 
+    .act3 {
+        clear: both;
+    }
+    .imgbox1 li  {
+       width: 43%;
+        display: inline-block;
+    }
+    .imgbox2 li {
+        width: 23%;
+        display: inline-block;
+       
+    }
+    .p6_4_img {
+        width: auto;
+        margin: 0 auto;
+    }
+
+}
+

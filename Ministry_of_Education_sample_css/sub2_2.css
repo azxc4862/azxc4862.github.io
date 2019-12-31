@@ -1,0 +1,251 @@
+@charset "utf-8";
+
+@media screen and (min-width:1200px) {
+   
+
+    .com_desk > h4 {
+        text-align: left;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 3;
+    }
+    .tb_list_top {
+        width: 80%;
+        height: 40px;
+        display: table;
+        margin: 0 auto;
+        border: 1px solid #ddd;
+    }
+    .tb_list_top > ul > li {
+        display: block;
+        width: 25%;
+        height: 40px;
+        float: left;
+        padding: 20px 0px;
+        cursor: pointer;
+        transition: 0.5s;
+       
+      
+    }
+    .tb_list_top > ul > li:hover {
+        background: #ddd;
+    }
+ 
+    .tb_list_top > ul > li > p {
+        line-height: 40px;
+    }
+    .tlp {
+        background: #ddd;
+    }
+    .tb_list_center {
+        width: 80%;
+        margin: 0 auto;
+        border: 1px solid #ddd;
+    }
+    .tb_list_center li {
+        display: block;
+        width: 100%;
+        padding: 50px 0px;
+        position: relative;
+        display: none;
+    }
+    .lbox {
+        width: 150px;
+        height: 50px;
+        border-radius: 7px;
+        margin: 20px auto;
+        background: #5b5b5b;
+        border: 1px solid #484848;
+    }
+    .lbox > a {
+        display: block;
+        color: #fff;
+        font-size: 16px;
+        line-height: 50px;
+        font-weight: bold;
+    }
+    .tb_list_center .tbl {
+        display: block;
+    }
+    
+
+    .my_box {
+        text-align: left;
+       margin-top: 50px;
+    }
+    .my_box > h4 {
+        font-size: 18px;
+        font-weight: bold;
+        display: inline-block;
+        line-height: 3;
+    }
+    .tlc_bt_box {
+        width: 80%;
+        text-align: left;
+        padding: 20px 30px;
+        margin: 0 auto;
+        border: 1px solid #ddd;
+    }
+    .tlc_bt_box p {
+        display: inline-block;
+        position: relative;
+    }
+    .tlc_bt_box p:first-child {
+        line-height: 3;
+       
+    }
+    .tlc_bt_box p::before {
+        content: "";
+        position: absolute;
+        width: 13px;
+        height: 10px;
+        left: -18px;
+        top: 15px;
+        background: url(https://azxc4862.github.io/Ministry_of_Education_sample_main/check_icon.gif);
+    }
+    .tlc_bt_box p:last-child::before {
+        top: 5px;
+    }
+    .tlc2_wrap {
+        width: 50%;
+        margin: 0 auto;
+    }
+    .tlc2_wrap > div {
+        margin-bottom: 20px;
+    }
+    .tlc2_wrap p {
+        display: inline-block;
+        text-align: left;
+        width: 40%;
+        float: left;
+    }
+    .tlc2_wrap input {
+        width: 50%;
+        border: 1px solid #ddd;
+        height: 25px;
+        padding: 5px 25px;
+    }
+    .tlc2_wrap div:nth-of-type(2) input {
+        width: 18%;
+    }
+    .tlc2_wrap div:nth-of-type(2) span {
+        width: 5%;
+        display: inline-block;
+        
+    }
+    .tlc2 .lbox {
+        margin-top: 50px;
+    }
+    .tlc2 .lbox > a {
+        line-height: 23px;
+    }
+    .tlc2 .tlc_bt_box {
+        height: 100px;
+    }
+    .tlc2 .tlc_bt_box p {
+        width: auto;
+    }
+    .tlc4 .tlc2_wrap {
+        height: 250px;
+    }
+    .tlc4 .tlc2_wrap p {
+        width: 25%;
+    }
+    .tlc4 .tlc2_wrap div:nth-of-type(3) input{
+        width: 50px;
+        margin: 0px 10px;
+    }
+    .tlc4 .tlc2_wrap div:nth-of-type(3) span {
+        font-weight: bold;
+    }
+    .my_box h4 {
+        padding: 50px 0px 50px 0px;
+    }
+    .login_line {
+        width: 100%;
+        border: 1px solid #dddd;
+        
+    }
+    .login_wrap {
+        width: 5dffc0%;
+        padding: 30px 0px;
+        width: 60%;
+        margin: 0 auto;
+        
+    }
+    .lw_left {
+        display: inline-block;
+        width: 150px;
+        height: 150px;
+        padding: 10px;
+        border-radius: 150px;
+        background: #ededed;
+        position: relative;
+    }
+    .lw_right {
+        width: auto;
+        vertical-align: top;
+        padding: 10px;
+        display: inline-block;
+        position: relative;
+        
+    }
+    .lw_right p {
+        width: 100px;
+        display: inline-block;
+    }
+    .lw_right input {
+        width: 200px;
+        border: 1px solid #ddd;
+        height: 25px;
+        padding: 5px 10px;
+    }
+    .lw_right li:nth-of-type(2){
+        padding: 10px 0px;
+    }
+
+    .lw_right li:nth-of-type(3) {
+        width: 70px;
+        height: 83px;
+        display: inline-block;
+        position: absolute;
+        right: -70px;
+        background: #5b5b5b;
+        border: 1px solid #484848;
+        top: 10px;
+    }
+    .lw_right li:nth-of-type(3) a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        line-height: 80px;
+        font-weight: bold;
+        color: #fff;
+    }
+    .lw_right li:last-child {
+        width: 90%;
+        padding: 20px 0px;
+        float: right;
+    }
+    .lw_right li span {
+        border: 1px solid #ddd;
+        padding: 9px;
+        display: inline-block;
+        
+    }
+    .lw_right li span a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        color: #444;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    }
+
+
+
+
+}

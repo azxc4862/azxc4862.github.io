@@ -1,0 +1,245 @@
+@charset "utf-8";
+.page_wrap_center > div {
+    border: 0;
+    padding: 10px;
+}
+.page_wrap_center {
+    padding-top: 0;
+}
+
+.main_wrap2 {
+    text-align: left;
+}
+.main_wrap2 li {
+    clear: both;
+}
+.main_wrap2 .m_wrap h3 {
+    font-size: 14px;
+    padding: 10px 10px;
+    position: relative;
+    display: inline-block;
+    
+}
+.main_wrap2 .m_wrap h3::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    width: 2px;
+    top: 15px;
+    height: 10px;
+    background: #939393;
+    transform: rotate(45deg);
+    
+}
+.md_tit {
+    font-size: 14px;
+    padding: 10px 5px 10px 10px;
+    position: relative;
+    display:block;
+    color: #444;
+    font-weight: 500;
+}
+.md_tit::before {
+    content: "";
+    position: absolute;
+    left:0px;
+    width: 4px;
+    top: 17px;
+    height: 4px;
+    border-radius: 100%;
+    background: #939393;
+    
+}
+.bt_tit {
+    padding: 3px 10px;
+    font-size: 12px;
+    position: relative;
+    display: block;
+}
+.bt_tit::before {
+    content: "";
+    width: 3px;
+    height: 1px;
+    position: absolute;
+    background: #939393;
+    left: 0;
+    top: 13px;
+}
+.main_wrap2 > h3 {
+    margin: 15px auto;
+    position: relative;
+    display: block;
+    padding-left: 40px;
+}
+.main_wrap2 > h3::before {
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    top: 5px;
+    left: 0;
+    border-radius: 100%;
+    background: #454d5d;
+}
+.main_wrap2 > h3::after {
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    top: 5px;
+    left: 18px;
+    border-radius: 100%;
+    background: #7887a5;
+}
+.m_wrap {
+    border: 1px solid #d4dbea;
+    margin: 20px auto;
+    padding: 2% 4%;
+    background: rgb(246,248,252);
+}
+.m_wrap table {
+    margin: 10px auto;
+    border-spacing: 0px;
+    background: #fff;
+    letter-spacing: -0.5px;
+    font-size: 12px;
+    border-top: 1px solid #bbb;
+    border-bottom: 1px solid #bbb;
+    text-align: center;
+    font-weight: bold;
+  
+}
+.m_wrap td {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+.m_wrap tr > td:first-child {
+    width: 25%;
+    border-right: 1px solid #ddd;
+}
+
+.m_wrap tr > td:last-child {
+    width: 75%;
+    line-height: 18px;
+}
+.bt_ck {
+    margin: 10px auto;
+
+    
+}
+.bt_ck h4 {
+    display: block;
+    position: relative;
+    padding-left: 15px;
+}
+.bt_ck h4::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 13px;
+    height: 10px;
+    background: url(https://azxc4862.github.io/Ministry_of_Education_sample_main/check_icon.gif) 0px 0px / auto no-repeat;
+    top: 5px;
+    
+}
+.bt_ck > div {
+    text-align: center;
+    font-weight: bold;
+    margin: 10px auto;
+    
+}
+.main_wrap_btn {
+    margin: 10px auto;
+    width: 95%;
+    border: 1px solid #ddd;
+    background: #fff;
+    transition: 0.5s;
+    
+}
+.main_wrap_btn > div {
+    padding: 10px;
+}
+.main_wrap_btn a {
+    color: #444;
+    vertical-align: middle;
+    font-size: 14px;
+    text-align: center;
+    position: relative;
+    display: block;
+    transition: 0.5s;
+}
+.main_wrap_btn a::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 1px;
+    background: #444;
+    right: 20px;
+    transition: 0.5s;
+    bottom: 0px;
+    
+}
+.main_wrap_btn a::after {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 1px;
+    transition: 0.5s;
+    background: #444;
+    right: 18px;
+    bottom: 5px;
+    transform: rotate(45deg);
+    
+}
+.main_wrap_btn:hover{
+   
+    background: #465379;
+}
+.main_wrap_btn:hover a {
+     color: #fff;
+}
+.main_wrap_btn:hover a::before {
+    background: #fff;
+}
+.main_wrap_btn:hover a::after {
+    background: #fff;
+}
+@media screen and (min-width:768px) {
+    .main_wrap_btn {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:1200px) {
+
+    .page_wrap_center{
+        height: auto;
+    }
+    .main_wrap_btn {
+        width: 35%;
+    }
+    .main_wrap_btn > div {
+        padding: 25px 10px;
+    }
+    .main_wrap_btn a {
+        font-size: 20px;
+        font-weight: bold;
+        padding-right: 90px;
+    }
+    
+    .main_wrap_btn a br {
+        display: none;
+    }
+    
+    .main_wrap2 li > h3 {
+        font-size: 17px;
+        
+    }
+    .md_tit {
+        font-size: 16px;
+    }
+    .bt_tit {
+        font-size: 14px;
+    }
+
+}

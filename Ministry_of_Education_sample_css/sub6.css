@@ -1,0 +1,168 @@
+@charset "utf-8";
+.sub6_contents {
+    padding: 10px;
+}
+.s6_top {
+    width: 100%;
+    border-bottom: 2px solid #ddd;
+}
+.s6_img img{
+  display: block;
+    margin: 0 auto;
+}
+.s6_top_title {
+    padding: 15px;
+    margin: 0 auto;
+}
+    .page_wrap_center .pb > div:first-child {
+        height: 100%;
+        background: #f9f9f9;
+    }
+.s6_top_title h2 {
+    display: block;
+    width: auto;
+    margin: 0 auto;
+    font-size: 14px;
+    border-radius: 100px;
+    background: #454d5d;
+    padding: 5px 15px;
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1;
+}
+.page2 span:nth-of-type(2) {
+    background: #8ab839;
+}
+.s6_left {
+    margin: 30px 10px;
+}
+.s6_left_wrap {
+    width: 85%;
+    margin: 0 auto;
+    border: 3px solid #97b746;
+    padding: 15px;
+    position:relative;
+}
+.s6_left_wrap::before {
+    content: "";
+    width: 46px;
+    height: 38px;
+    position: absolute;
+    top: -20px;
+    left: 5px;
+    background: url(https://azxc4862.github.io/Ministry_of_Education_sample_icon/bg_Bridge06-02.jpg) 0 0 / auto no-repeat;
+}
+.s6_left_wrap::after {
+    content: "";
+    width: 46px;
+    height: 38px;
+    position: absolute;
+    bottom: -20px;
+    right: 5px;
+    background: url(https://azxc4862.github.io/Ministry_of_Education_sample_icon/bg_Bridge06-02.jpg) -46px 0 / auto no-repeat;
+}
+.s6_left_wrap h2 {
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.7;
+    font-weight: 500;
+    color: #454d5d;
+}
+.s6_left_wrap h2 span {
+    font-weight: bold;
+
+}
+.s6_right {
+    position: relative;
+    height: 100%;
+}
+.s6_right li {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+    padding: 10px 10px;
+    color: #444444;
+    letter-spacing: -0.5px;
+}
+.s6_rt_img {
+    width: 95%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+
+}
+.s6_rt_img img {
+    display: block;
+    width: 100%;
+    max-width: 390px;
+    position: absolute;
+    right: 0;
+
+}
+.page_wrap_center .page3 {
+    height: 1310px;
+}
+.page_wrap_center .page3 .pw1 .pw2 {
+    height: 1310px;
+
+}
+@media screen and (min-width:768px) {
+    .s6_right li {
+        font-size: 18px;
+    }
+    .page_wrap_center .page3 {
+    height: 1220px;
+}
+.page_wrap_center .page3 .pw1 .pw2 {
+    height: 100%;
+
+}
+    .s6_top_title h2 {
+      padding: 10px 15px;  
+        display: inline-block;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+}
+
+
+@media screen and (min-width:1200px) {
+    .page_wrap_center .page3 {
+        height: 100%;
+    }
+    .s6_left  {
+        width: 40%;
+        height: 100%;
+        float: left;
+        display: inline-block;
+    }
+    .s6_left_wrap  {
+        height: 350px;
+        position: relative;
+    }
+    .s6_coment {
+       margin: 90px auto;
+
+    }
+    .s6_coment h2 {
+        font-size: 24px;
+    }
+    .s6_right  {
+        width: 58%;
+        float: left;
+    }
+    .s6_right > ul {
+        padding: 15px;
+    }
+    .s6_right li {
+        font-size: 15px;
+    }
+    .s6_rt_img {
+        top: 120px;
+    }
+
+
+}

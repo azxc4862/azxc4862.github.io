@@ -1,0 +1,111 @@
+@charset "utf-8";
+.page_wrap_center > div {
+    border: 0;
+    padding: 10px;
+}
+.page_wrap_center {
+    padding-top: 0;
+}
+.main_wrap1 {
+    border: 1px solid #ddd;
+    padding: 20px 10px;
+    background: url(https://azxc4862.github.io/Ministry_of_Education_sample_main/notice-Ptn.jpg) 0px 0px / auto repeat;
+    font-size: 14px;
+    letter-spacing: -0.5px;
+    font-weight: 500;
+    margin: 20px 0px;
+    
+}
+.main_wrap1 p {
+    display: block;
+    position: relative;
+    color: #444;
+    text-align: left;
+    padding: 10px 0px 10px 10px;
+}
+.main_wrap1 h3 {
+    text-align: left;
+    padding:0px 10px;
+}
+.main_wrap1 .mw_red {
+    padding-left: 20px;
+    color: #934b61 ;
+    background: url(https://azxc4862.github.io/Ministry_of_Education_sample_icon/icon_excl.png) no-repeat left 5px;
+    padding-top: 2px;
+}
+.main_wrap_btn {
+    margin: 10px auto;
+    width: auto;
+}
+.main_wrap_btn a {
+    color: #444;
+    vertical-align: middle;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    padding: 15px 100px 15px 15px;
+    position: relative;
+    background: #fff;
+    transition: 0.5s;
+}
+.main_wrap_btn a::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 1px;
+    background: #444;
+    right: 20px;
+    transition: 0.5s;
+    bottom: 19px;
+    
+}
+.main_wrap_btn a::after {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 1px;
+    transition: 0.5s;
+    background: #444;
+    right: 18px;
+    bottom: 24px;
+    transform: rotate(45deg);
+    
+}
+.main_wrap_btn a:hover {
+    color: #fff;
+    background: #465379;
+}
+.main_wrap_btn a:hover::before {
+    background: #fff;
+}
+.main_wrap_btn a:hover::after {
+    background: #fff;
+}
+
+
+@media screen and (min-width:768px) {
+    
+}
+
+@media screen and (min-width:1200px) {
+    .page_wrap_center{
+        height: auto;
+    }
+    .main_wrap1 h3 {
+        font-size: 18px;
+    }
+    .main_wrap1 {
+        padding: 3% 4%;
+    }
+    .main_wrap_btn {
+        margin-top: 50px;
+    }
+    .main_wrap_btn a {
+        font-size: 22px;
+        font-weight: 500;
+         padding: 15px 110px 15px 25px;
+        
+    }
+
+
+
+}

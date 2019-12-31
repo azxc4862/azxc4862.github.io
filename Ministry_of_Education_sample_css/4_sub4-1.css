@@ -1,0 +1,128 @@
+@charset "utf-8";
+ .page_wrap_center p {
+        color: #464646;
+    }
+     .page_wrap_center h3 {
+        color: #464646;
+    }
+.sinc.back {
+    color: #fff;
+    border: 1px solid #934b61;
+    background: #934b61;
+}
+
+.li {
+            position: absolute;
+        top: 0;
+        left: 0;
+    opacity: 0;
+ 
+}
+.on {
+    opacity: 1;
+}
+.sinc {
+    width: 47%;
+    border:1px solid #dcdfe4;
+    background: #dcdfe4;
+    color: #525252;
+    letter-spacing: -0.5px;
+    height: 42px;
+    display: inline-block;
+    margin: 0.5%;
+    
+    position: relative;
+    text-align: center;
+    font-size: 16px;
+    line-height: 42px;
+    cursor: pointer;
+}
+.xbox { 
+    opacity: 0;
+    z-index: -9999;
+}
+.art2 {
+    
+    padding-top: 20px;
+    position: relative;
+    
+}
+    table {
+        border-spacing: 0px;
+        text-align: center;
+        vertical-align: middle;
+        border-bottom: 2px solid #666;
+        margin: 20px 0px 20px 0px;
+        font-size: 12px;
+        width: 100%;
+
+        
+    }
+    table thead th {
+        border-top: 2px solid #bbb;
+        border-right: 1px solid #bbb;
+        background: #edeff3;
+        color: #444;
+        padding: 10px 0px;
+    }
+    table thead th:nth-child(1){
+        width: 60%;
+    }
+     table thead th:nth-child(2){
+        width: 20%;
+    }
+    table thead th:last-child {
+        border-right: 0px;
+    }
+    .tbox {
+        padding: 0px;
+    }
+    table tbody tr {
+        height: 50px;
+    }
+
+    table tbody td {
+        border-top: 1px solid #bbb;
+        padding: 4px;
+        color: #444;
+    }
+table tbody td > a {
+    color: #444;
+}
+table tbody td > a:hover {
+    text-decoration: underline;
+}
+
+    table tbody td {
+        border-right: 1px solid #bbb;
+    }
+    table tbody td:last-child {
+        border-right: 0px;
+    }
+    .art_ch_box {
+        margin: 0px;
+    }
+    .tb_wrap {
+        padding: 2% 4%;
+        font-size: 16px;
+        color: #444;
+        border: 1px solid #d4dbea;
+    }
+@media screen and (min-width:768px) {
+    .sinc {
+        width: 23%;
+    }
+    .art1 {
+    padding-left: 1.5%;
+}
+
+}
+@media screen and (min-width:1200px) {
+    .sinc {
+        width: 23%;
+    }
+    .art1 {
+    padding-left: 1.5%;
+}
+
+}

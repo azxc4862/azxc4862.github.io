@@ -1,0 +1,91 @@
+@charset "utf-8";
+.page_wrap_center > div {
+    border: 0;
+    padding: 10px;
+}
+.page_wrap_center {
+    padding-top: 0;
+}
+.page_wrap_center h3 {
+    text-align: left;
+    margin: 15px 0px 15px 0px;
+    position: relative;
+    display: block;
+    padding-left: 40px;
+}
+.page_wrap_center h3::before {
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    top: 5px;
+    left: 0;
+    border-radius: 100%;
+    background: #454d5d;
+}
+.page_wrap_center h3::after {
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    top: 5px;
+    left: 18px;
+    border-radius: 100%;
+    background: #7887a5;
+}
+.page_wrap_center table {
+    width: 100%;
+    border-spacing: 0px;
+    letter-spacing: -0.5px;
+    font-size: 14px;
+    border-bottom: 2px solid #bbb;
+    border-top: 2px solid #bbb;
+    vertical-align: middle;
+}
+.page_wrap_center thead tr th {
+    background: #edeff3;
+    border-right: 1px solid #bbb;
+    padding: 6px 5px;
+    color: #444;
+}
+.page_wrap_center tbody tr td {
+    padding: 4px;
+    border-right: 1px solid #bbb;
+    border-top: 1px solid #bbb;
+    background: #fff;
+    color: #444;
+    height: 45px;
+}
+.page_wrap_center tbody tr td a {
+    color: #444;
+}
+.page_wrap_center tbody tr td a:hover {
+    color: #7cb942; 
+    text-decoration: underline;
+}
+.page_wrap_center tbody tr td:last-child {
+    border-right: 0px;
+}
+.page_wrap_center thead tr:first-child th:last-child {
+    border-right: 0px;
+}
+.page_wrap_center thead tr:last-child th {
+    border-top: 1px solid #bbb;
+    width: 15%;
+}
+.page_wrap_center tbody {
+    border-top: 2px solid #bbb;
+}
+
+@media screen and (min-width:768px) {
+
+    
+}
+@media screen and (min-width:1200px) {
+
+
+
+
+
+
+}

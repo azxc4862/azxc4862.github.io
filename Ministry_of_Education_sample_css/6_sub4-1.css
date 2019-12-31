@@ -1,0 +1,142 @@
+@charset "utf-8";
+
+.page_wrap_center {
+    font-size: 14px;
+    letter-spacing: -0.5px;
+}
+.page_wrap_center > div {
+    padding: 10px 5px;
+}
+
+.map_cen {
+    width: 150px;
+    padding: 5px;
+    background: #383745;
+    margin: 20px auto;
+}
+.map_cen > p {
+    padding: 3% 0;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.map_lf, .map_rt {
+    width: 40%;
+    font-size: 12px;
+    vertical-align: top;
+    cursor: pointer;
+   
+}
+.map_rt > p {
+    padding: 3% 0;
+    color: #333;
+    background:#E5ECF1;
+    border: 1px solid #E5ECF1;
+}
+
+.map_lf > p {
+    padding: 3% 0;
+    color: #333;
+    background:#E5ECF1;
+    border: 1px solid #E5ECF1;
+}
+
+.map_lf{
+ display: inline-block;
+    margin-right: 5%;
+}
+.lf1{
+    vertical-align: top;
+}
+.lf2 {
+    margin-right: 55%;
+    margin-bottom: 10px;
+}
+.map_rt {
+   display: inline-block;
+    margin-left: 9%;
+
+}
+.rt1 {
+    vertical-align: top;
+}
+.map_wrap {
+
+    
+}
+.cen1, .cen2, .cen3, .cen4 {
+    width: 40%;
+    display: inline-block;
+}
+.cen1, .cen3 {
+    margin-right: 5%;
+
+}
+.cen2 {
+    vertical-align: top;
+
+}
+.lf4 {
+    margin-right: 50%;
+}
+.lf5 {
+    margin-right: 50%;
+}
+
+.lf8 {
+    margin-right: 55%;
+}
+
+.map_wrap li {
+    background: #fff;
+    padding: 3% 0;
+    border: 1px solid #ddd;
+    margin: 10px 0px;
+    
+}
+@media screen and (min-width:768px) {
+
+
+}
+
+@media screen and (min-width:1200px) {
+    .page_wrap_center {
+    }
+    .map_lf, .map_rt {
+        width: 30%;
+    }
+    .map_cen {
+        width: 20%;
+    }
+    .cen1, .cen2, .cen3, .cen4 {
+        width: 30%;
+    }
+    .page_wrap_center {
+        width: 50%;
+        margin: 0 auto;
+    }
+    .lf2 {
+        margin-right: 50%;
+    }
+    .map_rt {
+        margin-left: 15%;
+    }
+
+    .cen1, .cen3 {
+        margin-right: 19%;
+    }
+    .lf8 {
+        margin-right: 50%;
+    }
+    .lf9, .rt4, .lf10, .rt5 {
+        padding: 50px 0px;
+        width: 23%;
+        float: left;
+        margin: 1%;
+     
+    }
+    .lf11 {
+        clear: both;
+    }
+}

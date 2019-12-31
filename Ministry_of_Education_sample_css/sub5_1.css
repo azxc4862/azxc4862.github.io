@@ -1,0 +1,71 @@
+@charset "utf-8";
+.txt_title_box {
+    padding: 0px 15px 15px 15px;
+    border: 1px solid #ddd;
+    background: url(https://azxc4862.github.io/Ministry_of_Education_sample_main/notice-Ptn.jpg)0px 0px / auto repeat;
+}
+.txt_title_box > h4 {
+    text-align: left;
+    line-height: 3;
+    font-size: 15x;
+}
+.txt_title_box > p {
+    font-size: 14px;
+    text-align: left;
+    
+}
+.mo1 > .mo1_title {
+    font-weight: 550;
+    font-size: 15px;
+    letter-spacing: -0.5px;
+}
+.mo1_in {
+    font-size: 14px;
+    color: #444;
+    
+}
+.mo3 p {
+    font-weight: 500;
+    color: #444;
+    font-size: 14px;
+    letter-spacing: -0.5px;
+    text-align: left;
+    line-height: 24px;
+    margin-top: 10px;  
+    padding-bottom: 20px;
+}
+.mo3 span {
+    color: #1572cb;
+    font-weight: 550;
+}
+.mo2 p {
+    font-weight: bold;
+    line-height: 20px;
+}
+.bfe {
+    position: relative;
+    display: inline-block;
+    padding-left: 5px;
+}
+.bfe::before {
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 10px;
+    background: url(https://azxc4862.github.io/Ministry_of_Education_sample_main/check_icon.gif) 0px 0px / auto no-repeat;
+    left: -11px;
+    top: 5px;
+    
+}
+@media screen and (min-width:1200px) {
+    .mo1 {
+        padding: 0;
+    }
+    .mo3 p {
+        margin-top: 0;
+    }
+
+
+
+
+}

@@ -1,0 +1,156 @@
+@charset "utf-8";
+.page_wrap_center > div {
+    border: 0;
+    padding: 10px;
+}
+.main_wrap {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+.title {
+    font-weight: bold;
+    font-size: 16px;
+    color: #444;
+    padding: 10px;
+    border-bottom: 2px solid #ddd;
+    
+}
+.aro{
+    display: table;
+    width: 100%;
+}
+.m_cont {
+    padding: 2.5%;
+    width: 100%;
+    height: 100%;
+   
+}
+
+.m_cont li {
+    display: block;
+    width: 95%;
+    height: 150px;
+    margin: 10px 0px;
+    border: 1px solid #393939;
+ 
+}
+.art1 .m_cont li:first-child {
+       background: url(https://azxc4862.github.io/Ministry_of_Education_sample_main/proposal_child2.jpg)#395bbd no-repeat 100% 100%;
+}
+.art1 .m_cont li:last-child {
+       background: url(https://azxc4862.github.io/Ministry_of_Education_sample_main/proposal_child1.jpg)#173760 no-repeat 100% 100%;
+}
+.art2 .m_cont li:first-child {
+       background: url(https://azxc4862.github.io/Ministry_of_Education_sample_main/proposal_img1.png)#5f9de1 no-repeat 100% 100%;
+}
+.art2 .m_cont li:last-child {
+       background: url(https://azxc4862.github.io/Ministry_of_Education_sample_main/proposal_img2.png)#0eb1b6 no-repeat 100% 100%;
+}
+.art3 .art_wrap1 .m_cont li {
+     background: url(https://azxc4862.github.io/Ministry_of_Education_sample_main/proposal_violent.jpg)#132f78 no-repeat 100% 100%;
+}
+.art3 .art_wrap2 .m_cont li {
+     background: url(https://azxc4862.github.io/Ministry_of_Education_sample_main/proposal_hara.jpg)#444b5d no-repeat 100% 100%;
+}
+
+.art4 .art_wrap1 .m_cont li {
+     background: url(https://azxc4862.github.io/Ministry_of_Education_sample_main/proposal_etc.jpg)#7fc701 no-repeat 100% 100%;
+}
+.art4 .art_wrap2 .m_cont li {
+     background: url(https://azxc4862.github.io/Ministry_of_Education_sample_main/proposal_SH.jpg)#626c85 no-repeat 100% 100%;
+}
+.m_cont_wrap {
+    padding: 10px;
+    text-align: left;
+}
+.m_cont_wrap h4 {
+    color: #fff;
+    padding: 10px 0px;
+    font-size:18px;
+}
+.m_cont_wrap p {
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 0px;
+}
+.m_cont_wrap a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #fff;
+    font-size: 10px;
+    padding: 5px 50px 5px 10px;
+    border: 1px solid #fff;
+    position: relative;
+    transition: 0.5s;
+}
+.m_cont_wrap a:hover {
+    background: rgba(0,0,0,0.5);
+}
+.m_cont_wrap a::after {
+    right: 10px;
+    content: "";
+    width: 10px;
+    height: 15px;
+    top: 5px;
+    position: absolute;
+    background: url(https://azxc4862.github.io/Ministry_of_Education_sample_icon/proposal_arrow.png) 85% 50% /auto no-repeat;
+}
+.art4 .art_wrap1 .m_cont_wrap{
+    padding-top: 0px;
+}
+@media screen and (min-width:768px) {
+    .aro{
+    display: table;
+    width: 45%;
+        float: left;
+        margin-left: 2.5%
+}
+}
+
+@media screen and (min-width:1200px) {
+    .aro > .m_cont li {
+        display: inline-block;
+        width: 45%;
+       
+    }
+    .m_cont li {
+        height: 300px;
+    }
+    .aro {
+        display: inline-block;
+        float: none;
+        margin-left:2.5%;
+    }
+    .m_cont {
+        padding: 0;
+    }
+    .art_wrap1, .art_wrap2 {
+        display: inline-block;
+        width: 45%;
+        overflow: hidden;
+        
+    }
+    .art_wrap1, .art_wrap2 > .m_cont li {
+        margin-left: 2.5%;
+    }
+    .m_cont_wrap {
+        text-align: center;
+    }
+    .m_cont_wrap h4 {
+        font-size: 20px;
+        padding: 20px;
+    }
+    .m_cont_wrap p {
+        font-size: 14px;
+    }
+    .m_cont_wrap a {
+        margin-top: 40px;
+        font-size: 14px;
+    }
+    .m_cont_wrap a::after {
+        top: 7px;
+    }
+
+
+}

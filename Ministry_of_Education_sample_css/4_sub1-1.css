@@ -1,0 +1,75 @@
+@charset "utf-8";
+.page_wrap_center > div {
+    border: 0;
+    padding: 10px;
+}
+.page_wrap_center {
+    padding-top: 0;
+}
+.page_wrap_center li {
+    height: 270px;
+    width: 100%;
+    border: 1px solid #e2e2e2;
+    border-bottom: 0px;
+    letter-spacing: -0.5px;
+}
+.page_wrap_center li:last-child {
+    border-bottom: 1px solid #e2e2e2;
+}
+.page_wrap_center li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.page_wrap_center li h3 {
+    font-size: 16px;
+    color: #555;
+    padding: 70px 0 145px;
+}
+.page_wrap_center li:nth-child(2n) {
+    background: #f9fbfd;
+}
+.art1 h3 {
+    background: url(https://azxc4862.github.io/Ministry_of_Education_sample_icon/inform_ico1.png) no-repeat 50% 80%;
+}
+.art2 h3 {
+     background: url(https://azxc4862.github.io/Ministry_of_Education_sample_icon/inform_ico2.png) no-repeat 50% 80%;
+}
+.art3 h3 {
+     background: url(https://azxc4862.github.io/Ministry_of_Education_sample_icon/inform_ico3.png) no-repeat 50% 80%;
+} 
+.art4 h3 {
+     background: url(https://azxc4862.github.io/Ministry_of_Education_sample_icon/inform_ico4.png) no-repeat 50% 80%;
+}
+.art5 h3 {
+     background: url(https://azxc4862.github.io/Ministry_of_Education_sample_icon/inform_ico5.png) no-repeat 50% 80%;
+}
+.art6 h3 {
+     background: url(https://azxc4862.github.io/Ministry_of_Education_sample_icon/inform_ico6.png) no-repeat 50% 80%;
+}
+.art7 h3 {
+     background: url(https://azxc4862.github.io/Ministry_of_Education_sample_icon/inform_ico7.png) no-repeat 50% 80%;
+}
+.art8 h3 {
+     background: url(https://azxc4862.github.io/Ministry_of_Education_sample_icon/inform_ico8.png) no-repeat 50% 80%;
+}
+
+
+@media screen and (min-width:768px) {
+
+    
+}
+@media screen and (min-width:1200px) {
+    .page_wrap_center li {
+        width: 24%;
+        display: inline-block;
+    }
+    .page_wrap_center .art5, .page_wrap_center .art6, .page_wrap_center .art7 {
+        border-bottom: 1px solid #e2e2e2;
+    }
+
+
+
+
+
+}

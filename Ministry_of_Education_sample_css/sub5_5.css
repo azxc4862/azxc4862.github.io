@@ -1,0 +1,95 @@
+@charset "utf-8";
+.page_wrap_center {
+    padding: 0;
+}
+
+.mo1 > .mo1_title {
+    font-weight: 500;
+    line-height: 24px;
+}
+.mo3 p {
+    padding-bottom: 5px;
+}
+.mol.mo3 p {
+    margin-top: 0px;
+}
+.mol.mo3 .mo1_title {
+    padding-bottom: 0px;
+    
+}
+.mol.mo3 .mo1_in {
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-size: 13px;
+    
+}
+.txt_title_box {
+    margin-bottom: 20px;
+}
+.txt_title_box p {
+    position: relative;
+    display: block;
+    font-weight: 550;
+    text-align: left;
+    font-size: 13px;
+    padding: 5px 5px 5px 10px;
+    letter-spacing: -0.5px;
+    color: #444;
+}
+.txt_title_box p::before {
+    content: ""; 
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: #444;
+    border-radius: 100%;
+    left: 0;
+    top: 11px;
+}
+.mo2 {
+    text-align: center;
+}
+.mo2 > p {
+    padding: 5px;
+}
+.mo2 > a {
+    display: inline-block;
+    
+    border: 1px solid #aaaaaa;
+    font-size: 12px;
+    color: #444;
+    font-weight: bold;
+    height: 32px;
+    line-height: 32px;
+    vertical-align: middle;
+    margin: 3px 0px;
+    background-color: #ffee85;
+   
+}
+.mo2 > a:nth-of-type(1){
+    background:url(https://azxc4862.github.io/Ministry_of_Education_sample_icon/file_ico.gif) no-repeat 7px 6px #ffee85;
+    padding: 0px 10px 0px 30px;
+
+}
+.mo2 > a:nth-of-type(2){
+    background:url(https://azxc4862.github.io/Ministry_of_Education_sample_icon/file_hw.gif) no-repeat 6px 7px #ffee85;
+    padding: 0px 10px 0px 25px;
+
+}
+@media screen and (min-width:1200px) {
+    .txt_title_box {
+        margin-top: 20px;
+        padding: 20px 20px 40px 50px;
+    }
+    .txt_title_box p {
+        padding: 10px;
+    }
+    .txt_title_box p::before {
+        top: 16px;
+    }
+    .txt_title_box > h4 {
+        font-size: 20px;
+    }
+
+
+}

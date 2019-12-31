@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+.page_img {
+    height: 552px;
+    background: url(https://azxc4862.github.io/Ministry_of_Education_sample_icon/prof2.jpg) 0px 0px no-repeat;
+    background-position: center;
+    position: relative;
+
+}
+.page_img > table {
+    width: 80%;
+    position: absolute;
+    bottom: 6%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    font-weight: 500;
+    text-align: left;
+}
+.page_img > table td {
+    padding: 5px 5px;
+}
+.page_img > table tr td:first-child{
+    color: #00a1e2;
+}
+.page_img > table tr td:last-child{
+    color: #fff;
+}
+.page_img > table {
+     width: auto;
+}
+.pro_wrap {
+    padding: 10px 30px;
+    text-align: left;
+     font-size:14px;
+}
+.pro_wrap li {
+    padding: 5px 0px;
+    font-size: 14px;
+}
+.pro_wrap li p:first-child{
+    color: #333;
+    font-weight: 550;
+    line-height: 20px;    
+}
+.pro_wrap li p:last-child{
+    color: #333;
+    font-size: 13px;
+    
+}
+.pro_wrap h4 {
+    color: #007cc9;
+    font-weight: 550;
+    padding: 10px;
+}
+@media screen and (min-width:768px) {
+}
+
+@media screen and (min-width:1200px) {
+    .page_img {
+        width: 50%;
+        display: inline-block;
+        background-position: right;
+        vertical-align: top;
+    }
+    .pro_wrap {
+        width: 45%;
+        display: inline-block;
+        position: relative;
+        background: url(https://azxc4862.github.io/Ministry_of_Education_sample_icon/prof_bg.png) 45% 0px / auto no-repeat;
+        
+    }
+    .page_img > table {
+        right:0px;
+        left: auto;
+        font-size: 15px;   
+    }
+    .pro_wrap li {
+        padding: 2px;
+    }
+    .pro_wrap h4 {
+        padding: 5px;
+    }
+
+}
+

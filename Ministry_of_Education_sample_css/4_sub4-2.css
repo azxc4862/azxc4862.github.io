@@ -1,0 +1,268 @@
+@charset "utf-8";
+/* h3 문단 타이틀*/
+.page_wrap_center {
+    padding-top: 10px;
+    
+}
+.page_wrap_center > div {
+    padding: 10px;
+    border: none;
+}
+.page_wrap_center > div h3 {
+    position:relative;
+    display: block;
+    text-align: left;
+    padding: 20px 0px 20px 40px;
+    width: 90%;
+    font-size: 20px;
+    color: #444;
+    font-weight: bold;
+    
+}
+.page_wrap_center > div h3::before{
+    content: "";
+    width: 13px;
+    height: 13px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    background: #454d5d;
+    border-radius: 100px;
+}
+.page_wrap_center > div h3::after{
+    content: "";
+    width: 13px;
+    height: 13px;
+    left: 17px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    background: #7887a5;
+    border-radius: 100px;
+}
+/* h3 문단 타이틀 끝*/
+/*문단 타이틀 내용*/
+.mo1{
+    padding: 0;
+    font-size: 12px;
+    padding-bottom: 20px;
+    text-align: left;
+}
+.mo1_title {
+    font-weight: 550;
+    line-height: 24px;
+    font-size: 14px;
+    letter-spacing: -0.5px;
+    color: #464646;
+    padding-left: 7px;
+    width: 95%;
+    position: relative;
+    
+}
+/*문단 타이틀 내용 끝*/
+/*대각선 줄 박스*/
+.txt_title_box {
+    padding: 4%;
+    border: 1px solid #ddd;
+    background: url(https://azxc4862.github.io/Ministry_of_Education_sample_main/notice-Ptn.jpg)0px 0px/ auto repeat;
+}
+.txt_title_box p {
+    position: relative;
+    font-weight: 550;
+    text-align: left;
+    font-size: 13px;
+    padding: 5px 5px 5px 10px;
+    letter-spacing: -0.5px;
+    color: #444;
+}
+.txt_title_box p::before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: #444;
+    border-radius: 100%;
+    left: 0px;
+    top: 13px;
+}
+/*대각선 줄 박스 끝*/
+/*하늘색 배경 박스*/
+.mo2 {
+    
+    text-align: left;
+    
+}
+/*하늘색 배경 박스 끝*/
+
+/*창구,신고서 양식 다운 신고서 양식 다운 아이콘*/
+.mo2 > a {
+    border: 1px solid #aaaaaa;
+    font-size: 11px;
+    color: #444;
+    font-weight: 550;
+    height: 32px;
+    line-height: 32px;
+    vertical-align: middle;
+    margin: 3px 0px;
+    padding: 0px 10px 0px 27px;
+}
+  /*국가 기관 마크*/
+/*
+.mo2 > a:nth-of-type(1) {
+    background: url(../img/icon/file_ico.gif) no-repeat 7px 6px #ffee85;
+    padding: 0p 10px 0px 30px;
+}
+*/
+  /*국가 기관 마크 끝*/
+  /*양식서 아이콘*/
+/*
+.mo2 > a:nth-of-type(2) {
+    background: url(../img/icon/file_hw.gif) no-repeat 6px 7px #ffee85;
+    padding: 0p 10px 0px 25px;
+}
+*/
+  /*양식서 아이콘 끝*/
+/*창구,신고서 양식 다운 신고서 양식 다운 아이콘 끝*/
+
+.txt_title_box .mo1_inline::before {
+    content: none;
+}
+.mo2 > a {
+    display:inline-block;
+    background: url(https://azxc4862.github.io/Ministry_of_Education_sample_icon/file_hw.gif) no-repeat 6px 7px #ffee85;
+    
+}
+.ch > table {
+    width: 100%;
+    border-spacing: 0px;
+    font-size: 14px;
+    color: #444;
+   
+}
+.ch > table tr td {
+    padding: 5px 10px;
+    height: 45px;
+    letter-spacing: -0.5px;
+     
+    
+}
+.ch > table tr td input {
+    width: auto;
+    float: left;
+    display: inline-block;
+    height: 30px;
+    border: 1px solid #ddd;
+    margin: 0px 15px 0px 5px;
+    
+    letter-spacing: -0.5px;
+    padding: 0 10px;
+}
+ textarea {
+    border: 1px solid #ddd;
+     width: 97%;
+     height: auto;
+     padding: 1%;
+     background: #fff;
+     letter-spacing: -0.5px;
+     font-size: 16px;
+     color:#444;
+     display: inline-block;
+     
+     
+}
+.ch > table tr td:first-child {
+    background:#ececec;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+.ch > table tr td:last-child {
+    background:#f8f8f8;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+.ch > table tr:nth-of-type(4) td {
+    border-right: 0px;
+}
+
+
+
+.ch > table tr:first-child td:first-child {
+    border-top: 2px solid #ddd;
+}
+
+.ch > table tr:first-child td:last-child {
+    border-top: 2px solid #ddd;
+}
+
+.ch > table tr:last-child td:first-child {
+    border-bottom: 2px solid #ddd;
+}
+
+.ch > table tr:last-child td:last-child {
+    border-bottom: 2px solid #ddd;
+}
+.atr_selt_box {
+    margin: 30px auto;
+    font-size: 18px;
+}
+.atr_selt_box span {
+    color: #666666;
+    padding: 10px 20px 10px 40px;
+    display: block;
+    transition: 0.5s;
+    border: 1px solid #ddd;
+}
+.atr_selt_box a {
+    display: inline-block;
+    transition: 0.5s;
+    position: relative;
+}
+.atr_selt_box a:first-child::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: url(https://azxc4862.github.io/Ministry_of_Education_sample_icon/controls.png) -194px -142px / auto no-repeat;
+    left: 19px;
+    top: 15px;
+}
+.atr_selt_box a:last-child::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: url(https://azxc4862.github.io/Ministry_of_Education_sample_icon/controls.png) -159px -142px / auto no-repeat;
+    left: 19px;
+    top: 15px;
+}
+.atr_selt_box a:hover:first-child span {
+    color: #fff;
+    background: #465379;
+    border: 1px solid #465379; 
+  
+}
+.atr_selt_box a:hover:first-child::before {
+    background: url(https://azxc4862.github.io/Ministry_of_Education_sample_icon/controls.png) -211px -142px / auto no-repeat;
+}
+
+.atr_selt_box a:hover:last-child span {
+    color: #fff;
+    background: #934b4b;
+    border: 1px solid #934b4b; 
+  
+}
+.atr_selt_box a:hover:last-child::before {
+    background: url(https://azxc4862.github.io/Ministry_of_Education_sample_icon/controls.png) -175px -142px / auto no-repeat;
+}
+@media screen and (min-width:768px) {
+    
+
+}
+@media screen and (min-width:1200px) {
+    .ch > table tr td {
+       font-size: 18px;
+}
+
+}

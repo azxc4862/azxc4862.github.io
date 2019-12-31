@@ -1,0 +1,189 @@
+@charset "utf-8";
+
+    #calendar {
+    border: 1px solid #ddd;
+    width: 50%;
+    height: 90%;
+    
+}
+.cel {
+        width: 100%;
+        font-size: 12px;
+    }
+#calendar tr:nth-of-type(1) {
+    width: 100%;
+    height: 20%;
+    position: relative;
+    clear: both;
+}
+.p6_left {
+    width: 20%;
+}
+#tbCalendarYM {
+    width: 100%;
+    margin: 0 auto;
+}
+.p6_right {
+    width: 20%;
+}
+#calendar tr:nth-of-type(2) {
+    width: 100%;
+    height: 10%;
+    position: relative;
+}
+.cal_top {
+    width: 100%;
+    height: 50px;
+    line-height: 45px;
+    font-size: 18px;
+    position: relative;
+    background: #272b3b;
+
+}
+.cal_wrap{
+    width: 60%;
+    margin: 0 auto;
+}
+.cal_top span {
+    color: #fff;
+    width: 50%;
+    
+    
+}
+#movePrevMonth {
+    left: 0;
+    width: 20%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#moveNextMonth {
+    right: 0;
+    top: 0;
+    width: 20%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    
+}
+.calendar {
+    width: 100%;
+    border-spacing: 0px;
+}
+.calendar tr:first-child {
+    background: #666;
+}
+.calendar tr:first-child th {
+     border: 1px solid rgba(255,255,255,0.3);
+    border-top: 0;
+}
+.calendar tr:first-child th:first-child {
+        background: #ea4e5a;
+    }
+.calendar tr:first-child th:last-child {
+        background: #5a82ca;
+    }
+th {
+    color: #fff;
+    font-size: 12px;
+  font-weight: 500;
+}
+tr, td {
+    width: 30px;
+    height: 40px;
+    color: #444;
+    cursor: pointer;
+    background: #f5f5f5;
+    border: 1px solid #fff;
+    transition: 0.3s;
+}
+td:hover {
+        background: #d7d7d7;
+    }
+#movePrevMonth {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url("https://azxc4862.github.io/Ministry_of_Education_sample_icon/controls.png") -0px -139px;
+    margin-left: 20px;
+    cursor:pointer;
+}
+#moveNextMonth {
+    cursor:pointer;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url("https://azxc4862.github.io/Ministry_of_Education_sample_icon/controls.png") -20px -139px;
+    margin-right: 20px;
+}
+
+
+.cel_box {
+    border: 2px solid #ddd;
+    padding: 20px;
+    margin: 20px 0px;
+    letter-spacing: -0.5px;
+}
+.cel_box h3 {
+    color: #333;
+    font-weight: 550;
+    padding: 10px 0px;
+}
+.cel_box p:nth-of-type(1) {
+    font-size: 14px;
+    color: #444;
+    line-height: 22px;
+    padding: 15px 0px;
+    display: block;
+    
+}
+.cel_box p:nth-of-type(1) span {
+    font-weight: bold;
+}
+.cel_box select{
+    padding: 5px 5px;
+    margin: 5px;
+    background: #f8f8f8;
+    border: 1px solid #dfdfdf;
+    color: #464646;
+}
+.cel_box p{
+    font-size: 14px;
+    display: inline-block;
+}
+.cel_box a {
+    display: inline-block;
+    color: #fff;
+    font-size: 12px;
+    background: #454d5d;
+    border: 1px solid #454d5d;
+    padding: 5px 20px;
+    margin: 10px;
+    
+}
+
+@media screen and (min-width:768px) {
+    .cel_box {
+        width: 50%;
+        display: inline-block;
+        float: left;
+    }
+    .cel {
+        display: inline-block;
+        width: 40%;
+    }
+
+}
+
+@media screen and (min-width:1200px) {
+      .cel_box {
+        width: 55%;
+        display: inline-block;
+        float: left;
+    }
+    .cel {
+        display: inline-block;
+        width: 35%;
+    }
+
+}

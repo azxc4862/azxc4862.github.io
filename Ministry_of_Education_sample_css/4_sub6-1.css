@@ -1,0 +1,194 @@
+@charset "utf-8";
+.page_wrap_center > div {
+   border:0px;
+   padding: 5px;
+    text-align: left;
+    letter-spacing: 0.5px;
+}
+.page_wrap_center > div > div > h3 {
+    padding: 0px 15px 15px 20px;
+    line-height: 18px;
+    margin-top: 20px;
+    font-size: 15px;
+    border-bottom: 1px solid #d1d1d1;
+    margin-bottom: 15px;
+    font-weight: 550;
+    color: #444;
+    background: url(https://azxc4862.github.io/Ministry_of_Education_sample_icon/bu_con05.gif) no-repeat 0px 3px;
+}
+.page_wrap_center > div > div:first-child > h3 {
+    color: #0a6da6;
+    background: url(https://azxc4862.github.io/Ministry_of_Education_sample_icon/bu_con01.gif) no-repeat 0px 2px;
+}
+.act_title {
+    padding-left:15px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    background: url(https://azxc4862.github.io/Ministry_of_Education_sample_icon/bu_con02.gif) no-repeat 3px 8px;
+    color: #333;
+    font-size: 13px;
+    line-height: 21px;
+}
+.act1.act_title {
+    color: #444;
+}
+.act1_box {
+    margin: 0 auto;
+    padding: 20px;
+    padding-bottom: 15px;
+    color: #444;
+    border: 1px solid #d9d9d8;
+    background: #f8f8f8;
+}
+.act1_box > p {
+    line-height: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 0px 10px 10px 0px;
+}
+
+.act1_box > p > span {
+    color: #09896c;
+}
+.act_ln {
+    color: #333;
+    padding:0px 0px 5px 20px;
+    font-size: 14px;
+
+}
+.act4 > table {
+    width: 100%;
+    border-spacing: 0px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 550;
+} 
+.act4 > table th {
+    padding: 10px 0px 10px 0px;
+    background: #f5f5f5;
+    border-top: 2px solid #dcdcdc;
+    border-right: 1px solid #dcdcdc;
+}
+.act4 > table th:first-child {
+    border-left: 1px solid #dcdcdc;
+}
+.act4 > table tr td:first-child {
+    border-left: 1px solid #dcdcdc
+}
+.act4 > table td {
+    padding: 10px 0px 10px 0px;
+    border-top: 1px solid #dcdcdc;
+
+}
+.bodr {
+    border-right: 1px solid #dcdcdc;
+}
+.bord1 {
+    border: 1px solid #dcdcdc;
+    border-left: 0px;
+}
+.bord2 {
+    border-right: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+}
+.act4 > table tr:last-child td {
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.ac_box {
+    border: 1px solid #d9d9d8;
+    text-align: left;
+    position: relative;
+    padding: 20px 15px;
+    font-size: 13px;
+    color: #444;
+    letter-spacing: -0.5px;
+}
+
+.ac_box h4 {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #444;
+}
+.ac_box span {
+    color: #09896c; 
+}
+.ac_box p {
+    padding: 2px 0px;
+    font-weight: 550;
+}
+.ac_box ul li a {
+    padding: 7px 10px;
+    display: inline-block;
+    border-radius: 5px;
+    margin: 2px;
+    border: 1px solid #0075ab;
+    background: #0075ab;
+    color: #fff;
+    font-weight: bold;
+}
+.ac_box ul li:last-child img {
+    width: 125px;
+}
+.ac_box:nth-of-type(1) {
+    border:1px solid #02b294;
+}
+.ac_box:nth-of-type(1) > img {
+    position: absolute;
+    top: 0;
+    right:0px;
+}
+.ac_box:nth-of-type(1) p:last-child {
+    font-size: 10px;
+}
+
+.act2_2 .ac_box ul li:first-child {
+    display: block;
+    margin-bottom: 15%;
+}
+.act2_2 .ac_box ul li:first-child > p {
+    position: absolute;
+    margin: 0 0 0 80px;
+
+}
+.act2_2 .ac_box ul li:first-child img {
+    position: absolute;
+}
+.act2_2 .ac_box ul li:nth-of-type(2) {
+    padding: 2% 0 10px 0px;
+}
+.act2_2 .ac_box ul li:first-child span {
+    display: inline-block;
+    font-size: 14px;
+    margin: 0 0 0 80px;
+}
+.act2_2 .ac_box ul li:first-child > p::after {
+    content: "";
+    display: block;
+    clear: both;
+    font-size: 13px;
+}
+.act2_2 .ac_box p:last-child {
+    font-size: 13px;
+    
+}
+.act2_1 ul li {
+    display: inline-block;
+}
+.act2_1 ul li img {
+    display: inline-block;
+}
+@media screen and (min-width:768px) {
+    .act2_2 .ac_box ul li:first-child {
+        margin-bottom: 5%;
+    }
+
+}
+@media screen and (min-width:1200px) {
+    .act2_2 .ac_box ul li:first-child {
+        margin-bottom: 2%;
+    }
+
+
+}
